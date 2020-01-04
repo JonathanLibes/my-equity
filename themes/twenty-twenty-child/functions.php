@@ -15,3 +15,13 @@ function enqueue_styles() {
     }
     
     add_action( 'wp_enqueue_scripts', 'enqueue_styles' ); // Enque Styles and Scripts
+
+
+    if( function_exists('acf_add_options_page') ) {
+        acf_add_options_page();
+    }
+
+    function wpb_custom_new_menu() {
+        register_nav_menu('my-custom-menu',__( 'Main Nav' ));
+      }
+      add_action( 'init', 'wpb_custom_new_menu' );
