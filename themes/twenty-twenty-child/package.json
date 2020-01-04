@@ -1,59 +1,26 @@
 {
-  "name": "understrap",
-  "version": "0.9.3",
-  "description": "WordPress Theme framework",
+  "name": "scss-gulp-boilerplate",
+  "version": "1.0.0",
+  "description": "Rapid development boilerplate for sass projects",
   "main": "index.js",
   "scripts": {
-    "postinstall": "gulp copy-assets"
+    "start": "node_modules/gulp/bin/gulp.js watch",
+    "min": "node_modules/gulp/bin/gulp.js min",
+    "minify-css": "node_modules/gulp/bin/gulp.js minify-css",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "npm": ">=2.1.8"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/holger1411/understrap.git"
-  },
-  "keywords": [
-    "wordpress",
-    "theme",
-    "framework",
-    "bootstrap",
-    "underscores"
-  ],
-  "author": "Holger Koenemann",
-  "license": "GPL-2.0",
-  "bugs": {
-    "url": "https://github.com/holger1411/understrap/issues"
-  },
-  "homepage": "https://understrap.com",
-  "dependencies": {
-    "@babel/preset-env": "^7.4.5",
-    "bootstrap": "^4.3.1",
-    "browser-sync": "^2.26.3",
-    "del": "^4.1.0",
-    "font-awesome": "^4.7.0",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-clean-css": "^4.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-ignore": "^2.0.2",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-plumber": "^1.2.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-replace": "^1.0.0",
-    "gulp-rimraf": "^0.2.2",
-    "gulp-sass": "^4.0.2",
-    "gulp-sequence": "^1.0.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2",
-    "gulp-watch": "^5.0.1",
-    "run-sequence": "^2.2.1",
-    "undescores-for-npm": "^1.0.0"
-  },
+  "author": "Vikrant Negi",
+  "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.4.4",
-    "autoprefixer": "^9.5.1",
-    "gulp-babel": "^8.0.0",
-    "gulp-postcss": "^8.0.0"
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.0"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.1.11",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-rename": "^1.2.2"
   }
 }
