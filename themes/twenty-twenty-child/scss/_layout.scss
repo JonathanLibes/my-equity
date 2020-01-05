@@ -2,6 +2,10 @@ html, body {
     background-color: $body-bg;
 }
 
+.full-screen {
+    height: 100vh;
+}
+
 header.site-header{
     background-color: $body-bg;
     min-height: 100px;

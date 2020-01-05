@@ -8040,6 +8040,10 @@ html, body {
   background-color: #ffffff;
 }
 
+.full-screen {
+  height: 100vh;
+}
+
 header.site-header {
   background-color: #ffffff;
   min-height: 100px;
@@ -8070,6 +8074,14 @@ header.site-header .site-main-nav ul li a {
 header.site-header .site-main-nav .nav-login {
   position: absolute;
   right: 80px;
+}
+
+.home-page-content {
+  background-color: #ffffff;
+}
+
+.home-page-content .jumbotron {
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
