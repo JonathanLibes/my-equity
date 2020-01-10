@@ -69,4 +69,19 @@
       position: relative;
     }
   }
+
+  // Start Your Journey
+
+  .start-your-journey{
+    background-color: $light-blue;
+    padding: 50px 10px;
+    .start-your-journey-block{
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      text-align: center;
+    }
+  }
+
+
 }

@@ -65,6 +65,25 @@
         </div>
     </div>
 
+    <!-- Start Your Journey Section -->
+
+    <div class="jumbotron start-your-journey">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 start-your-journey-block">
+                    <h4>You Choose</h4>
+                </div>
+                <div class="col-lg-4 start-your-journey-block">
+                    <h4>We Manage</h4>
+
+                </div>
+                <div class="col-lg-4 start-your-journey-block">
+                    <h4>You Enjoy</h4>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 <?php get_footer(); // get footer assets 

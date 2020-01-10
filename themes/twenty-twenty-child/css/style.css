@@ -8151,4 +8151,16 @@ header.site-header .site-main-nav .nav-login {
   position: relative;
 }
 
+.home-page-content .start-your-journey {
+  background-color: #e2ebf8;
+  padding: 50px 10px;
+}
+
+.home-page-content .start-your-journey .start-your-journey-block {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
