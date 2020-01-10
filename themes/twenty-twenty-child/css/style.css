@@ -8091,15 +8091,63 @@ header.site-header .site-main-nav .nav-login {
   background-color: #ffffff;
 }
 
-.home-page-content .data-analysis__img {
+.home-page-content .data-analysis .data-analysis-body__img {
   padding: 50px;
 }
 
-.home-page-content .data-analysis__img img#bg-data-analysis {
-  max-width: 90%;
+.home-page-content .data-analysis .data-analysis-body__img img#bg-data-analysis {
+  width: 80%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
 }
 
 .home-page-content .data-analysis .container-fluid {
+  position: relative;
+}
+
+.home-page-content .asset-management {
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #ffffff;
+}
+
+.home-page-content .asset-management .asset-management-body__img {
+  padding: 50px;
+}
+
+.home-page-content .asset-management .asset-management-body__img img#bg-asset-management {
+  width: 80%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.home-page-content .asset-management .container-fluid {
+  position: relative;
+}
+
+.home-page-content .knowledge {
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #ffffff;
+}
+
+.home-page-content .knowledge .knowledge-body__img {
+  padding: 50px;
+}
+
+.home-page-content .knowledge .knowledge-body__img img#bg-knowledge {
+  width: 75%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  float: right;
+}
+
+.home-page-content .knowledge .container-fluid {
   position: relative;
 }
 

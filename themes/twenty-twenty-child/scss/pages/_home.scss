@@ -1,14 +1,68 @@
 .home-page-content {
   background-color: $body-bg;
+
+  // Data Analysis
   .data-analysis {
     position: relative;
     margin: 0 !important;
     padding: 0 !important;
     background-color: $body-bg;
-    &__img{
-      padding: 50px;
-      img#bg-data-analysis {
-        max-width: 90%;
+    .data-analysis-body {
+      &__img {
+        padding: 50px;
+        img#bg-data-analysis {
+          width: 80%;
+          position: relative;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    .container-fluid {
+      position: relative;
+    }
+  }
+
+  // Asset Management
+
+  .asset-management {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: $body-bg;
+    .asset-management-body {
+      &__img {
+        padding: 50px;
+        img#bg-asset-management {
+          width: 80%;
+          position: relative;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    .container-fluid {
+      position: relative;
+    }
+  }
+
+  // Knowledge
+
+  .knowledge {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: $body-bg;
+    .knowledge-body {
+      &__img {
+        padding: 50px;
+        img#bg-knowledge {
+          width: 75%;
+          position: relative;
+          display: block;
+          margin: 0 auto;
+          float: right;
+        }
       }
     }
     .container-fluid {
