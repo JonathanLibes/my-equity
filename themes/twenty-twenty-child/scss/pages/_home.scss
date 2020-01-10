@@ -1,7 +1,18 @@
 .home-page-content {
+  background-color: $body-bg;
+  .data-analysis {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
     background-color: $body-bg;
-
-    .jumbotron{
-        background-color: $body-bg;
+    &__img{
+      padding: 50px;
+      img#bg-data-analysis {
+        max-width: 90%;
+      }
     }
+    .container-fluid {
+      position: relative;
+    }
+  }
 }

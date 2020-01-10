@@ -6,6 +6,10 @@ html, body {
     height: 100vh;
 }
 
+.jumbotron {
+    border-radius: 0 !important;
+}
+
 header.site-header{
     background-color: $body-bg;
     min-height: 100px;
