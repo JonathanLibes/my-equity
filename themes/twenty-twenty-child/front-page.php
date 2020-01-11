@@ -88,6 +88,72 @@
         </div>
     </div>
 
+    <!-- Why Invest Section -->
+
+    <div class="jumbotron why-invest">
+        <div class="container-fluid">
+            <div class="row">
+
+                <?php $why_invest = get_field("why_invest_sections"); ?>
+
+                <div class="col-lg-12">
+                    <h4 class="text-center"><?= get_field("why_section_title") ?></h4>
+                </div>
+
+                <?php foreach ($why_invest as $key => $section) : ?>
+                    <div class="col-lg-4 why-invest-block">
+                        <h5><?= $section["title"] ?></h5>
+                        <img id="why-invest-icon-<?= $key + 1 ?>" class="why-invest-icon" src="<?= $section["thumbnail"]["sizes"]["medium"] ?>" alt="<?= $section["thumbnail"]["alt"] ?>">
+                        <a class="why-invest-cta" href="<?= $section["cta"]["link"] ?>"><?= $section["cta"]["text"] ?></a>
+                    </div>
+                <?php endforeach; ?>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Invest Section -->
+
+    <div class="jumbotron testimonial-section">
+        <div class="container-fluid">
+            <div class="row">
+
+                <?php //$why_invest = get_field("why_invest_sections"); 
+                ?>
+
+                <div class="col-lg-12">
+                    <h4 class="text-center">Testimonials</h4>
+                </div>
+
+            </div>
+
+            <div class="testimonial-block">
+                <div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img src="" alt="">
+                        </div>
+                        <div class="col-lg-9">
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden
+                                in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
+                                making this the first true generator on the Internet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <?php foreach ($why_invest as $key => $section) : ?>
+                    <div class="col-lg-4 testimonial-section-block">
+                        
+                    </div>
+                <?php endforeach; ?> -->
+
+        </div>
+    </div>
+</div>
+
 </div>
 <?php get_footer(); // get footer assets 
 ?>

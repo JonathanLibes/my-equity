@@ -20,6 +20,17 @@ if (!defined('ABSPATH')) {
 
 <?php wp_footer(); ?>
 
+<script>
+  jQuery(function() {
+    jQuery('.testimonial-block').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true
+    });
+  });
+</script>
+
 </body>
 
 </html>

@@ -8153,7 +8153,8 @@ header.site-header .site-main-nav .nav-login {
 
 .home-page-content .start-your-journey {
   background-color: #e2ebf8;
-  padding: 50px 10px;
+  padding: 50px 10px 80px 10px;
+  margin-bottom: 0;
 }
 
 .home-page-content .start-your-journey .start-your-journey-block {
@@ -8185,6 +8186,61 @@ header.site-header .site-main-nav .nav-login {
   font-size: 20px;
   margin-top: 40px;
   letter-spacing: 1px;
+}
+
+.home-page-content .why-invest {
+  background-color: #323439;
+  padding: 50px 10px 80px 10px;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.home-page-content .why-invest .why-invest-block {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.home-page-content .why-invest .why-invest-block img.why-invest-icon {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  height: 300px;
+  width: auto;
+  padding-top: 40px;
+}
+
+.home-page-content .why-invest .why-invest-block a.why-invest-cta {
+  max-width: 200px;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 60px;
+  letter-spacing: 1px;
+}
+
+.home-page-content .testimonial-section {
+  background-color: #ffffff;
+  padding: 40px;
+  margin-bottom: 0;
+  color: #323439;
+}
+
+.home-page-content .testimonial-section .testimonial-block {
+  padding: 60px;
+  max-width: 1600px;
+  width: 100%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
