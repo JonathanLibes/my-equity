@@ -8044,6 +8044,10 @@ html, body {
   height: 100vh;
 }
 
+.jumbotron {
+  border-radius: 0 !important;
+}
+
 header.site-header {
   background-color: #ffffff;
   min-height: 100px;
@@ -8080,8 +8084,107 @@ header.site-header .site-main-nav .nav-login {
   background-color: #ffffff;
 }
 
-.home-page-content .jumbotron {
+.home-page-content .data-analysis {
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
   background-color: #ffffff;
+}
+
+.home-page-content .data-analysis .data-analysis-body__img {
+  padding: 50px;
+}
+
+.home-page-content .data-analysis .data-analysis-body__img img#bg-data-analysis {
+  width: 80%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.home-page-content .data-analysis .container-fluid {
+  position: relative;
+}
+
+.home-page-content .asset-management {
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #ffffff;
+}
+
+.home-page-content .asset-management .asset-management-body__img {
+  padding: 50px;
+}
+
+.home-page-content .asset-management .asset-management-body__img img#bg-asset-management {
+  width: 80%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.home-page-content .asset-management .container-fluid {
+  position: relative;
+}
+
+.home-page-content .knowledge {
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #ffffff;
+}
+
+.home-page-content .knowledge .knowledge-body__img {
+  padding: 50px;
+}
+
+.home-page-content .knowledge .knowledge-body__img img#bg-knowledge {
+  width: 75%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  float: right;
+}
+
+.home-page-content .knowledge .container-fluid {
+  position: relative;
+}
+
+.home-page-content .start-your-journey {
+  background-color: #e2ebf8;
+  padding: 50px 10px;
+}
+
+.home-page-content .start-your-journey .start-your-journey-block {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.home-page-content .start-your-journey .start-your-journey-block img.journey-icon {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 220px;
+  padding-top: 40px;
+}
+
+.home-page-content .start-your-journey a.journey_cta {
+  max-width: 350px;
+  background-color: #323439;
+  padding: 12px;
+  text-align: center;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 40px;
+  letter-spacing: 1px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,107 @@
 .home-page-content {
-    background-color: $body-bg;
+  background-color: $body-bg;
 
-    .jumbotron{
-        background-color: $body-bg;
+  // Data Analysis
+  .data-analysis {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: $body-bg;
+    .data-analysis-body {
+      &__img {
+        padding: 50px;
+        img#bg-data-analysis {
+          width: 80%;
+          position: relative;
+          display: block;
+          margin: 0 auto;
+        }
+      }
     }
+    .container-fluid {
+      position: relative;
+    }
+  }
+
+  // Asset Management
+
+  .asset-management {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: $body-bg;
+    .asset-management-body {
+      &__img {
+        padding: 50px;
+        img#bg-asset-management {
+          width: 80%;
+          position: relative;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    .container-fluid {
+      position: relative;
+    }
+  }
+
+  // Knowledge
+
+  .knowledge {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: $body-bg;
+    .knowledge-body {
+      &__img {
+        padding: 50px;
+        img#bg-knowledge {
+          width: 75%;
+          position: relative;
+          display: block;
+          margin: 0 auto;
+          float: right;
+        }
+      }
+    }
+    .container-fluid {
+      position: relative;
+    }
+  }
+
+  // Start Your Journey
+
+  .start-your-journey {
+    background-color: $light-blue;
+    padding: 50px 10px;
+    .start-your-journey-block {
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      text-align: center;
+      img.journey-icon {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        max-width: 220px;
+        padding-top: 40px;
+      }
+    }
+    a.journey_cta {
+      max-width: 350px;
+      background-color: $dark;
+      padding: 12px;
+      text-align: center;
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      color: $body-bg;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 20px;
+      margin-top: 40px;
+      letter-spacing: 1px;
+    }
+  }
 }
