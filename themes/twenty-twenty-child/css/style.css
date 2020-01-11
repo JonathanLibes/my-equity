@@ -8037,7 +8037,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 /*# sourceMappingURL=bootstrap.min.css.map */
 html, body {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 .full-screen {
@@ -8078,6 +8078,17 @@ header.site-header .site-main-nav ul li a {
 header.site-header .site-main-nav .nav-login {
   position: absolute;
   right: 80px;
+}
+
+footer.footer {
+  padding: 30px 50px;
+  background-color: #323439;
+}
+
+footer.footer p.copyright {
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
 }
 
 .home-page-content {
@@ -8229,7 +8240,7 @@ header.site-header .site-main-nav .nav-login {
 
 .home-page-content .testimonial-section {
   background-color: #ffffff;
-  padding: 40px;
+  padding: 40px 40px 80px 40px;
   margin-bottom: 0;
   color: #323439;
 }
@@ -8241,6 +8252,46 @@ header.site-header .site-main-nav .nav-login {
   position: relative;
   display: block;
   margin: 0 auto;
+  color: #000000;
+}
+
+.home-page-content .testimonial-section .testimonial-block img {
+  max-width: 260px;
+}
+
+.home-page-content .testimonial-section .testimonial-block .testimonial-text > p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.slick-dots {
+  position: relative !important;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+
+.slick-dots li {
+  margin: 0 0.25rem;
+}
+
+.slick-dots li > button {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: #323439 !important;
+  text-indent: -9999px;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #7f48a3 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

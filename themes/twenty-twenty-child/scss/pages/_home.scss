@@ -146,19 +146,60 @@
 
   // Testimonials
 
-  .testimonial-section{
+  .testimonial-section {
     background-color: $body-bg;
-    padding: 40px;
+    padding: 40px 40px 80px 40px;
     margin-bottom: 0;
     color: $dark;
-    .testimonial-block{
+    .testimonial-block {
       padding: 60px;
       max-width: 1600px;
       width: 100%;
       position: relative;
       display: block;
       margin: 0 auto;
+      color: $black;
+      img {
+        max-width: 260px;
+      }
+      .testimonial-text > p {
+        font-size: 20px;
+        text-align: center;
+      }
     }
   }
+}
 
+// Styling the default Slick dots
+
+.slick-dots {
+  position: relative !important;
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  padding: 1rem 0;
+
+  list-style-type: none;
+
+  li {
+    margin: 0 0.25rem;
+  }
+
+  li > button {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+
+    border: none;
+    border-radius: 100%;
+    background-color: $dark !important;
+
+    text-indent: -9999px;
+  }
+
+  li.slick-active button {
+    background-color: $purple !important;
+  }
 }

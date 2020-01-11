@@ -1,5 +1,5 @@
 html, body {
-    background-color: $body-bg;
+    background-color: $body-bg !important;
 }
 
 .full-screen {
@@ -38,5 +38,15 @@ header.site-header{
             position: absolute;
             right: 80px;
         }
+    }
+}
+
+footer.footer {
+    padding: 30px 50px;
+    background-color: $dark;
+    p.copyright {
+        font-weight: bold;
+        color: $body-bg;
+        margin: 0;
     }
 }
