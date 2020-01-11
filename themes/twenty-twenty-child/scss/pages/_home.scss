@@ -72,16 +72,36 @@
 
   // Start Your Journey
 
-  .start-your-journey{
+  .start-your-journey {
     background-color: $light-blue;
     padding: 50px 10px;
-    .start-your-journey-block{
+    .start-your-journey-block {
       margin: 0 auto;
       display: block;
       position: relative;
       text-align: center;
+      img.journey-icon {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        max-width: 220px;
+        padding-top: 40px;
+      }
+    }
+    a.journey_cta {
+      max-width: 350px;
+      background-color: $dark;
+      padding: 12px;
+      text-align: center;
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      color: $body-bg;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 20px;
+      margin-top: 40px;
+      letter-spacing: 1px;
     }
   }
-
-
 }

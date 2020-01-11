@@ -8163,4 +8163,28 @@ header.site-header .site-main-nav .nav-login {
   text-align: center;
 }
 
+.home-page-content .start-your-journey .start-your-journey-block img.journey-icon {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 220px;
+  padding-top: 40px;
+}
+
+.home-page-content .start-your-journey a.journey_cta {
+  max-width: 350px;
+  background-color: #323439;
+  padding: 12px;
+  text-align: center;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 40px;
+  letter-spacing: 1px;
+}
+
 /*# sourceMappingURL=style.css.map */

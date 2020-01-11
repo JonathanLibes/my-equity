@@ -70,17 +70,20 @@
     <div class="jumbotron start-your-journey">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 start-your-journey-block">
-                    <h4>You Choose</h4>
-                </div>
-                <div class="col-lg-4 start-your-journey-block">
-                    <h4>We Manage</h4>
 
-                </div>
-                <div class="col-lg-4 start-your-journey-block">
-                    <h4>You Enjoy</h4>
+                <?php $journey_sections = get_field("journey_sections"); ?>
 
+                <?php foreach ($journey_sections as $key => $section) : ?>
+                    <div class="col-lg-4 start-your-journey-block">
+                        <h4><?= $section["title"] ?></h4>
+                        <img id="journey-icon-<?= $key + 1 ?>" class="journey-icon" src="<?= $section["icon"]["sizes"]["medium"] ?>" alt="<?= $section["icon"]["alt"] ?>">
+                    </div>
+                <?php endforeach; ?>
+                <?php $journey_cta = get_field("journey_call_to_action"); ?>
+                <div class="col-lg-12">
+                    <a class="journey_cta" href="<?= $journey_cta["link"] ?>"><?= $journey_cta["text"] ?></a>
                 </div>
+
             </div>
         </div>
     </div>
