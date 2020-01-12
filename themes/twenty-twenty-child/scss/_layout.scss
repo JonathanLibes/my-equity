@@ -45,8 +45,19 @@ footer.footer {
     padding: 30px 50px;
     background-color: $dark;
     p.copyright {
-        font-weight: bold;
+        font-weight: 600;
         color: $body-bg;
         margin: 0;
+        font-size: 16px;
+    }
+    .socials{
+        a{
+            text-decoration: none;
+            margin: 2px;
+        }
+        i{
+            font-size: 25px;
+            color: $body-bg;
+        }
     }
 }

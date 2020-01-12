@@ -1,5 +1,17 @@
 .home-page-content {
   background-color: $body-bg;
+  
+  .scroll-animation{
+    position: relative;
+  }
+
+  img.our-bird{
+    width: 150px !important;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 999;
+  }
 
   // Data Analysis
   .data-analysis {
@@ -202,4 +214,5 @@
   li.slick-active button {
     background-color: $purple !important;
   }
+
 }
