@@ -19,7 +19,7 @@ function enqueue_styles() {
     wp_enqueue_script( 'gsap-tweenmax', '//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js', array('jquery'), '', false );
     wp_enqueue_script( 'gsap-tweenlite', '//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenLite.min.js', array('jquery'), '', false );
     wp_enqueue_script( 'gsap-timelinelite', '//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TimelineLite.min.js', array('jquery'), '', false );
-    wp_enqueue_script( 'gsap-cssplugin', '//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/CSSPlugin.min.js', array('jquery'), '', false );
+    wp_enqueue_script( 'gsap-cssplugin', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/CSSRulePlugin.min.js', array('jquery'), '', false );
     wp_enqueue_script( 'gsap-motionpath', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/MotionPathPlugin.min.js', array('jquery'), '', false );
     
     wp_enqueue_script( 'slick-js', get_stylesheet_directory_uri() . '/js/slick.min.js', array('jquery'), '', false );

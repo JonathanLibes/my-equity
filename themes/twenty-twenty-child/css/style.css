@@ -8108,6 +8108,7 @@ footer.footer .socials i {
 
 .home-page-content .scroll-animation {
   position: relative;
+  overflow: visible;
 }
 
 .home-page-content img.our-bird {

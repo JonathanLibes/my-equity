@@ -6,10 +6,7 @@ const flightPath={
         {x: 300, y: 80},
         {x: 500, y: 100},
         {x: 750, y: 150},
-        {x: 750, y: 500},
-        {x: 550, y: 700},
-        {x: 350, y: 900},
-        {x: 150, y: 1200},
+        {x: 600, y: 1000}
     ]    
 }
 
@@ -25,8 +22,9 @@ tween.add(
 const controller = new ScrollMagic.Controller();
 
 const scene = new ScrollMagic.Scene({
+     triggerElement: ".scroll-animation",
      duration: 10000,
-     triggerHook: 0 
+     triggerHook: 0
 })
 .setTween(tween)
 .setPin('.scroll-animation')
