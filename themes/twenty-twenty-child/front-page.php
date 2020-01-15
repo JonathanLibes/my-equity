@@ -11,7 +11,10 @@
 ?>
 <div class="home-page-content">
 
-    <!-- <div class="scroll-animation"> -->
+    <div class="scroll-animation">
+
+    <div id="cloud1" class="cloud"></div>
+    <div id="cloud2" class="cloud"></div>
 
         <img class="our-bird" src="<?= get_field("bird_image", "options")["url"] ?>" alt="Bird" />
 
@@ -69,7 +72,7 @@
             </div>
         </div>
 
-    <!-- </div> -->
+    </div>
 
     <!-- Start Your Journey Section -->
 

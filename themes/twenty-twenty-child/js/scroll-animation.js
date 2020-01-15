@@ -1,5 +1,5 @@
 const flightPath={
-    curviness: 1.25,
+    curviness: 2,
     autoRotate: true,
     values:[
         {x: 100, y: 50},
@@ -23,7 +23,7 @@ const controller = new ScrollMagic.Controller();
 
 const scene = new ScrollMagic.Scene({
      triggerElement: ".scroll-animation",
-     duration: 10000,
+     duration: 8000,
      triggerHook: 0
 })
 .setTween(tween)
