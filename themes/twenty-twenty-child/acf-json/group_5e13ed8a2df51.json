@@ -307,8 +307,23 @@
                 },
                 {
                     "key": "field_5e194ac723d42",
-                    "label": "Colour",
-                    "name": "colour",
+                    "label": "Circle Colour",
+                    "name": "circle_colour",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": ""
+                },
+                {
+                    "key": "field_5e2103394dc91",
+                    "label": "Triangle Colour",
+                    "name": "triangle_colour",
                     "type": "color_picker",
                     "instructions": "",
                     "required": 0,
@@ -324,7 +339,7 @@
                     "key": "field_5e194ada23d43",
                     "label": "Angle",
                     "name": "angle",
-                    "type": "text",
+                    "type": "select",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -333,11 +348,20 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "choices": {
+                        "45deg": "45deg",
+                        "135deg": "135deg",
+                        "225deg": "225deg"
+                    },
+                    "default_value": [
+                        "45-deg"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
                 }
             ]
         },
@@ -648,5 +672,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1578725782
+    "modified": 1579222644
 }

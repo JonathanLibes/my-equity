@@ -8198,14 +8198,108 @@ footer.footer .socials i {
   display: block;
   position: relative;
   text-align: center;
+  padding: 40px 0;
+}
+
+.home-page-content .start-your-journey .start-your-journey-block .circle--135deg {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  transition: 0.3s linear;
+  z-index: 9;
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.home-page-content .start-your-journey .start-your-journey-block .circle--135deg:hover {
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+  transition: 0.3s linear;
+}
+
+.home-page-content .start-your-journey .start-your-journey-block .circle--225deg {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  transition: 0.3s linear;
+  z-index: 9;
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+.home-page-content .start-your-journey .start-your-journey-block .circle--225deg:hover {
+  -ms-transform: rotate(315deg);
+  transform: rotate(315deg);
+  transition: 0.3s linear;
+}
+
+.home-page-content .start-your-journey .start-your-journey-block .circle--45deg {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  transition: 0.3s linear;
+  z-index: 9;
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.home-page-content .start-your-journey .start-your-journey-block .circle--45deg:hover {
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  transition: 0.3s linear;
+}
+
+.home-page-content .start-your-journey .start-your-journey-block .triangle {
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 150px solid transparent;
+  z-index: 999;
+  position: relative;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+.home-page-content .start-your-journey .start-your-journey-block .circle-blue {
+  background-color: #5097ca;
+}
+
+.home-page-content .start-your-journey .start-your-journey-block .circle-green {
+  background-color: #91c73e;
+}
+
+.home-page-content .start-your-journey .start-your-journey-block .circle-purple {
+  background-color: #774d9e;
+}
+
+.home-page-content .start-your-journey .start-your-journey-block .triangle-blue {
+  border-top-color: #77addc;
+}
+
+.home-page-content .start-your-journey .start-your-journey-block .triangle-green {
+  border-top-color: #b1d476;
+}
+
+.home-page-content .start-your-journey .start-your-journey-block .triangle-purple {
+  border-top-color: #9578b6;
 }
 
 .home-page-content .start-your-journey .start-your-journey-block img.journey-icon {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  max-width: 220px;
-  padding-top: 40px;
+  position: absolute;
+  max-width: 120px;
+  top: 50%;
+  left: 38%;
+  z-index: 99;
 }
 
 .home-page-content .start-your-journey a.journey_cta {

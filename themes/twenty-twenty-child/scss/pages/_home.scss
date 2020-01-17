@@ -20,7 +20,7 @@
     margin: 0 !important;
     padding: 0 !important;
     background-color: $body-bg;
-    
+
     .data-analysis-body {
       &__img {
         padding: 50px;
@@ -37,7 +37,6 @@
       position: relative;
     }
   }
-
 
   // Asset Management
 
@@ -86,6 +85,32 @@
     }
   }
 
+  @mixin circleTransition {
+    transition: 0.3s linear;
+  }
+
+  @mixin circleStyles {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    @include circleTransition();
+    z-index: 9;
+  }
+  @mixin circleTriangle {
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 150px solid transparent;
+    z-index: 999;
+    position: relative;
+    margin: 0 auto;
+    z-index: 999;
+  }
+
   // Start Your Journey
 
   .start-your-journey {
@@ -97,12 +122,65 @@
       display: block;
       position: relative;
       text-align: center;
+      padding: 40px 0;
+
+      // Circles
+      .circle--135deg {
+        @include circleStyles();
+        transform: rotate(135deg);
+        &:hover {
+          transform: rotate(225deg);
+          @include circleTransition();
+        }
+      }
+
+      .circle--225deg {
+        @include circleStyles();
+        transform: rotate(225deg);
+        &:hover {
+          transform: rotate(315deg);
+          @include circleTransition();
+        }
+      }
+
+      .circle--45deg {
+        @include circleStyles();
+        transform: rotate(45deg);
+        &:hover {
+          transform: rotate(135deg);
+          @include circleTransition();
+        }
+      }
+
+      .triangle {
+        @include circleTriangle();
+      }
+
+      .circle-blue {
+        background-color: $circle-blue;
+      }
+      .circle-green {
+        background-color: $circle-green;
+      }
+      .circle-purple {
+        background-color: $circle-purple;
+      }
+      .triangle-blue {
+        border-top-color: $triangle-blue;
+      }
+      .triangle-green {
+        border-top-color: $triangle-green;
+      }
+      .triangle-purple {
+        border-top-color: $triangle-purple;
+      }
+
       img.journey-icon {
-        position: relative;
-        display: block;
-        margin: 0 auto;
-        max-width: 220px;
-        padding-top: 40px;
+        position: absolute;
+        max-width: 120px;
+        top: 50%;
+        left: 38%;
+        z-index: 99;
       }
     }
     a.journey_cta {
@@ -220,10 +298,9 @@
   }
 }
 
-
-.cloud{
+.cloud {
   position: absolute;
-  background-image: url('./../images/cloud_1.png');
+  background-image: url("./../images/cloud_1.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 250px;
@@ -247,28 +324,51 @@
 }
 
 @keyframes movingcloud1 {
-0% {left: -250px;}
-100% {left: 102%;}
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: 102%;
+  }
 }
 @-webkit-keyframes movingcloud1 {
-0% {left: -250px;}
-100% {left: 102%;}
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: 102%;
+  }
 }
 @-moz-keyframes movingcloud1 {
-0% {left: -250px;}
-100% {left: 102%;}
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: 102%;
+  }
 }
 
 @keyframes movingcloud2 {
-  0% {left: 102%;}
-  100% {left: -250px;}
+  0% {
+    left: 102%;
   }
-  @-webkit-keyframes movingcloud2 {
-  0% {left: 102%;}
-  100% {left: -250px;}
+  100% {
+    left: -250px;
   }
-  @-moz-keyframes movingcloud2 {
-  0% {left: 102%;}
-  100% {left: -250px;}
+}
+@-webkit-keyframes movingcloud2 {
+  0% {
+    left: 102%;
   }
-  
+  100% {
+    left: -250px;
+  }
+}
+@-moz-keyframes movingcloud2 {
+  0% {
+    left: 102%;
+  }
+  100% {
+    left: -250px;
+  }
+}
