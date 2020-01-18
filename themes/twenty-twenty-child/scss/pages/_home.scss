@@ -181,6 +181,28 @@
         top: 50%;
         left: 38%;
         z-index: 99;
+        @include media(">=768px"){
+          max-width: 100px;
+          top: 57%;
+          left: 35%;
+        }
+        @include media(">1300px"){
+          max-width: 100px;
+          top: 58%;
+          left: 39%;
+        }
+      }
+      img.j-icon-1:hover ~ .circle--135deg{
+        transform: rotate(225deg);
+        @include circleTransition();
+      }
+      img.j-icon-2:hover ~ .circle--45deg{
+        transform: rotate(225deg);
+        @include circleTransition();
+      }
+      img.j-icon-3:hover ~ .circle--225deg{
+        transform: rotate(225deg);
+        @include circleTransition();
       }
     }
     a.journey_cta {
@@ -316,7 +338,7 @@
   -o-animation: movingcloud1 25s linear infinite;
 }
 #cloud2 {
-  top: 300px;
+  top: 200px;
   left: 400px;
   -webkit-animation: movingcloud2 25s linear infinite;
   -moz-animation: movingcloud2 25s linear infinite;

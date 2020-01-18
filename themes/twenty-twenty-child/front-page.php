@@ -80,33 +80,16 @@
         <div class="container-fluid">
             <div class="row">
 
-                <div class="col-lg-4 start-your-journey-block">
-                    <div class="circle-blue circle--225deg">
-                        <div class="triangle triangle-blue"></div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 start-your-journey-block">
-                    <div class="circle-green circle--45deg">
-                        <div class="triangle triangle-green"></div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 start-your-journey-block">
-                    <div class="circle-purple circle--135deg">
-                        <div class="triangle triangle-purple"></div>
-                    </div>
-                </div>
-
                 <?php $journey_sections = get_field("journey_sections"); ?>
 
                 <?php foreach ($journey_sections as $key => $section) : ?>
                     <div class="col-lg-4 start-your-journey-block">
                         <h4><?= $section["title"] ?></h4>
-                        <div class="circle--<?= $section["angle"] ?>" style="background-color: <?= $section["circle_colour"] ?>">
+                        <br />
+                        <img id="journey-icon-<?= $key + 1 ?>" class="journey-icon j-icon-<?= $key+1 ?>" src="<?= $section["icon"]["sizes"]["medium"] ?>" alt="<?= $section["icon"]["alt"] ?>" onmouseover="" onmouseout="" />
+                        <div id="circle-home-<?= $key+1 ?>" class="circle--<?= $section["angle"] ?>" style="background-color: <?= $section["circle_colour"] ?>">
                             <div class="triangle" style="border-top-color: <?= $section["triangle_colour"] ?>"></div>
                         </div>
-                        <img id="journey-icon-<?= $key + 1 ?>" class="journey-icon" src="<?= $section["icon"]["sizes"]["medium"] ?>" alt="<?= $section["icon"]["alt"] ?>">
                     </div>
                 <?php endforeach; ?>
                 <?php $journey_cta = get_field("journey_call_to_action"); ?>

@@ -8302,6 +8302,40 @@ footer.footer .socials i {
   z-index: 99;
 }
 
+@media (min-width: 768px) {
+  .home-page-content .start-your-journey .start-your-journey-block img.journey-icon {
+    max-width: 100px;
+    top: 57%;
+    left: 35%;
+  }
+}
+
+@media (min-width: 1301px) {
+  .home-page-content .start-your-journey .start-your-journey-block img.journey-icon {
+    max-width: 100px;
+    top: 58%;
+    left: 39%;
+  }
+}
+
+.home-page-content .start-your-journey .start-your-journey-block img.j-icon-1:hover ~ .circle--135deg {
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+  transition: 0.3s linear;
+}
+
+.home-page-content .start-your-journey .start-your-journey-block img.j-icon-2:hover ~ .circle--45deg {
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+  transition: 0.3s linear;
+}
+
+.home-page-content .start-your-journey .start-your-journey-block img.j-icon-3:hover ~ .circle--225deg {
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+  transition: 0.3s linear;
+}
+
 .home-page-content .start-your-journey a.journey_cta {
   max-width: 350px;
   background-color: #323439;
@@ -8432,7 +8466,7 @@ footer.footer .socials i {
 }
 
 #cloud2 {
-  top: 300px;
+  top: 200px;
   left: 400px;
   -webkit-animation: movingcloud2 25s linear infinite;
   -moz-animation: movingcloud2 25s linear infinite;
