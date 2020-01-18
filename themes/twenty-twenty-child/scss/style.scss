@@ -20,7 +20,9 @@
 @import "layout";
 
 //Page-specific styles
+@import 'pages/common';
 @import 'pages/home';
 @import 'pages/about';
+@import 'pages/team';
 
 @import "footer";

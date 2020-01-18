@@ -18,38 +18,44 @@
         </div>
     </div>
 
+    <?php $who_we_are = get_field("who_we_are"); ?>
+
     <div class="jumbotron who-we-are">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-2">
-                    <h2 class="subtitle">WHO<br /> WE<br /> ARE</h2>
+                    <h2 class="subtitle"><?= $who_we_are["title"] ?></h2>
                 </div>
                 <div class="col-lg-10">
-                    <p>My Equity (ME) is a residential marketplace focused on new-construction properties in the United States.</p>
-                    <p>We use technology backed analysis protocols to help our clients choose the best performing investments in the US new-construction single-family rental market.</p>
-                    <p>From one rental property to a portfolio, you can continue to build your equity with our asset management services and hand-picked properties in leading markets across the US.</p>
-                    <p>We specialize in working with leading US builders, analyzing investment properties in emerging markets, managing our clients' properties from purchase to lease and sale\refinance, providing mortgages from Canadian banks, providing US certified accountants for annual tax statements and an end-to-end closing process.</p>
-                    <p>Our customer-focused approach and market expertise provide key advantages by leveraging our local relationships with banks, builders, property managers, lawyers and accountants to provide a comprehensive solution to investing in rental properties in the US.</p>
+                    <?= $who_we_are["content"] ?>
                 </div>
             </div>
         </div>
     </div>
 
+    <?php $what_we_do = get_field("what_we_do"); ?>
+
     <div class="jumbotron what-we-do">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3">
+                    <div class="col-lg-12">
+                    <h3 class="text-center"><?= $what_we_do["title"] ?></h3>
+                    </div>
 
-                </div>
-                <div class="col-lg-3">
+                <?php foreach ($what_we_do["sections"] as $key => $content) : ?>
 
-                </div>
-                <div class="col-lg-3">
+                    <div class="col-lg-3 what-we-do-block">
 
-                </div>
-                <div class="col-lg-3">
+                        <img id="journey-icon-<?= $key + 1 ?>" class="journey-icon j-icon-<?= $key+1 ?>" src="<?= $content["icon"]["sizes"]["medium"] ?>" alt="<?= $content["icon"]["alt"] ?>" />
+                        <div id="circle-home-<?= $key+1 ?>" class="circle circle--<?= $content["angle"] ?>" style="background-color: <?= $content["circle_colour"] ?>">
+                            <div class="triangle" style="border-top-color: <?= $content["triangle_colour"] ?>"></div>
+                        </div>
+                        <p class="labels"><?= $content["labels"] ?></p>
 
-                </div>
+                    </div>
+
+                <?php endforeach; ?>
+
             </div>
         </div>
     </div>

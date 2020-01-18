@@ -42,6 +42,81 @@
         background-color: $body-bg;
         padding: 50px !important;
         color: $dark !important;  
+
+        .what-we-do-block {
+            margin: 0 auto;
+            display: block;
+            position: relative;
+            text-align: center;
+            padding: 40px 0;
+      
+            p.labels{
+                position: relative;
+                display: block;
+                max-width: 260px;
+                margin: 0 auto !important;
+                margin-top: 30px !important;
+                font-size: 16px;
+            }
+            // Circles
+            .circle--135deg {
+              @include circleStyles();
+              transform: rotate(135deg);
+              &:hover {
+                transform: rotate(225deg);
+                @include circleTransition();
+              }
+            }
+      
+            .circle--225deg {
+              @include circleStyles();
+              transform: rotate(225deg);
+              &:hover {
+                transform: rotate(315deg);
+                @include circleTransition();
+              }
+            }
+      
+            .circle--45deg {
+              @include circleStyles();
+              transform: rotate(45deg);
+              &:hover {
+                transform: rotate(135deg);
+                @include circleTransition();
+              }
+            }
+
+            .circle--90deg {
+                @include circleStyles();
+                transform: rotate(90deg);
+                &:hover {
+                  transform: rotate(180deg);
+                  @include circleTransition();
+                }
+              }
+      
+            .triangle {
+              @include circleTriangle();
+            }
+      
+            img.journey-icon {
+              position: absolute;
+              max-width: 120px;
+              top: 38%;
+              left: 36%;
+              z-index: 99;
+              @include media(">=768px"){
+                max-width: 100px;
+                top: 38%;
+                left: 36%;
+              }
+              @include media(">1300px"){
+                max-width: 100px;
+                top: 38%;
+                left: 36%;
+              }
+            }
+          }
     }
 
     .our-team{
@@ -71,6 +146,7 @@
         }
         a{
             @include buttonCTA;
+            max-width: 250px !important;
         }
     }
 }

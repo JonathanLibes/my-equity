@@ -8102,6 +8102,22 @@ footer.footer .socials i {
   color: #ffffff;
 }
 
+.hero {
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 400px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 80%;
+}
+
+.hero .page-title {
+  color: #323439;
+  letter-spacing: 1px;
+}
+
 .home-page-content {
   background-color: #ffffff;
 }
@@ -8538,6 +8554,135 @@ footer.footer .socials i {
   color: #323439 !important;
 }
 
+.about-page-content .what-we-do .what-we-do-block {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.about-page-content .what-we-do .what-we-do-block p.labels {
+  position: relative;
+  display: block;
+  max-width: 260px;
+  margin: 0 auto !important;
+  margin-top: 30px !important;
+  font-size: 16px;
+}
+
+.about-page-content .what-we-do .what-we-do-block .circle--135deg {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  transition: 0.3s linear;
+  z-index: 9;
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.about-page-content .what-we-do .what-we-do-block .circle--135deg:hover {
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+  transition: 0.3s linear;
+}
+
+.about-page-content .what-we-do .what-we-do-block .circle--225deg {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  transition: 0.3s linear;
+  z-index: 9;
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+.about-page-content .what-we-do .what-we-do-block .circle--225deg:hover {
+  -ms-transform: rotate(315deg);
+  transform: rotate(315deg);
+  transition: 0.3s linear;
+}
+
+.about-page-content .what-we-do .what-we-do-block .circle--45deg {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  transition: 0.3s linear;
+  z-index: 9;
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.about-page-content .what-we-do .what-we-do-block .circle--45deg:hover {
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  transition: 0.3s linear;
+}
+
+.about-page-content .what-we-do .what-we-do-block .circle--90deg {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  transition: 0.3s linear;
+  z-index: 9;
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.about-page-content .what-we-do .what-we-do-block .circle--90deg:hover {
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  transition: 0.3s linear;
+}
+
+.about-page-content .what-we-do .what-we-do-block .triangle {
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 150px solid transparent;
+  z-index: 999;
+  position: relative;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+.about-page-content .what-we-do .what-we-do-block img.journey-icon {
+  position: absolute;
+  max-width: 120px;
+  top: 38%;
+  left: 36%;
+  z-index: 99;
+}
+
+@media (min-width: 768px) {
+  .about-page-content .what-we-do .what-we-do-block img.journey-icon {
+    max-width: 100px;
+    top: 38%;
+    left: 36%;
+  }
+}
+
+@media (min-width: 1301px) {
+  .about-page-content .what-we-do .what-we-do-block img.journey-icon {
+    max-width: 100px;
+    top: 38%;
+    left: 36%;
+  }
+}
+
 .about-page-content .our-team {
   position: relative;
   margin: 0 !important;
@@ -8583,6 +8728,7 @@ footer.footer .socials i {
   font-size: 20px;
   margin-top: 40px;
   letter-spacing: 1px;
+  max-width: 250px !important;
 }
 
 /*# sourceMappingURL=style.css.map */
