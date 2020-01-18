@@ -1,0 +1,46 @@
+.about-page-content{
+
+    .about-hero{
+        position: relative;
+        margin: 0 !important;
+        padding: 0 !important;
+        min-height: 400px;
+        background-color: $body-bg;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 80%;
+        .page-title{
+            color: $dark;
+            letter-spacing: 1px;
+        }
+    }
+
+    .who-we-are{
+        position: relative;
+        margin: 0 !important;
+        padding: 0 !important;
+        min-height: 400px;
+        background-color: $dark;
+        padding: 50px !important;
+        color: $body-bg !important;
+        .subtitle{
+            text-align: right;
+            margin: 0 !important;
+            letter-spacing: 1px;
+        }
+        p{
+            margin: 0 !important;
+            margin-top: 10px !important;
+        }
+    }
+
+    .what-we-do{
+        position: relative;
+        margin: 0 !important;
+        padding: 0 !important;
+        min-height: 400px;
+        background-color: $body-bg;
+        padding: 50px !important;
+        color: $dark !important;  
+    }
+}
