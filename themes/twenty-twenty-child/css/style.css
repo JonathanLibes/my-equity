@@ -8538,4 +8538,51 @@ footer.footer .socials i {
   color: #323439 !important;
 }
 
+.about-page-content .our-team {
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 400px;
+  background-color: #e2ebf8;
+  color: #323439 !important;
+  padding: 0 0 50px 0 !important;
+}
+
+.about-page-content .our-team h3 {
+  text-align: center !important;
+  margin-bottom: 20px !important;
+}
+
+.about-page-content .our-team img.member-image {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.about-page-content .our-team h5, .about-page-content .our-team p {
+  text-align: center;
+  margin: 0;
+}
+
+.about-page-content .our-team h5 {
+  margin-top: 10px;
+}
+
+.about-page-content .our-team a {
+  max-width: 350px;
+  background-color: #323439;
+  padding: 12px;
+  text-align: center;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 40px;
+  letter-spacing: 1px;
+}
+
 /*# sourceMappingURL=style.css.map */

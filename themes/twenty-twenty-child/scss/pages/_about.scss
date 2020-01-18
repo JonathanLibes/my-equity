@@ -43,4 +43,34 @@
         padding: 50px !important;
         color: $dark !important;  
     }
+
+    .our-team{
+        position: relative;
+        margin: 0 !important;
+        padding: 0 !important;
+        min-height: 400px;
+        background-color: $light-blue;
+        color: $dark !important;  
+        padding: 0 0 50px 0 !important;
+        h3{
+            text-align: center !important;
+            margin-bottom: 20px !important;
+        }
+        img.member-image{
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            width: 200px;
+        }
+        h5, p{
+            text-align: center;
+            margin: 0;
+        }
+        h5{
+            margin-top: 10px;
+        }
+        a{
+            @include buttonCTA;
+        }
+    }
 }

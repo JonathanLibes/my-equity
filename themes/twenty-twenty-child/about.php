@@ -48,7 +48,35 @@
 
                 </div>
                 <div class="col-lg-3">
-                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <?php
+    $our_team = get_field("our_team");
+    ?>
+
+    <div class="jumbotron our-team">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3><?= $our_team["title"] ?></h3>
+                </div>
+
+                <?php foreach ($our_team["team_members"] as $key => $member) : ?>
+
+                    <div class="col-lg-3">
+                        <img class="member-image" src="<?= $member["image"]["sizes"]["thumbnail"] ?>" alt="<?= $member["image"]["alt"] ?>">
+                        <h5><?= $member["name"] ?></h5>
+                        <p><?= $member["job_title"] ?></p>
+                    </div>
+
+                <?php endforeach; ?>
+
+                <div class="col-lg-12">
+                    <a href="<?= $our_team["cta"]["link"] ?>"><?= $our_team["cta"]["text"] ?></a>
                 </div>
             </div>
         </div>
