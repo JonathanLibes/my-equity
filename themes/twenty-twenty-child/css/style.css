@@ -8770,4 +8770,51 @@ footer.footer .socials i {
   border-bottom: 1px solid #323439;
 }
 
+.services {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.services .sidenav {
+  padding: 0 !important;
+}
+
+.services .sidenav .sidemenu {
+  height: 33.33333333%;
+  width: 80px !important;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 0;
+  background-color: #323439;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.services .sidenav .sidemenu:hover {
+  background-color: #7f48a3;
+  color: #ffffff;
+}
+
+.services .sidenav .sidemenu p.menu-text {
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  margin: 0;
+  position: absolute;
+  font-size: 18px;
+}
+
+.services .sidenav .active {
+  background-color: #6E2390;
+}
+
+.services .sidenav,
+.services .service-body {
+  background-color: #ffffff;
+}
+
+.services__investors {
+  margin-bottom: 0 !important;
+}
+
 /*# sourceMappingURL=style.css.map */
