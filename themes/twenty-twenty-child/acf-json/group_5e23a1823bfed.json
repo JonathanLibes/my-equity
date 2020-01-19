@@ -1,9 +1,9 @@
 {
-    "key": "group_5e235a43d9560",
-    "title": "Our Team Page",
+    "key": "group_5e23a1823bfed",
+    "title": "Our Partners",
     "fields": [
         {
-            "key": "field_5e2389f27a8aa",
+            "key": "field_5e23a1823fad7",
             "label": "Hero",
             "name": "",
             "type": "tab",
@@ -19,7 +19,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5e235a49aafdf",
+            "key": "field_5e23a1823fae1",
             "label": "Background Image",
             "name": "background_image",
             "type": "image",
@@ -43,8 +43,8 @@
             "mime_types": ""
         },
         {
-            "key": "field_5e238a2fa440b",
-            "label": "Team Members",
+            "key": "field_5e23a1823fae9",
+            "label": "Partners",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -59,9 +59,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_5e238a3ca440c",
-            "label": "Team Members",
-            "name": "team_members",
+            "key": "field_5e23a1823faf1",
+            "label": "Partners",
+            "name": "partners",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -78,7 +78,7 @@
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_5e238a47a440d",
+                    "key": "field_5e23a18245eb0",
                     "label": "Thumbnail",
                     "name": "thumbnail",
                     "type": "image",
@@ -102,45 +102,7 @@
                     "mime_types": ""
                 },
                 {
-                    "key": "field_5e238a52a440e",
-                    "label": "Name",
-                    "name": "name",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_5e238a56a440f",
-                    "label": "Job Title",
-                    "name": "job_title",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_5e238a5ca4410",
+                    "key": "field_5e23a18245ecc",
                     "label": "Bio",
                     "name": "bio",
                     "type": "textarea",
@@ -166,7 +128,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "our-team.php"
+                "value": "our-partners.php"
             }
         ]
     ],
@@ -178,5 +140,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1579387495
+    "modified": 1579393557
 }

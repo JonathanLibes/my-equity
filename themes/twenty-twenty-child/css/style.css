@@ -8731,4 +8731,43 @@ footer.footer .socials i {
   max-width: 250px !important;
 }
 
+.hero-team {
+  background-size: cover !important;
+  min-height: 500px;
+}
+
+.hero-team .page-title {
+  margin-top: 0;
+  padding-top: 150px;
+}
+
+.team-members {
+  margin-bottom: 0rem;
+}
+
+.team-members .team-member {
+  padding-bottom: 70px;
+}
+
+.team-members .team-member h5.name {
+  margin: 0;
+}
+
+.team-members .team-member img.partner-logo {
+  max-width: 200px;
+  max-width: 140px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.team-members .partner {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+.team-members hr {
+  margin: 0 !important;
+  border-bottom: 1px solid #323439;
+}
+
 /*# sourceMappingURL=style.css.map */
