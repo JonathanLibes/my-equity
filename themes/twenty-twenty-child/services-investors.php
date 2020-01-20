@@ -9,6 +9,9 @@
 ?>
 
 <?php get_header(); // get header assets 
+
+$invest1 = get_field("investors_recieve");
+// var_dump($inves1);
 ?>
 
 <div class="jumbotron full-screen services services__investors">
@@ -27,26 +30,52 @@
             </div>
             <div class="col-lg-11 full-screen service-body">
                 <div class="investor-carousel">
-                    <div>
-                        <h2 class="text-center">As a My Equity Investor you will recieve:</h2>
+
+                    <!-- Investors -> First Section -->
+                    <div class="investor-carousel-inner1">
+                        <h3 class="text-center"><?= $invest1["title"] ?></h3>
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-lg-4"></div>
-                                <div class="col-lg-4"></div>
-                                <div class="col-lg-4"></div>
+                                <?php foreach ($invest1["columns"] as $key => $column) : ?>
+                                    <div class="col-lg-4 column">
+                                        <h5><?= $column["title"] ?></h5>
+                                        <img src="<?= $column["icon"]["sizes"]["medium"] ?>" alt="<?= $column["icon"]["alt"] ?>" />
+                                        <p><?= $column["content"] ?></p>
+                                    </div>
+                                <?php endforeach; ?>
                             </div>
                         </div>
+                        <div class="cta">
+                            <a href="<?= $invest1["cta"]["link"] ?>"><?= $invest1["cta"]["text"] ?></a>
+                        </div>
                     </div>
-                    <div>
-                        <h2 class="text-center">As a My Equity Investor you will recieve:</h2>
+
+                    <!-- Investors -> Second Section -->
+                    <div class="investor-carousel-inner2">
+                        <h3 class="text-center">As a My Equity Investor you will recieve:</h3>
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-lg-4"></div>
-                                <div class="col-lg-4"></div>
-                                <div class="col-lg-4"></div>
+                                <?php foreach ($invest1["columns"] as $key => $column) : ?>
+                                    <div class="col-lg-4 column">
+                                        <img class="img-small" src="<?= $column["icon"]["sizes"]["medium"] ?>" alt="<?= $column["icon"]["alt"] ?>" />
+                                        <p><?= $column["content"] ?></p>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                            <div class="row">
+                                <?php foreach ($invest1["columns"] as $key => $column) : ?>
+                                    <div class="col-lg-4 column">
+                                        <img class="img-small" src="<?= $column["icon"]["sizes"]["medium"] ?>" alt="<?= $column["icon"]["alt"] ?>" />
+                                        <p><?= $column["content"] ?></p>
+                                    </div>
+                                <?php endforeach; ?>
                             </div>
                         </div>
+                        <div class="cta">
+                            <a href="<?= $invest1["cta"]["link"] ?>"><?= $invest1["cta"]["text"] ?></a>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -54,16 +83,16 @@
 </div>
 
 <script>
-  jQuery(function() {
-    jQuery('.investor-carousel').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      arrows: false,
-      dots: true,
+    jQuery(function() {
+        jQuery('.investor-carousel').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            arrows: false,
+            dots: true,
+        });
     });
-  });
 </script>
 <?php get_footer(); // get footer assets 
 ?>
