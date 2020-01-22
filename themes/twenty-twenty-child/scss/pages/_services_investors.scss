@@ -13,6 +13,9 @@
       .investor-carousel-inner1 {
         h3 {
           color: $purple-thick;
+          margin: 0 !important;
+          margin-bottom: 30px !important;
+          font-size: 35px;
         }
         padding-top: 50px;
         .column {
@@ -43,11 +46,13 @@
       .investor-carousel-inner2 {
         h3 {
           color: $purple-thick;
-          margin-bottom: 40px;
+          margin: 0 !important;
+          margin-bottom: 30px !important;
+          font-size: 35px;
         }
         padding-top: 30px;
         .column {
-            margin-top: 20px;
+          margin-top: 20px;
           h5 {
             text-align: center;
             color: $dark;

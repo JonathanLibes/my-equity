@@ -8832,6 +8832,9 @@ footer.footer .socials i {
 
 .services__investors .investor-carousel .investor-carousel-inner1 h3 {
   color: #6E2390;
+  margin: 0 !important;
+  margin-bottom: 30px !important;
+  font-size: 35px;
 }
 
 .services__investors .investor-carousel .investor-carousel-inner1 .column h5 {
@@ -8875,7 +8878,9 @@ footer.footer .socials i {
 
 .services__investors .investor-carousel .investor-carousel-inner2 h3 {
   color: #6E2390;
-  margin-bottom: 40px;
+  margin: 0 !important;
+  margin-bottom: 30px !important;
+  font-size: 35px;
 }
 
 .services__investors .investor-carousel .investor-carousel-inner2 .column {
