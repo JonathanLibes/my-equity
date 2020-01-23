@@ -1,0 +1,51 @@
+.services {
+  &__builders {
+    margin-bottom: 0 !important;
+
+    .services-body {
+      padding-bottom: 40px;
+      background-color: $body-bg;
+
+      .builder-carousel {
+        overflow: hidden;
+        overflow-x: scroll;
+        white-space: nowrap;
+        background-color: $body-bg;
+        padding-bottom: 60px;
+
+        &::-webkit-scrollbar {
+          width: 6px;
+          background-color: $body-bg;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 100px;
+          background-color: $menu-active-green;
+          border: 5px solid $menu-active-green;
+          height:50px;
+          width: 2px;
+        }
+
+        &::-webkit-scrollbar {
+            width: 50px;
+            background-color: $dark;
+            border: 7px solid $body-bg;
+            border-radius: 10px;
+          }
+
+        .builder-property {
+          display: inline-block;
+          float: none;
+        }
+      }
+
+      h3 {
+        color: $menu-active-green !important;
+      }
+      p {
+        font-size: 20px;
+        text-align: center !important;
+      }
+    }
+  }
+}

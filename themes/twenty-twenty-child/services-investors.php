@@ -14,17 +14,17 @@ $invest1 = get_field("investors_recieve");
 // var_dump($inves1);
 ?>
 
-<div class="jumbotron full-screen services services__investors">
+<div class="jumbotron services services__investors">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-1 full-screen sidenav">
-                <a class="sidemenu d-flex active">
+                <a href="/investors" class="sidemenu d-flex investor-active">
                     <p class="menu-text justify-content-center align-self-center">Investors</p>
                 </a>
-                <a class="sidemenu d-flex">
+                <a href="/builders" class="sidemenu d-flex">
                     <p class="menu-text justify-content-center align-self-center">Builders</p>
                 </a>
-                <a class="sidemenu d-flex">
+                <a href="/seminars" class="sidemenu d-flex">
                     <p class="menu-text justify-content-center align-self-center">Seminars</p>
                 </a>
             </div>

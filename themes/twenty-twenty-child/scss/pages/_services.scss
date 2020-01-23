@@ -14,7 +14,7 @@
       color: $body-bg;
       cursor: pointer;
       &:hover{
-          background-color: $purple;
+          background-color: $grey;
           color: $body-bg;
       }
       p.menu-text {
@@ -24,13 +24,22 @@
         font-size: 18px;
       }
     }
-    .active {
-      background-color: $purple-thick;
+    .seminar-active {
+      background-color: $menu-active-blue;
+    }
+    .investor-active {
+      background-color: $menu-active-purple;
+    }
+    .builder-active {
+      background-color: $menu-active-green;
     }
   }
-  .sidenav,
+  .sidenav{
+    background-color: $body-bg;
+  }
   .service-body {
     background-color: $body-bg;
-    
+    min-height: 100vh !important;
+    height: 100% !important;
   }
 }

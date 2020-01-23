@@ -8717,7 +8717,7 @@ footer.footer .socials i {
 .about-page-content .our-team a {
   max-width: 350px;
   background-color: #323439;
-  padding: 12px;
+  padding: 10px;
   text-align: center;
   position: relative;
   display: block;
@@ -8792,7 +8792,7 @@ footer.footer .socials i {
 }
 
 .services .sidenav .sidemenu:hover {
-  background-color: #7f48a3;
+  background-color: #787f81;
   color: #ffffff;
 }
 
@@ -8804,13 +8804,26 @@ footer.footer .socials i {
   font-size: 18px;
 }
 
-.services .sidenav .active {
-  background-color: #6E2390;
+.services .sidenav .seminar-active {
+  background-color: #5097cb;
 }
 
-.services .sidenav,
+.services .sidenav .investor-active {
+  background-color: #6d138a;
+}
+
+.services .sidenav .builder-active {
+  background-color: #91c73e;
+}
+
+.services .sidenav {
+  background-color: #ffffff;
+}
+
 .services .service-body {
   background-color: #ffffff;
+  min-height: 100vh !important;
+  height: 100% !important;
 }
 
 .services__investors {
@@ -8859,7 +8872,7 @@ footer.footer .socials i {
 .services__investors .investor-carousel .investor-carousel-inner1 .cta a {
   max-width: 350px;
   background-color: #323439;
-  padding: 12px;
+  padding: 10px;
   text-align: center;
   position: relative;
   display: block;
@@ -8910,7 +8923,7 @@ footer.footer .socials i {
 .services__investors .investor-carousel .investor-carousel-inner2 .cta a {
   max-width: 350px;
   background-color: #323439;
-  padding: 12px;
+  padding: 10px;
   text-align: center;
   position: relative;
   display: block;
@@ -8921,6 +8934,137 @@ footer.footer .socials i {
   font-size: 20px;
   margin-top: 40px;
   letter-spacing: 1px;
+}
+
+.services__seminars {
+  margin-bottom: 0 !important;
+}
+
+.services__seminars .services-body {
+  padding-bottom: 40px;
+}
+
+.services__seminars .seminar-carousel {
+  height: 100%;
+  width: 98%;
+}
+
+.services__seminars .seminar-carousel .seminar-title {
+  color: #5097cb !important;
+  margin-bottom: 30px !important;
+}
+
+.services__seminars .seminar-carousel .seminar-title em {
+  color: #000000 !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.6rem;
+}
+
+.services__seminars .seminar-carousel a.register {
+  max-width: 350px;
+  background-color: #323439;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 40px;
+  letter-spacing: 1px;
+  max-width: 250px;
+}
+
+.services__seminars .seminar-carousel .unit-title {
+  color: #000000;
+  margin: 10px 0 0 0;
+}
+
+.services__seminars .seminar-carousel .unit-title span {
+  color: #5097cb !important;
+  font-size: 2rem;
+}
+
+.services__seminars .seminar-carousel li {
+  margin: 0 !important;
+  list-style: none !important;
+  padding: 10px 0 10px 0 !important;
+  border-bottom: 1px solid #787f81 !important;
+}
+
+.services__seminars .seminar-carousel .units li:last-child {
+  border-bottom: none !important;
+}
+
+.services__seminars .seminar-carousel .slick-dots {
+  display: block !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  right: 20px;
+  float: right !important;
+  width: auto !important;
+}
+
+.services__seminars .seminar-carousel .slick-dots li.slick-active button {
+  background-color: #5097cb !important;
+}
+
+.services__seminars .seminar-carousel .slick-prev {
+  background-color: transparent;
+}
+
+.services__builders {
+  margin-bottom: 0 !important;
+}
+
+.services__builders .services-body {
+  padding-bottom: 40px;
+  background-color: #ffffff;
+}
+
+.services__builders .services-body .builder-carousel {
+  overflow: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  background-color: #ffffff;
+  padding-bottom: 60px;
+}
+
+.services__builders .services-body .builder-carousel::-webkit-scrollbar {
+  width: 6px;
+  background-color: #ffffff;
+}
+
+.services__builders .services-body .builder-carousel::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: #91c73e;
+  border: 5px solid #91c73e;
+  height: 50px;
+  width: 2px;
+}
+
+.services__builders .services-body .builder-carousel::-webkit-scrollbar {
+  width: 50px;
+  background-color: #323439;
+  border: 7px solid #ffffff;
+  border-radius: 10px;
+}
+
+.services__builders .services-body .builder-carousel .builder-property {
+  display: inline-block;
+  float: none;
+}
+
+.services__builders .services-body h3 {
+  color: #91c73e !important;
+}
+
+.services__builders .services-body p {
+  font-size: 20px;
+  text-align: center !important;
 }
 
 /*# sourceMappingURL=style.css.map */
