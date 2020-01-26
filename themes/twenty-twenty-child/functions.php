@@ -8,10 +8,6 @@ function enqueue_styles()
     wp_enqueue_style('slick-styles', get_stylesheet_directory_uri() . '/css/slick.css', array(), 1.1);
     wp_enqueue_style('font-awesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), 1.1);
     wp_enqueue_style('slick-theme-styles', get_stylesheet_directory_uri() . '/css/slick-theme.css', array(), 1.1);
-    
-    }
-    
-    add_action( 'wp_enqueue_scripts', 'enqueue_styles' ); // Enque Styles and Scripts
 
     wp_enqueue_script('jquery');
 
