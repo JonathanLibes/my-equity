@@ -3,27 +3,15 @@
 function enqueue_styles()
 {
 
-<<<<<<< HEAD
     wp_enqueue_style('myequity-styles', get_stylesheet_directory_uri() . '/css/style.css', array(), 1.1);
 
     wp_enqueue_style('slick-styles', get_stylesheet_directory_uri() . '/css/slick.css', array(), 1.1);
     wp_enqueue_style('font-awesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), 1.1);
     wp_enqueue_style('slick-theme-styles', get_stylesheet_directory_uri() . '/css/slick-theme.css', array(), 1.1);
-=======
-    wp_enqueue_style( 'myequity-styles', get_stylesheet_directory_uri() . '/css/style.css', array(), '');
     
-    wp_enqueue_script( 'jquery' );
-    
-    wp_enqueue_script( 'jquery-migrate', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js', array('jquery'), '', false );
-    
-    // TODO Combine all these js files by adding them to the src directory later
-    
-    wp_enqueue_script( 'myequity-scripts', get_stylesheet_directory_uri() . '/js/theme.js', array(), '', true );
-    wp_enqueue_script( 'sup-scripts', get_stylesheet_directory_uri() . '/js/sup.js', array(), '', true );    
     }
     
     add_action( 'wp_enqueue_scripts', 'enqueue_styles' ); // Enque Styles and Scripts
->>>>>>> 8b60dfb4111f1be8d884b80e685b8ac8e5b37542
 
     wp_enqueue_script('jquery');
 
