@@ -4,6 +4,7 @@
 * All variables and most of the configuration is defined on this page. */
 /*** Background color for `<body>`.*/
 /*** Grey */
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -8038,6 +8039,7 @@ a.text-dark:focus, a.text-dark:hover {
 /*# sourceMappingURL=bootstrap.min.css.map */
 html, body {
   background-color: #ffffff !important;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .full-screen {
@@ -8053,6 +8055,11 @@ header.site-header {
   min-height: 100px;
   padding: 20px 10px;
   border-bottom: 1px solid #787f81 !important;
+}
+
+header.site-header div#navbarNavDropdown {
+  margin-left: 40px;
+  letter-spacing: 1px;
 }
 
 header.site-header img.site-logo {

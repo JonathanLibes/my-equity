@@ -1,5 +1,6 @@
 html, body {
     background-color: $body-bg !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .full-screen {
@@ -15,6 +16,11 @@ header.site-header{
     min-height: 100px;
     padding: 20px 10px;
     border-bottom: 1px solid $grey !important;
+
+    div#navbarNavDropdown {
+        margin-left: 40px;
+        letter-spacing: 1px;
+    }
 
     img.site-logo{
         height: 60px;
