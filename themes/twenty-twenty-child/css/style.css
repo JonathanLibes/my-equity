@@ -8036,18 +8036,6 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
-@media screen and (max-width: 767px) {
-  .m-hide {
-    display: hide !important;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .d-hide {
-    display: hide !important;
-  }
-}
-
 html, body {
   background-color: #ffffff !important;
 }
@@ -9084,6 +9072,7 @@ footer.footer .socials i {
   min-height: 200px;
   background-repeat: no-repeat;
   background-size: 100%;
+  margin: 0 !important;
 }
 
 .contact-page-hero img.bird-image {
@@ -9147,6 +9136,18 @@ footer.footer .socials i {
   letter-spacing: 1px;
   margin-top: 10px !important;
   margin-bottom: 50px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .m-hide {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .d-hide {
+    display: none !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
