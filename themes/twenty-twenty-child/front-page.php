@@ -13,8 +13,8 @@
 
     <div class="scroll-animation">
 
-        <div id="cloud1" class="cloud"></div>
-        <div id="cloud2" class="cloud"></div>
+        <div id="cloud1" class="cloud" style="background-image: url(<?= get_field("da_cloud_one")["sizes"]["medium"] ?>)"></div>
+        <div id="cloud2" class="cloud" style="background-image: url(<?= get_field("da_cloud_two")["sizes"]["medium"] ?>)"></div>
 
         <img class="our-bird" src="<?= get_field("bird_image", "options")["url"] ?>" alt="Bird" />
 

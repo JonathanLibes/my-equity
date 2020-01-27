@@ -29,7 +29,7 @@ if (!defined('ABSPATH')) {
 		<header class="site-header">
 			<div class="container-fluid">
 				<nav class="navbar navbar-expand-lg navbar-light site-main-nav">
-					<a class="navbar-brand" href="#"><img class="site-logo" src="<?= get_field('site_logo', 'option')['url'] ?>" /></a>
+					<a class="navbar-brand" href="<?= get_home_url(); ?>"><img class="site-logo" src="<?= get_field('site_logo', 'option')['url'] ?>" /></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
