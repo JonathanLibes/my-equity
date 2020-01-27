@@ -1,0 +1,55 @@
+.contact-page-hero{
+    background-color: $body-bg;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    img.bird-image{
+        max-width: 150px;
+        position: absolute;
+        right: 200px;
+        top: 280px;
+    }
+}
+
+.contact-page-form {
+  h2.title {
+    font-weight: 200;
+    color: $dark;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  h3.subtitle {
+    color: $dark;
+    text-align: center;
+    margin: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"], textarea {
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  input[type="submit"]{
+    background-color: $purple;
+    text-transform: capitalize;
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 15px;
+    &:hover{
+        text-decoration: none;
+    }
+  }
+  a.register-seminar{
+      @include buttonCTA();
+      margin-top: 10px !important;
+      margin-bottom: 50px !important;
+  }
+}
