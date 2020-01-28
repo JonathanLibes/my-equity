@@ -15,7 +15,6 @@ if (!defined('ABSPATH')) {
 $facebook = get_field("facebook", "options");
 $instagram = get_field("instagram", "options");
 $linkedin = get_field("linkedin", "options");
-
 ?>
 
 <footer class="footer">
