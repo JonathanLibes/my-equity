@@ -42,9 +42,7 @@ if (!defined('ABSPATH')) {
 							'menu_class'      => 'navbar-nav mr-auto',
 						));
 						?>
-						<div class="nav-login">
-							Sign up | Sign in
-						</div>
+			
 					</div>
 				</nav>
 			</div>

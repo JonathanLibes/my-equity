@@ -26,7 +26,21 @@ $register = get_field("register_button");
     <h3 class="subtitle"><?= $contact_subtitle ?></h3>
     <?php echo do_shortcode('[contact-form-7 id="223"]'); ?>
 
-    <a href="<?= $register["link"] ?>" class="register-seminar"><?= $register["text"] ?></a>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <a href="<?= $register["link"] ?>" class="register-seminar"><?= $register["text"] ?></a>
+            </div>
+            <div class="col-lg-6">
+                <a href="<?= $register["link"] ?>" class="register-seminar"><?= $register["text"] ?></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <a href="<?= $register["link"] ?>" class="register-seminar"><?= $register["text"] ?></a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <?php get_footer(); // get footer assets 
