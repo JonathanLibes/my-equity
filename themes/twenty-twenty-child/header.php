@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) {
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body>
 	<div class="site">
 
 		<!-- Header Includes the Main Nav and the top Nav -->

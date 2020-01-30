@@ -20,29 +20,28 @@ $linkedin = get_field("linkedin", "options");
 <footer class="footer">
   <div class="container-fluid">
     <div class="row ">
-      <div class="col-lg-3 d-flex">
-        <p class="copyright justify-content-center align-self-center">&copy;All right reserved | My Equity</p>
+      <div class="col-lg-3 col-md-12 col-sm-12 col-12 d-flex">
+        <p class="copyright justify-content-center align-self-center">&copy;&nbsp;All right reserved | My Equity</p>
       </div>
-      <div class="col-lg-7 justify-content-center align-self-center"></div>
-      <div class="col-lg-2 justify-content-center align-self-center">
-        <div class="socials">
-          <?php if ($instagram != "") : ?>
+      <div class="col-lg-7 col-12 justify-content-center align-self-center"></div>
+      <div class="col-lg-2 col-md-12 col-sm-12 col-12 justify-content-center align-self-center">
+        <ul>
+          <li>
             <a target="_blank" href="<?= $instagram ?>">
               <i class="fa fa-instagram"></i>
             </a>
-          <?php endif; ?>
-          <?php if ($linkedin != "") : ?>
+          </li>
+          <li>
             <a target="_blank" href="<?= $linkedin ?>">
-              <i class="fa fa-linkedin-square"></i>
+              <i class="fa fa-linkedin"></i>
             </a>
-          <?php endif; ?>
-
-          <?php if ($facebook != "") : ?>
+          </li>
+          <li>
             <a target="_blank" href="<?= $facebook ?>">
-              <i class="fa fa-facebook-square"></i>
+              <i class="fa fa-facebook"></i>
             </a>
-          <?php endif; ?>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

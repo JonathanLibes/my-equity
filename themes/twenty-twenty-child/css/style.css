@@ -4,7 +4,7 @@
 * All variables and most of the configuration is defined on this page. */
 /*** Background color for `<body>`.*/
 /*** Grey */
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800&display=swap");
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -8037,9 +8037,10 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
-html, body {
+html,
+body {
   background-color: #ffffff !important;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .full-screen {
@@ -8088,25 +8089,35 @@ header.site-header .site-main-nav .nav-login {
 }
 
 footer.footer {
-  padding: 30px 50px;
+  padding: 30px;
   background-color: #323439;
 }
 
 footer.footer p.copyright {
-  font-weight: 600;
+  font-weight: 700;
   color: #ffffff;
-  margin: 0;
-  font-size: 16px;
+  margin: 0 auto;
+  font-size: 18px;
 }
 
-footer.footer .socials a {
-  text-decoration: none;
-  margin: 2px;
+footer.footer ul {
+  text-align: center;
+  margin: 0 !important;
 }
 
-footer.footer .socials i {
-  font-size: 25px;
-  color: #ffffff;
+footer.footer ul li {
+  display: inline;
+  list-style: none;
+}
+
+footer.footer ul li a {
+  text-decoration: none !important;
+  margin: 2px !important;
+}
+
+footer.footer ul li i {
+  font-size: 35px !important;
+  color: #ffffff !important;
 }
 
 .hero {
@@ -8467,7 +8478,7 @@ footer.footer .socials i {
 }
 
 .slick-dots li.slick-active button {
-  background-color: #7f48a3 !important;
+  background-color: #733F9A !important;
 }
 
 .cloud {
@@ -8721,7 +8732,7 @@ footer.footer .socials i {
 }
 
 .about-page-content .our-team a {
-  max-width: 350px;
+  max-width: 400px;
   background-color: #323439;
   padding: 10px;
   text-align: center;
@@ -8850,7 +8861,7 @@ footer.footer .socials i {
 }
 
 .services__investors .investor-carousel .investor-carousel-inner1 h3 {
-  color: #6E2390;
+  color: #733F9A;
   margin: 0 !important;
   margin-bottom: 30px !important;
   font-size: 35px;
@@ -8876,7 +8887,7 @@ footer.footer .socials i {
 }
 
 .services__investors .investor-carousel .investor-carousel-inner1 .cta a {
-  max-width: 350px;
+  max-width: 400px;
   background-color: #323439;
   padding: 10px;
   text-align: center;
@@ -8896,7 +8907,7 @@ footer.footer .socials i {
 }
 
 .services__investors .investor-carousel .investor-carousel-inner2 h3 {
-  color: #6E2390;
+  color: #733F9A;
   margin: 0 !important;
   margin-bottom: 30px !important;
   font-size: 35px;
@@ -8927,7 +8938,7 @@ footer.footer .socials i {
 }
 
 .services__investors .investor-carousel .investor-carousel-inner2 .cta a {
-  max-width: 350px;
+  max-width: 400px;
   background-color: #323439;
   padding: 10px;
   text-align: center;
@@ -8968,7 +8979,7 @@ footer.footer .socials i {
 }
 
 .services__seminars .seminar-carousel a.register {
-  max-width: 350px;
+  max-width: 400px;
   background-color: #323439;
   padding: 10px;
   text-align: center;
@@ -9111,7 +9122,7 @@ footer.footer .socials i {
 }
 
 .contact-page-form input[type="submit"] {
-  background-color: #7f48a3;
+  background-color: #733F9A;
   text-transform: capitalize;
   position: relative;
   display: block;
@@ -9127,7 +9138,7 @@ footer.footer .socials i {
 }
 
 .contact-page-form a.register-seminar {
-  max-width: 350px;
+  max-width: 400px;
   background-color: #323439;
   padding: 10px;
   text-align: center;
@@ -9142,6 +9153,31 @@ footer.footer .socials i {
   letter-spacing: 1px;
   margin-top: 10px !important;
   margin-bottom: 50px !important;
+}
+
+.contact-page-form .contact-cta {
+  max-width: 800px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.contact-page-form .contact-cta .columns {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.contact-page-form .contact-cta .columns a.other-cta {
+  width: 100% !important;
+  margin: 0 auto !important;
+  font-size: 20px;
+  letter-spacing: unset !important;
+  padding: 20px;
+}
+
+.contact-page-form .contact-cta .columns a.large-button {
+  max-width: unset !important;
+  width: 100% !important;
+  background-color: #5197CB;
 }
 
 @media screen and (max-width: 767px) {

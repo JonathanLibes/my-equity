@@ -1,69 +1,76 @@
-html, body {
-    background-color: $body-bg !important;
-    font-family: 'Montserrat', sans-serif !important;
+html,
+body {
+  background-color: $body-bg !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .full-screen {
-    height: 100vh;
+  height: 100vh;
 }
 
 .jumbotron {
-    border-radius: 0 !important;
+  border-radius: 0 !important;
 }
 
-header.site-header{
-    background-color: $body-bg;
-    min-height: 100px;
-    padding: 20px 10px;
-    border-bottom: 1px solid $grey !important;
+header.site-header {
+  background-color: $body-bg;
+  min-height: 100px;
+  padding: 20px 10px;
+  border-bottom: 1px solid $grey !important;
 
-    div#navbarNavDropdown {
-        margin-left: 40px;
-        letter-spacing: 1px;
-    }
+  div#navbarNavDropdown {
+    margin-left: 40px;
+    letter-spacing: 1px;
+  }
 
-    img.site-logo{
-        height: 60px;
-        width: auto;
-    }
+  img.site-logo {
+    height: 60px;
+    width: auto;
+  }
 
-    .site-main-nav{
-        ul {
-            margin: 0;
-            display: block;
-            li {
-                display: inline;
-                a {
-                    color: #33363a !important;
-                    font-weight: bold;
-                    text-decoration: none;
-                }
-            }
+  .site-main-nav {
+    ul {
+      margin: 0;
+      display: block;
+      li {
+        display: inline;
+        a {
+          color: #33363a !important;
+          font-weight: bold;
+          text-decoration: none;
         }
-        .nav-login{
-            position: absolute;
-            right: 80px;
-        }
+      }
     }
+    .nav-login {
+      position: absolute;
+      right: 80px;
+    }
+  }
 }
 
 footer.footer {
-    padding: 30px 50px;
-    background-color: $dark;
-    p.copyright {
-        font-weight: 600;
-        color: $body-bg;
-        margin: 0;
-        font-size: 16px;
+  padding: 30px;
+  background-color: $dark;
+  p.copyright {
+    font-weight: 700;
+    color: $body-bg;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+  ul {
+      text-align: center;
+      margin: 0 !important;
+    li {
+        display: inline; 
+        list-style: none;
+      a {
+        text-decoration: none !important;
+        margin: 2px !important;
+      }
+      i {
+        font-size: 35px !important;
+        color: $body-bg !important;
+      }
     }
-    .socials{
-        a{
-            text-decoration: none;
-            margin: 2px;
-        }
-        i{
-            font-size: 25px;
-            color: $body-bg;
-        }
-    }
+  }
 }
