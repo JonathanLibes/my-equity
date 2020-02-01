@@ -18,14 +18,73 @@ header.site-header {
   padding: 20px 10px;
   border-bottom: 1px solid $grey !important;
 
+  .mobile-menu-items {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 155px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: $body-bg;
+    img.close{
+      margin-right: 25px;
+      margin-top: 50px;
+      width: 30px;
+    }
+    #menu-main-nav {
+      margin: 0;
+      padding-top: 75px;
+      li {
+        display: block;
+        list-style: none;
+        text-align: center;
+        border-bottom: 1px solid $dark;
+        margin: 0;
+        padding: 15px 0;
+        &:last-child{
+          border-bottom: unset !important;
+        }
+        a{
+          text-decoration: none;
+          text-align: center;
+          font-weight: 600;
+          color: $dark;
+        }
+      }
+    }
+  }
+
+  .mobile-menu {
+    .hamburger {
+      width: 50px;
+      height: 2px;
+      background-color: $dark;
+      margin: 5px 0;
+      @include media("<767px"){
+        width: 40px;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
   div#navbarNavDropdown {
     margin-left: 40px;
     letter-spacing: 1px;
+    margin: 0 auto;
   }
 
   img.site-logo {
-    height: 60px;
+    height: 50px;
     width: auto;
+    margin-left: 100px;
+    @include media("<=991px") {
+      margin-left: unset;
+      margin: auto;
+    }
   }
 
   .site-main-nav {
@@ -58,11 +117,11 @@ footer.footer {
     font-size: 18px;
   }
   ul {
-      text-align: center;
-      margin: 0 !important;
+    text-align: center;
+    margin: 0 !important;
     li {
-        display: inline; 
-        list-style: none;
+      display: inline;
+      list-style: none;
       a {
         text-decoration: none !important;
         margin: 2px !important;
