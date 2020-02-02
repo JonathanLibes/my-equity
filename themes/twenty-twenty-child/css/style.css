@@ -8072,7 +8072,7 @@ header.site-header .mobile-menu-items {
 header.site-header .mobile-menu-items img.close {
   margin-right: 25px;
   margin-top: 50px;
-  width: 30px;
+  width: 25px;
 }
 
 header.site-header .mobile-menu-items #menu-main-nav {
@@ -8159,6 +8159,7 @@ header.site-header .site-main-nav .nav-login {
 footer.footer {
   padding: 30px;
   background-color: #323439;
+  position: relative;
 }
 
 footer.footer p.copyright {
@@ -8186,6 +8187,24 @@ footer.footer ul li a {
 footer.footer ul li i {
   font-size: 35px !important;
   color: #ffffff !important;
+}
+
+footer.footer .scroll-top {
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+}
+
+@media (max-width: 499px) {
+  footer.footer .scroll-top {
+    right: 20px;
+    bottom: 30px;
+  }
+}
+
+footer.footer .scroll-top i {
+  color: #ffffff;
+  font-size: 60px;
 }
 
 .hero {

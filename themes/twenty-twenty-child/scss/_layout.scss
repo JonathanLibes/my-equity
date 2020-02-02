@@ -27,10 +27,10 @@ header.site-header {
     right: 0;
     z-index: 9999;
     background-color: $body-bg;
-    img.close{
+    img.close {
       margin-right: 25px;
       margin-top: 50px;
-      width: 30px;
+      width: 25px;
     }
     #menu-main-nav {
       margin: 0;
@@ -42,10 +42,10 @@ header.site-header {
         border-bottom: 1px solid $dark;
         margin: 0;
         padding: 15px 0;
-        &:last-child{
+        &:last-child {
           border-bottom: unset !important;
         }
-        a{
+        a {
           text-decoration: none;
           text-align: center;
           font-weight: 600;
@@ -61,7 +61,7 @@ header.site-header {
       height: 2px;
       background-color: $dark;
       margin: 5px 0;
-      @include media("<767px"){
+      @include media("<767px") {
         width: 40px;
       }
     }
@@ -110,6 +110,7 @@ header.site-header {
 footer.footer {
   padding: 30px;
   background-color: $dark;
+  position: relative;
   p.copyright {
     font-weight: 700;
     color: $body-bg;
@@ -130,6 +131,19 @@ footer.footer {
         font-size: 35px !important;
         color: $body-bg !important;
       }
+    }
+  }
+  .scroll-top {
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    @include media("<500px"){
+      right: 20px;
+      bottom: 30px;
+    }
+    i {
+      color: $body-bg;
+      font-size: 60px;
     }
   }
 }

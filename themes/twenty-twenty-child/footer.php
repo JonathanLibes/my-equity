@@ -23,8 +23,8 @@ $linkedin = get_field("linkedin", "options");
       <div class="col-lg-3 col-md-12 col-sm-12 col-12 d-flex">
         <p class="copyright justify-content-center align-self-center">&copy;&nbsp;All right reserved | My Equity</p>
       </div>
-      <div class="col-lg-7 col-12 justify-content-center align-self-center"></div>
-      <div class="col-lg-2 col-md-12 col-sm-12 col-12 justify-content-center align-self-center">
+      <div class="col-lg-6 col-12 justify-content-center align-self-center"></div>
+      <div class="col-lg-3 col-md-12 col-sm-12 col-12 justify-content-center align-self-center">
         <ul>
           <li>
             <a target="_blank" href="<?= $instagram ?>">
@@ -42,6 +42,9 @@ $linkedin = get_field("linkedin", "options");
             </a>
           </li>
         </ul>
+      </div>
+      <div class="scroll-top">
+        <i class="fa fa-angle-up"></i>
       </div>
     </div>
   </div>
@@ -61,6 +64,7 @@ $linkedin = get_field("linkedin", "options");
       arrows: false,
       dots: true,
     });
+
   });
 </script>
 
