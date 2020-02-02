@@ -1,16 +1,10 @@
-/* Variables
-* ===============
-*
-* All variables and most of the configuration is defined on this page. */
-/*** Background color for `<body>`.*/
-/*** Grey */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800&display=swap");
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800&display=swap");
 :root {
   --blue:#007bff;
   --indigo:#6610f2;
@@ -8037,6 +8031,12 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
+/* Variables
+* ===============
+*
+* All variables and most of the configuration is defined on this page. */
+/*** Background color for `<body>`.*/
+/*** Grey */
 html,
 body {
   background-color: #ffffff !important;
@@ -8326,8 +8326,8 @@ footer.footer .scroll-top i {
   margin: 0 auto;
   display: block;
   position: relative;
-  width: 220px;
-  height: 220px;
+  width: 280px;
+  height: 280px;
   border-radius: 100%;
   transition: 0.3s linear;
   z-index: 9;
@@ -8345,8 +8345,8 @@ footer.footer .scroll-top i {
   margin: 0 auto;
   display: block;
   position: relative;
-  width: 220px;
-  height: 220px;
+  width: 280px;
+  height: 280px;
   border-radius: 100%;
   transition: 0.3s linear;
   z-index: 9;
@@ -8364,8 +8364,8 @@ footer.footer .scroll-top i {
   margin: 0 auto;
   display: block;
   position: relative;
-  width: 220px;
-  height: 220px;
+  width: 280px;
+  height: 280px;
   border-radius: 100%;
   transition: 0.3s linear;
   z-index: 9;
@@ -8384,7 +8384,7 @@ footer.footer .scroll-top i {
   height: 0;
   border-left: 80px solid transparent;
   border-right: 80px solid transparent;
-  border-top: 150px solid transparent;
+  border-top: 160px solid transparent;
   z-index: 999;
   position: relative;
   margin: 0 auto;
@@ -8679,8 +8679,8 @@ footer.footer .scroll-top i {
   margin: 0 auto;
   display: block;
   position: relative;
-  width: 220px;
-  height: 220px;
+  width: 280px;
+  height: 280px;
   border-radius: 100%;
   transition: 0.3s linear;
   z-index: 9;
@@ -8698,8 +8698,8 @@ footer.footer .scroll-top i {
   margin: 0 auto;
   display: block;
   position: relative;
-  width: 220px;
-  height: 220px;
+  width: 280px;
+  height: 280px;
   border-radius: 100%;
   transition: 0.3s linear;
   z-index: 9;
@@ -8717,8 +8717,8 @@ footer.footer .scroll-top i {
   margin: 0 auto;
   display: block;
   position: relative;
-  width: 220px;
-  height: 220px;
+  width: 280px;
+  height: 280px;
   border-radius: 100%;
   transition: 0.3s linear;
   z-index: 9;
@@ -8736,8 +8736,8 @@ footer.footer .scroll-top i {
   margin: 0 auto;
   display: block;
   position: relative;
-  width: 220px;
-  height: 220px;
+  width: 280px;
+  height: 280px;
   border-radius: 100%;
   transition: 0.3s linear;
   z-index: 9;
@@ -8756,7 +8756,7 @@ footer.footer .scroll-top i {
   height: 0;
   border-left: 80px solid transparent;
   border-right: 80px solid transparent;
-  border-top: 150px solid transparent;
+  border-top: 160px solid transparent;
   z-index: 999;
   position: relative;
   margin: 0 auto;
@@ -9265,6 +9265,93 @@ footer.footer .scroll-top i {
   max-width: unset !important;
   width: 100% !important;
   background-color: #5197CB;
+}
+
+.strategy-hero {
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 400px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+}
+
+.strategy-hero .page-title {
+  color: #323439;
+  letter-spacing: 1px;
+  margin: 0 !important;
+  float: right;
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+}
+
+@media (max-width: 500px) {
+  .strategy-hero .page-title {
+    top: 40px;
+    left: 40px;
+    font-size: 30px;
+  }
+}
+
+.housing-market {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.housing-market h3 {
+  text-align: center;
+  margin: 30px 0 60px 0;
+}
+
+.housing-market .circle-container .circle {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  transition: 0.3s linear;
+  z-index: 9;
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.housing-market .circle-container .circle:hover {
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+  transition: 0.3s linear;
+}
+
+.housing-market .circle-container .triangle {
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 160px solid transparent;
+  z-index: 999;
+  position: relative;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+.housing-market .circle-container img.circle-icon {
+  max-width: 200px;
+  z-index: 99;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.housing-market .label {
+  text-align: center;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 767px) {

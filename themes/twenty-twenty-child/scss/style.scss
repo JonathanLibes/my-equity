@@ -1,13 +1,13 @@
 @charset 'UTF-8';
 
+// Vendors
+@import 'vendor/bootstrap';
+@import 'vendor/include-media';
+
 @import "variables";
 
 @import 'base/fonts';
 @import 'base/mixins';
-
-// Vendors
-@import 'vendor/bootstrap';
-@import 'vendor/include-media';
 
 @import "typography";
 
@@ -28,6 +28,7 @@
 @import 'pages/services_seminars';
 @import 'pages/services_builders';
 @import 'pages/contact';
+@import 'pages/strategy';
 
 @import "footer";
 @import 'base/helpers';
