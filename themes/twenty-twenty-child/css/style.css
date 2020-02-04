@@ -8326,8 +8326,8 @@ footer.footer .scroll-top i {
   margin: 0 auto;
   display: block;
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 220px;
+  height: 220px;
   border-radius: 100%;
   transition: 0.3s linear;
   z-index: 9;
@@ -8345,8 +8345,8 @@ footer.footer .scroll-top i {
   margin: 0 auto;
   display: block;
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 220px;
+  height: 220px;
   border-radius: 100%;
   transition: 0.3s linear;
   z-index: 9;
@@ -8364,8 +8364,8 @@ footer.footer .scroll-top i {
   margin: 0 auto;
   display: block;
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 220px;
+  height: 220px;
   border-radius: 100%;
   transition: 0.3s linear;
   z-index: 9;
@@ -8679,8 +8679,8 @@ footer.footer .scroll-top i {
   margin: 0 auto;
   display: block;
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 220px;
+  height: 220px;
   border-radius: 100%;
   transition: 0.3s linear;
   z-index: 9;
@@ -8698,8 +8698,8 @@ footer.footer .scroll-top i {
   margin: 0 auto;
   display: block;
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 220px;
+  height: 220px;
   border-radius: 100%;
   transition: 0.3s linear;
   z-index: 9;
@@ -8717,8 +8717,8 @@ footer.footer .scroll-top i {
   margin: 0 auto;
   display: block;
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 220px;
+  height: 220px;
   border-radius: 100%;
   transition: 0.3s linear;
   z-index: 9;
@@ -8736,8 +8736,8 @@ footer.footer .scroll-top i {
   margin: 0 auto;
   display: block;
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 220px;
+  height: 220px;
   border-radius: 100%;
   transition: 0.3s linear;
   z-index: 9;
@@ -9300,6 +9300,7 @@ footer.footer .scroll-top i {
 .housing-market {
   margin: 0;
   background-color: #ffffff;
+  padding-bottom: 80px;
 }
 
 .housing-market h3 {
@@ -9311,8 +9312,8 @@ footer.footer .scroll-top i {
   margin: 0 auto;
   display: block;
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 220px;
+  height: 220px;
   border-radius: 100%;
   transition: 0.3s linear;
   z-index: 9;
@@ -9339,7 +9340,7 @@ footer.footer .scroll-top i {
 }
 
 .housing-market .circle-container img.circle-icon {
-  max-width: 200px;
+  max-width: 160px;
   z-index: 99;
   margin: auto;
   position: absolute;
@@ -9350,8 +9351,86 @@ footer.footer .scroll-top i {
 }
 
 .housing-market .label {
+  font-size: 16px;
   text-align: center;
+  max-width: 320px;
+  position: relative;
+  margin: 0 auto;
   margin-top: 50px;
+}
+
+.family-rentals {
+  background-color: #8bbcea;
+  margin: 0;
+  padding-bottom: 80px;
+}
+
+.family-rentals h3 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.family-rentals .card {
+  padding: 15px;
+  border-radius: 0;
+  border: none;
+  max-width: 400px;
+  min-height: 420px;
+}
+
+.family-rentals .card h5 {
+  text-align: center;
+  margin: 15px;
+}
+
+.accordion-block {
+  color: #ffffff !important;
+  background-color: #323439;
+  margin: 0;
+}
+
+.accordion-block .accordion {
+  background-color: #ffffff;
+  color: #323439;
+}
+
+.accordion-block .accordion .accordion-item {
+  padding: 0;
+}
+
+.accordion-block .accordion .accordion-item .accordion-item-header {
+  border-top: 2px solid #323439;
+  border-bottom: 2px solid #323439;
+}
+
+.accordion-block .accordion .accordion-item .accordion-item-header h5 {
+  margin: 0;
+  padding: 10px 0;
+  color: #876197;
+}
+
+.accordion-block .accordion .accordion-item .accordion-item-header h5 i.icon {
+  float: right;
+  color: #323439;
+  margin-right: 25px;
+  font-size: 32px;
+}
+
+.accordion-block .accordion .accordion-item .accordion-item-header h5 span {
+  color: #323439 !important;
+  min-width: 60px;
+  border-right: 2px solid #323439;
+  padding: 10px 20px 10px 20px;
+}
+
+.accordion-block .accordion .accordion-item .accordion-item-body {
+  padding: 20px 20px 20px 50px;
+}
+
+.accordion-block .accordion div.show ~ div.accordion-item-header i.icon {
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  transition: ease;
 }
 
 @media screen and (max-width: 767px) {
