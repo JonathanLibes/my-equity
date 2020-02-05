@@ -11,4 +11,26 @@ jQuery(function () {
         window.scrollTo(0, 0);
     });
 
+    /** ================= Strategy Page ==================*/
+
+    /** Circles One */
+    jQuery('#circle-one-mobile').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: true,
+        dots: true,
+    });
+
+    /** Family Rentals Cards */
+    jQuery('#family-rentals-cards').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: true,
+        dots: true,
+    });
 });
+

@@ -15,9 +15,9 @@
 @mixin circleTriangle {
   width: 0;
   height: 0;
-  border-left: 80px solid transparent;
-  border-right: 80px solid transparent;
-  border-top: 160px solid transparent;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 150px solid transparent;
   z-index: 999;
   position: relative;
   margin: 0 auto;
@@ -33,4 +33,27 @@
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+@mixin sliderArrows {
+  button.slick-next.slick-arrow {
+    right: 5px;
+    top: 160px;
+    background-color: unset !important;
+    &::before {
+      color: $dark;
+      content: "\003E";
+      font-size: 50px;
+    }
+  }
+  button.slick-prev.slick-arrow {
+    left: 5px;
+    top: 160px;
+    background-color: unset !important;
+    &::before {
+      color: $dark;
+      content: "\003C";
+      font-size: 50px;
+    }
+  }
 }

@@ -27,12 +27,25 @@
 .housing-market {
   margin: 0;
   background-color: $body-bg;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
+  .row {
+    &:nth-child(1) {
+      margin-bottom: 40px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 50px;
+    }
+  }
   h3 {
     text-align: center;
     margin: 30px 0 60px 0;
+    @include media("<=1000px") {
+      margin: 30px 0 0 0;
+    }
   }
   .circle-container {
+    position: relative;
+    padding-top: 40px;
     .circle {
       @include circleStyles();
       transform: rotate(135deg);
@@ -50,12 +63,16 @@
     }
   }
   .label {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
     text-align: center;
     max-width: 320px;
     position: relative;
     margin: 0 auto;
     margin-top: 50px;
+  }
+  #circle-one-mobile {
+    @include sliderArrows();
   }
 }
 
@@ -75,10 +92,23 @@
     border: none;
     max-width: 400px;
     min-height: 420px;
+    margin: 0 auto;
+    @include media("<500px") {
+      max-width: 300px;
+      min-height: 390px;
+    }
+    @include media("<375px") {
+      max-width: 240px;
+      min-height: 350px;
+    }
     h5 {
       text-align: center;
       margin: 15px;
     }
+  }
+
+  #family-rentals-cards {
+    @include sliderArrows();
   }
 }
 
@@ -86,6 +116,28 @@
   color: $body-bg !important;
   background-color: $dark;
   margin: 0;
+  padding-top: 0 !important;
+  padding-bottom: 80px;
+  .row.first-row {
+    padding: 0 !important;
+    margin: 0 !important;
+    @include media("<770px"){
+      h3{
+        margin-top: 60px;
+        text-align: center;
+      }
+    }
+    img.bg {
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      height: 100%;
+    }
+    img.bird {
+      position: absolute;
+      bottom: 0;
+    }
+  }
   .accordion {
     background-color: $body-bg;
     color: $dark;
@@ -93,6 +145,7 @@
       padding: 0;
       .accordion-item-header {
         // padding: 10px;
+        cursor: pointer;
         border-top: 2px solid $dark;
         border-bottom: 2px solid $dark;
         h5 {
@@ -108,7 +161,7 @@
           span {
             color: $dark !important;
             min-width: 60px;
-            border-right: 2px solid $dark;
+            border-right: 3px solid $dark;
             padding: 10px 20px 10px 20px;
           }
         }
@@ -118,14 +171,116 @@
       }
     }
 
-
-    div.show ~ div.accordion-item-header{
-      i.icon{
+    div.show ~ div.accordion-item-header {
+      i.icon {
         transform: rotate(90deg);
         transition: ease;
       }
     }
+  }
+}
 
+/* Circles on the First Block */
+#circle-one-1 {
+  .circle {
+    transform: rotate(-100deg);
+  }
+  .circle:hover,
+  img.circle-icon:hover ~ .circle {
+    cursor: auto;
+    transform: rotate(80deg);
+    @include circleTransition();
+  }
+}
+#circle-one-2 {
+  .circle {
+    transform: rotate(30deg);
+  }
+  .circle:hover,
+  img.circle-icon:hover ~ .circle {
+    cursor: auto;
+    transform: rotate(210deg);
+    @include circleTransition();
+  }
+}
+#circle-one-3 {
+  .circle {
+    transform: rotate(140deg);
+  }
+  .circle:hover,
+  img.circle-icon:hover ~ .circle {
+    cursor: auto;
+    transform: rotate(280deg);
+    @include circleTransition();
+  }
+}
 
+/* Circles on the Second Block */
+#circle-two-1 {
+  .circle {
+    transform: rotate(-100deg);
+  }
+  .circle:hover,
+  img.circle-icon:hover ~ .circle {
+    cursor: auto;
+    transform: rotate(80deg);
+    @include circleTransition();
+  }
+}
+#circle-two-2 {
+  .circle {
+    transform: rotate(30deg);
+  }
+  .circle:hover,
+  img.circle-icon:hover ~ .circle {
+    cursor: auto;
+    transform: rotate(210deg);
+    @include circleTransition();
+  }
+}
+#circle-two-3 {
+  .circle {
+    transform: rotate(140deg);
+  }
+  .circle:hover,
+  img.circle-icon:hover ~ .circle {
+    cursor: auto;
+    transform: rotate(280deg);
+    @include circleTransition();
+  }
+}
+
+/* Circles on the Third Block */
+#circle-three-1 {
+  .circle {
+    transform: rotate(-150deg);
+  }
+  .circle:hover,
+  img.circle-icon:hover ~ .circle {
+    cursor: auto;
+    transform: rotate(30deg);
+    @include circleTransition();
+  }
+}
+#circle-three-2 {
+  .circle {
+    transform: rotate(-45deg);
+  }
+  .circle:hover,
+  img.circle-icon:hover ~ .circle {
+    cursor: auto;
+    transform: rotate(135deg);
+    @include circleTransition();
+  }
+}
+#circle-three-3 {
+  .circle {
+    transform: rotate(70deg);
+  }
+  .circle:hover,
+  img.circle-icon:hover ~ .circle {
+    cursor: auto;
+    transform: rotate(250deg);
+    @include circleTransition();
   }
 }

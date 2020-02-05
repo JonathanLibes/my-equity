@@ -8382,9 +8382,9 @@ footer.footer .scroll-top i {
 .home-page-content .start-your-journey .start-your-journey-block .triangle {
   width: 0;
   height: 0;
-  border-left: 80px solid transparent;
-  border-right: 80px solid transparent;
-  border-top: 160px solid transparent;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 150px solid transparent;
   z-index: 999;
   position: relative;
   margin: 0 auto;
@@ -8754,9 +8754,9 @@ footer.footer .scroll-top i {
 .about-page-content .what-we-do .what-we-do-block .triangle {
   width: 0;
   height: 0;
-  border-left: 80px solid transparent;
-  border-right: 80px solid transparent;
-  border-top: 160px solid transparent;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 150px solid transparent;
   z-index: 999;
   position: relative;
   margin: 0 auto;
@@ -9300,12 +9300,31 @@ footer.footer .scroll-top i {
 .housing-market {
   margin: 0;
   background-color: #ffffff;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
+}
+
+.housing-market .row:nth-child(1) {
+  margin-bottom: 40px;
+}
+
+.housing-market .row:nth-child(2) {
+  margin-bottom: 50px;
 }
 
 .housing-market h3 {
   text-align: center;
   margin: 30px 0 60px 0;
+}
+
+@media (max-width: 1000px) {
+  .housing-market h3 {
+    margin: 30px 0 0 0;
+  }
+}
+
+.housing-market .circle-container {
+  position: relative;
+  padding-top: 40px;
 }
 
 .housing-market .circle-container .circle {
@@ -9330,9 +9349,9 @@ footer.footer .scroll-top i {
 .housing-market .circle-container .triangle {
   width: 0;
   height: 0;
-  border-left: 80px solid transparent;
-  border-right: 80px solid transparent;
-  border-top: 160px solid transparent;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 150px solid transparent;
   z-index: 999;
   position: relative;
   margin: 0 auto;
@@ -9351,12 +9370,37 @@ footer.footer .scroll-top i {
 }
 
 .housing-market .label {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 500;
   text-align: center;
   max-width: 320px;
   position: relative;
   margin: 0 auto;
   margin-top: 50px;
+}
+
+.housing-market #circle-one-mobile button.slick-next.slick-arrow {
+  right: 5px;
+  top: 160px;
+  background-color: unset !important;
+}
+
+.housing-market #circle-one-mobile button.slick-next.slick-arrow::before {
+  color: #323439;
+  content: "\003E";
+  font-size: 50px;
+}
+
+.housing-market #circle-one-mobile button.slick-prev.slick-arrow {
+  left: 5px;
+  top: 160px;
+  background-color: unset !important;
+}
+
+.housing-market #circle-one-mobile button.slick-prev.slick-arrow::before {
+  color: #323439;
+  content: "\003C";
+  font-size: 50px;
 }
 
 .family-rentals {
@@ -9376,6 +9420,21 @@ footer.footer .scroll-top i {
   border: none;
   max-width: 400px;
   min-height: 420px;
+  margin: 0 auto;
+}
+
+@media (max-width: 499px) {
+  .family-rentals .card {
+    max-width: 300px;
+    min-height: 390px;
+  }
+}
+
+@media (max-width: 374px) {
+  .family-rentals .card {
+    max-width: 240px;
+    min-height: 350px;
+  }
 }
 
 .family-rentals .card h5 {
@@ -9383,10 +9442,60 @@ footer.footer .scroll-top i {
   margin: 15px;
 }
 
+.family-rentals #family-rentals-cards button.slick-next.slick-arrow {
+  right: 5px;
+  top: 160px;
+  background-color: unset !important;
+}
+
+.family-rentals #family-rentals-cards button.slick-next.slick-arrow::before {
+  color: #323439;
+  content: "\003E";
+  font-size: 50px;
+}
+
+.family-rentals #family-rentals-cards button.slick-prev.slick-arrow {
+  left: 5px;
+  top: 160px;
+  background-color: unset !important;
+}
+
+.family-rentals #family-rentals-cards button.slick-prev.slick-arrow::before {
+  color: #323439;
+  content: "\003C";
+  font-size: 50px;
+}
+
 .accordion-block {
   color: #ffffff !important;
   background-color: #323439;
   margin: 0;
+  padding-top: 0 !important;
+  padding-bottom: 80px;
+}
+
+.accordion-block .row.first-row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 769px) {
+  .accordion-block .row.first-row h3 {
+    margin-top: 60px;
+    text-align: center;
+  }
+}
+
+.accordion-block .row.first-row img.bg {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+}
+
+.accordion-block .row.first-row img.bird {
+  position: absolute;
+  bottom: 0;
 }
 
 .accordion-block .accordion {
@@ -9399,6 +9508,7 @@ footer.footer .scroll-top i {
 }
 
 .accordion-block .accordion .accordion-item .accordion-item-header {
+  cursor: pointer;
   border-top: 2px solid #323439;
   border-bottom: 2px solid #323439;
 }
@@ -9419,7 +9529,7 @@ footer.footer .scroll-top i {
 .accordion-block .accordion .accordion-item .accordion-item-header h5 span {
   color: #323439 !important;
   min-width: 60px;
-  border-right: 2px solid #323439;
+  border-right: 3px solid #323439;
   padding: 10px 20px 10px 20px;
 }
 
@@ -9433,13 +9543,133 @@ footer.footer .scroll-top i {
   transition: ease;
 }
 
-@media screen and (max-width: 767px) {
+/* Circles on the First Block */
+#circle-one-1 .circle {
+  -ms-transform: rotate(-100deg);
+  transform: rotate(-100deg);
+}
+
+#circle-one-1 .circle:hover,
+#circle-one-1 img.circle-icon:hover ~ .circle {
+  cursor: auto;
+  -ms-transform: rotate(80deg);
+  transform: rotate(80deg);
+  transition: 0.3s linear;
+}
+
+#circle-one-2 .circle {
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+#circle-one-2 .circle:hover,
+#circle-one-2 img.circle-icon:hover ~ .circle {
+  cursor: auto;
+  -ms-transform: rotate(210deg);
+  transform: rotate(210deg);
+  transition: 0.3s linear;
+}
+
+#circle-one-3 .circle {
+  -ms-transform: rotate(140deg);
+  transform: rotate(140deg);
+}
+
+#circle-one-3 .circle:hover,
+#circle-one-3 img.circle-icon:hover ~ .circle {
+  cursor: auto;
+  -ms-transform: rotate(280deg);
+  transform: rotate(280deg);
+  transition: 0.3s linear;
+}
+
+/* Circles on the Second Block */
+#circle-two-1 .circle {
+  -ms-transform: rotate(-100deg);
+  transform: rotate(-100deg);
+}
+
+#circle-two-1 .circle:hover,
+#circle-two-1 img.circle-icon:hover ~ .circle {
+  cursor: auto;
+  -ms-transform: rotate(80deg);
+  transform: rotate(80deg);
+  transition: 0.3s linear;
+}
+
+#circle-two-2 .circle {
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+#circle-two-2 .circle:hover,
+#circle-two-2 img.circle-icon:hover ~ .circle {
+  cursor: auto;
+  -ms-transform: rotate(210deg);
+  transform: rotate(210deg);
+  transition: 0.3s linear;
+}
+
+#circle-two-3 .circle {
+  -ms-transform: rotate(140deg);
+  transform: rotate(140deg);
+}
+
+#circle-two-3 .circle:hover,
+#circle-two-3 img.circle-icon:hover ~ .circle {
+  cursor: auto;
+  -ms-transform: rotate(280deg);
+  transform: rotate(280deg);
+  transition: 0.3s linear;
+}
+
+/* Circles on the Third Block */
+#circle-three-1 .circle {
+  -ms-transform: rotate(-150deg);
+  transform: rotate(-150deg);
+}
+
+#circle-three-1 .circle:hover,
+#circle-three-1 img.circle-icon:hover ~ .circle {
+  cursor: auto;
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+  transition: 0.3s linear;
+}
+
+#circle-three-2 .circle {
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#circle-three-2 .circle:hover,
+#circle-three-2 img.circle-icon:hover ~ .circle {
+  cursor: auto;
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  transition: 0.3s linear;
+}
+
+#circle-three-3 .circle {
+  -ms-transform: rotate(70deg);
+  transform: rotate(70deg);
+}
+
+#circle-three-3 .circle:hover,
+#circle-three-3 img.circle-icon:hover ~ .circle {
+  cursor: auto;
+  -ms-transform: rotate(250deg);
+  transform: rotate(250deg);
+  transition: 0.3s linear;
+}
+
+@media screen and (max-width: 1000px) {
   .m-hide {
     display: none !important;
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1000px) {
   .d-hide {
     display: none !important;
   }

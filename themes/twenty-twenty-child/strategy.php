@@ -21,17 +21,17 @@ $investment_strategy = get_field("investment_strategy");
 </div>
 
 <div class="jumbotron housing-market">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h3><?= $housing_merket["title"] ?></h3>
             </div>
         </div>
-        <div class="row">
+        <div class="row m-hide">
 
             <?php foreach ($housing_merket["circles"] as $key => $circle) : ?>
 
-                <div class="col-lg-4 circle-container">
+                <div class="col-lg-4 col-12 circle-container" id="circle-one-<?= $key + 1; ?>">
                     <img class="circle-icon" src="<?= $circle["icon"]["url"] ?>" alt="<?= $circle["icon"]["alt"] ?>" />
 
                     <div class="circle" style="background-color: <?= $circle["circle_color"] ?>">
@@ -49,6 +49,27 @@ $investment_strategy = get_field("investment_strategy");
             <?php endforeach; ?>
 
         </div>
+        <div class="row d-hide" id="circle-one-mobile">
+
+
+            <?php foreach ($housing_merket["circles"] as $key => $circle) : ?>
+
+                <div class="col-lg-4">
+
+                    <div class=" circle-container" id="circle-one-<?= $key + 1; ?>">
+                        <img class="circle-icon" src="<?= $circle["icon"]["url"] ?>" alt="<?= $circle["icon"]["alt"] ?>" />
+
+                        <div class="circle" style="background-color: <?= $circle["circle_color"] ?>">
+                            <div class="triangle" style="border-top-color: <?= $circle["triangle_color"] ?>"></div>
+                        </div>
+                    </div>
+                    <p class="label"><?= $circleLabel["label"] ?></p>
+
+                </div>
+
+            <?php endforeach; ?>
+
+        </div>
     </div>
 </div>
 
@@ -59,7 +80,7 @@ $investment_strategy = get_field("investment_strategy");
                 <h3><?= $family_rentals["title"] ?></h3>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="family-rentals-cards">
 
             <?php foreach ($family_rentals["cards"] as $key => $card) : ?>
 
@@ -81,14 +102,14 @@ $investment_strategy = get_field("investment_strategy");
 
 <div class="jumbotron accordion-block">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-5">
+        <div class="row first-row">
+            <div class="col-lg-5 col-12">
                 <h3>
                     <?= $new_construction["title"] ?>
                 </h3>
             </div>
-            <div class="col-lg-4"></div>
-            <div class="col-lg-3"></div>
+            <div class="col-lg-4 col-12"><img src="<?= $new_construction["bg"] ?>" class="bg"></div>
+            <div class="col-lg-3 col-12 m-hide"><img src="<?= $new_construction["bird"] ?>" class="bird"></div>
         </div>
         <div class="row">
             <div class="col-lg-12">
@@ -122,7 +143,7 @@ $investment_strategy = get_field("investment_strategy");
     </div>
 </div>
 <div class="jumbotron housing-market">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h3><?= $investment_strategy["title"] ?></h3>
@@ -131,7 +152,7 @@ $investment_strategy = get_field("investment_strategy");
         <div class="row">
             <?php foreach ($investment_strategy["circles_row_one"] as $key => $circle_one) : ?>
 
-                <div class="col-lg-4 circle-container">
+                <div class="col-lg-4 circle-container" id="circle-two-<?= $key + 1; ?>">
                     <img class="circle-icon" src="<?= $circle_one["icon"] ?>" />
 
                     <div class="circle" style="background-color: <?= $circle_one["circle_color"] ?>">
@@ -148,13 +169,11 @@ $investment_strategy = get_field("investment_strategy");
                 </div>
             <?php endforeach; ?>
         </div>
-        <br />
-        <br />
         <div class="row">
             <?php foreach ($investment_strategy["circles_row_two"] as $key => $circle_two) : ?>
 
-                <div class="col-lg-4 circle-container">
-                    <img class="circle-icon" src="<?= $circle_two["icon"] ?>"/>
+                <div class="col-lg-4 circle-container" id="circle-three-<?= $key + 1; ?>">
+                    <img class="circle-icon" src="<?= $circle_two["icon"] ?>" />
 
                     <div class="circle" style="background-color: <?= $circle_two["circle_color"] ?>">
                         <div class="triangle" style="border-top-color: <?= $circle_two["triangle_color"] ?>"></div>
