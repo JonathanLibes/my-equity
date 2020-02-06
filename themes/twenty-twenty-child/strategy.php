@@ -10,6 +10,7 @@ $housing_merket = get_field("housing_market");
 $family_rentals = get_field("single_family_rentals");
 $new_construction = get_field("new_construction");
 $investment_strategy = get_field("investment_strategy");
+$investment_strategy_mobile = array_merge($investment_strategy["circles_row_one"], $investment_strategy["circles_row_two"]);
 ?>
 <?php get_header(); ?>
 
@@ -80,7 +81,23 @@ $investment_strategy = get_field("investment_strategy");
                 <h3><?= $family_rentals["title"] ?></h3>
             </div>
         </div>
-        <div class="row" id="family-rentals-cards">
+        <div class="row m-hide">
+
+            <?php foreach ($family_rentals["cards"] as $key => $card) : ?>
+
+                <div class="col-lg-4">
+
+                    <div class="card">
+                        <h5><?= $card["title"] ?></h5>
+                        <img src="<?= $card["image"]["url"] ?>" alt="<?= $card["image"]["alt"] ?>">
+                    </div>
+
+                </div>
+
+            <?php endforeach; ?>
+
+        </div>
+        <div class="row d-hide" id="family-rentals-cards">
 
             <?php foreach ($family_rentals["cards"] as $key => $card) : ?>
 
@@ -149,7 +166,7 @@ $investment_strategy = get_field("investment_strategy");
                 <h3><?= $investment_strategy["title"] ?></h3>
             </div>
         </div>
-        <div class="row">
+        <div class="row m-hide">
             <?php foreach ($investment_strategy["circles_row_one"] as $key => $circle_one) : ?>
 
                 <div class="col-lg-4 circle-container" id="circle-two-<?= $key + 1; ?>">
@@ -169,7 +186,7 @@ $investment_strategy = get_field("investment_strategy");
                 </div>
             <?php endforeach; ?>
         </div>
-        <div class="row">
+        <div class="row m-hide">
             <?php foreach ($investment_strategy["circles_row_two"] as $key => $circle_two) : ?>
 
                 <div class="col-lg-4 circle-container" id="circle-three-<?= $key + 1; ?>">
@@ -189,6 +206,29 @@ $investment_strategy = get_field("investment_strategy");
                 </div>
             <?php endforeach; ?>
         </div>
+
+        <div class="row d-hide" id="circle-two-mobile">
+
+
+            <?php foreach ($investment_strategy_mobile as $key => $circle) : ?>
+
+                <div class="col-lg-4">
+
+                    <div class=" circle-container" id="circle-one-<?= $key + 1; ?>">
+                        <img class="circle-icon" src="<?= $circle["icon"] ?>" />
+
+                        <div class="circle" style="background-color: <?= $circle["circle_color"] ?>">
+                            <div class="triangle" style="border-top-color: <?= $circle["triangle_color"] ?>"></div>
+                        </div>
+                    </div>
+                    <p class="label"><?= $circleLabel["label"] ?></p>
+
+                </div>
+
+            <?php endforeach; ?>
+
+        </div>
+
     </div>
 </div>
 <?php get_footer(); ?>

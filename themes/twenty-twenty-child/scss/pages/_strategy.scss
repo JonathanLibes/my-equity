@@ -46,6 +46,9 @@
   .circle-container {
     position: relative;
     padding-top: 40px;
+    @include media("<=770px"){
+      padding-bottom: 40px;
+    }
     .circle {
       @include circleStyles();
       transform: rotate(135deg);
@@ -72,6 +75,9 @@
     margin-top: 50px;
   }
   #circle-one-mobile {
+    @include sliderArrows();
+  }
+  #circle-two-mobile {
     @include sliderArrows();
   }
 }
@@ -110,6 +116,7 @@
   #family-rentals-cards {
     @include sliderArrows();
   }
+
 }
 
 .accordion-block {
@@ -121,8 +128,8 @@
   .row.first-row {
     padding: 0 !important;
     margin: 0 !important;
-    @include media("<770px"){
-      h3{
+    @include media("<770px") {
+      h3 {
         margin-top: 60px;
         text-align: center;
       }
@@ -132,6 +139,12 @@
       bottom: 0;
       top: 0;
       height: 100%;
+      width: auto;
+      @include media("<=770px") {
+        position: relative !important;
+        height: auto;
+        width: auto;
+      }
     }
     img.bird {
       position: absolute;
@@ -152,17 +165,35 @@
           margin: 0;
           padding: 10px 0;
           color: $strategy_accordion_title;
+          @include media("<=500px") {
+            font-size: 20px;
+          }
+          @include media("<425px") {
+            font-size: 18px;
+            font-weight: 500;
+          }
           i.icon {
             float: right;
             color: $dark;
             margin-right: 25px;
             font-size: 32px;
+            @include media("<=500px") {
+              font-size: 20px;
+              margin-right: 15px;
+            }
           }
           span {
             color: $dark !important;
             min-width: 60px;
             border-right: 3px solid $dark;
             padding: 10px 20px 10px 20px;
+            @include media("<=500px") {
+              padding: 10px;
+              // display: none !important;
+            }
+            @include media("<425px") {
+              display: none !important;
+            }
           }
         }
       }

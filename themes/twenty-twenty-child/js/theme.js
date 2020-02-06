@@ -22,6 +22,15 @@ jQuery(function () {
         arrows: true,
         dots: true,
     });
+    /** Circles Two */
+    jQuery('#circle-two-mobile').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: true,
+        dots: true,
+    });
 
     /** Family Rentals Cards */
     jQuery('#family-rentals-cards').slick({

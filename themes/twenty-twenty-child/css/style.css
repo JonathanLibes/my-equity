@@ -9327,6 +9327,12 @@ footer.footer .scroll-top i {
   padding-top: 40px;
 }
 
+@media (max-width: 770px) {
+  .housing-market .circle-container {
+    padding-bottom: 40px;
+  }
+}
+
 .housing-market .circle-container .circle {
   margin: 0 auto;
   display: block;
@@ -9398,6 +9404,30 @@ footer.footer .scroll-top i {
 }
 
 .housing-market #circle-one-mobile button.slick-prev.slick-arrow::before {
+  color: #323439;
+  content: "\003C";
+  font-size: 50px;
+}
+
+.housing-market #circle-two-mobile button.slick-next.slick-arrow {
+  right: 5px;
+  top: 160px;
+  background-color: unset !important;
+}
+
+.housing-market #circle-two-mobile button.slick-next.slick-arrow::before {
+  color: #323439;
+  content: "\003E";
+  font-size: 50px;
+}
+
+.housing-market #circle-two-mobile button.slick-prev.slick-arrow {
+  left: 5px;
+  top: 160px;
+  background-color: unset !important;
+}
+
+.housing-market #circle-two-mobile button.slick-prev.slick-arrow::before {
   color: #323439;
   content: "\003C";
   font-size: 50px;
@@ -9491,6 +9521,15 @@ footer.footer .scroll-top i {
   bottom: 0;
   top: 0;
   height: 100%;
+  width: auto;
+}
+
+@media (max-width: 770px) {
+  .accordion-block .row.first-row img.bg {
+    position: relative !important;
+    height: auto;
+    width: auto;
+  }
 }
 
 .accordion-block .row.first-row img.bird {
@@ -9519,6 +9558,19 @@ footer.footer .scroll-top i {
   color: #876197;
 }
 
+@media (max-width: 500px) {
+  .accordion-block .accordion .accordion-item .accordion-item-header h5 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 424px) {
+  .accordion-block .accordion .accordion-item .accordion-item-header h5 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
 .accordion-block .accordion .accordion-item .accordion-item-header h5 i.icon {
   float: right;
   color: #323439;
@@ -9526,11 +9578,30 @@ footer.footer .scroll-top i {
   font-size: 32px;
 }
 
+@media (max-width: 500px) {
+  .accordion-block .accordion .accordion-item .accordion-item-header h5 i.icon {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+}
+
 .accordion-block .accordion .accordion-item .accordion-item-header h5 span {
   color: #323439 !important;
   min-width: 60px;
   border-right: 3px solid #323439;
   padding: 10px 20px 10px 20px;
+}
+
+@media (max-width: 500px) {
+  .accordion-block .accordion .accordion-item .accordion-item-header h5 span {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 424px) {
+  .accordion-block .accordion .accordion-item .accordion-item-header h5 span {
+    display: none !important;
+  }
 }
 
 .accordion-block .accordion .accordion-item .accordion-item-body {
