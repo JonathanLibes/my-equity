@@ -1,6 +1,121 @@
 .home-page-content {
   background-color: $body-bg;
 
+  .home-hero-banner {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: transparent;
+    height: 80vh;
+    background-position-y: -20vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .column {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .cloud-group {
+      min-height: 200px;
+    }
+    .cloud-group-one {
+      width: 100%;
+      position: absolute;
+      left: 20%;
+      -webkit-animation: movingcloudGroupOne 5s linear;
+      -moz-animation: movingcloudGroupOne 5s linear;
+      -o-animation: movingcloudGroupOne 5s linear;
+      img {
+        max-width: 380px;
+      }
+      img.cloud_one {
+        position: absolute;
+      }
+      img.cloud_two {
+        position: absolute;
+        left: 100px;
+        top: 60px;
+      }
+    }
+    .cloud-group-two {
+      width: 100%;
+      position: absolute;
+      right: 10%;
+      -webkit-animation: movingcloudGroupTwo 5s linear;
+      -moz-animation: movingcloudGroupTwo 5s linear;
+      -o-animation: movingcloudGroupTwo 5s linear;
+      img {
+        max-width: 350px;
+      }
+      img.cloud_one {
+        position: absolute;
+        right: 100px;
+      }
+      img.cloud_two {
+        position: absolute;
+        right: 100px;
+        top: 60px;
+        max-width: 300px;
+      }
+    }
+    .hero-text-container {
+      max-width: 800px;
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      h3 {
+        font-size: 36px;
+        color: $dark;
+        margin: 0 0 60px 0;
+      }
+    }
+    .hero-house-container {
+      position: relative;
+      margin: 0 auto;
+      .house-group-one {
+        img.house {
+          max-width: 220px;
+          position: relative;
+          margin: 0 auto;
+          top: -120px;
+          left: 50px;
+          float: left;
+        }
+        img.tree {
+          float: right;
+          max-width: 120px;
+          animation: shake 6s;
+          animation-iteration-count: infinite;
+          transition: 10s linear;
+        }
+      }
+      .house-group-two {
+        img.house {
+          max-width: 300px;
+          position: relative;
+          margin: 0 auto;
+        }
+      }
+      .house-group-three {
+        img.house {
+          max-width: 300px;
+          position: relative;
+          margin: 0 auto;
+          float: right;
+          top: -100px;
+          right: 50px;
+        }
+        img.tree {
+          float: left;
+          max-width: 100px;
+          left: -50px;
+          position: absolute;
+          animation: shake 6s;
+          animation-iteration-count: infinite;
+          transition: 10s linear;
+        }
+      }
+    }
+  }
+
   .scroll-animation {
     position: relative;
     overflow: visible;
@@ -155,26 +270,26 @@
         top: 50%;
         left: 38%;
         z-index: 99;
-        @include media(">=768px"){
+        @include media(">=768px") {
           max-width: 100px;
           top: 57%;
           left: 35%;
         }
-        @include media(">1300px"){
+        @include media(">1300px") {
           max-width: 100px;
           top: 58%;
           left: 39%;
         }
       }
-      img.j-icon-1:hover ~ .circle--135deg{
+      img.j-icon-1:hover ~ .circle--135deg {
         transform: rotate(225deg);
         @include circleTransition();
       }
-      img.j-icon-2:hover ~ .circle--45deg{
+      img.j-icon-2:hover ~ .circle--45deg {
         transform: rotate(225deg);
         @include circleTransition();
       }
-      img.j-icon-3:hover ~ .circle--225deg{
+      img.j-icon-3:hover ~ .circle--225deg {
         transform: rotate(225deg);
         @include circleTransition();
       }

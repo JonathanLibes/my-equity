@@ -1,0 +1,88 @@
+// Cloud Group One
+@keyframes movingcloudGroupOne {
+  0% {
+    left: -5%;
+  }
+  100% {
+    left: 20%;
+  }
+}
+@-webkit-keyframes movingcloudGroupOne {
+  0% {
+    left: -5%;
+  }
+  100% {
+    left: 20%;
+  }
+}
+@-moz-keyframes movingcloudGroupOne {
+  0% {
+    left: -5%;
+  }
+  100% {
+    left: 20%;
+  }
+}
+
+// Cloud Group Two
+@keyframes movingcloudGroupTwo {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 10%;
+  }
+}
+@-webkit-keyframes movingcloudGroupTwo {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 10%;
+  }
+}
+@-moz-keyframes movingcloudGroupTwo {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 10%;
+  }
+}
+
+// Shaking Animation
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-2deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(-2deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(2deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

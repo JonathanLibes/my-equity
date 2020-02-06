@@ -140,7 +140,7 @@ $investment_strategy_mobile = array_merge($investment_strategy["circles_row_one"
                             <div class="accordion-item-header" id="heading<?= $key + 1 ?>">
                                 <div data-toggle="collapse" data-target="#collapse<?= $key + 1 ?>" aria-expanded="true" aria-controls="collapse<?= $key + 1 ?>">
 
-                                    <h5><span>&nbsp;<?= $key + 1 ?></span> &nbsp;&nbsp; <?= $item["title"] ?><i class="icon fa fa-chevron-circle-right"></i></h5>
+                                    <h5><span>&nbsp;<?= $key + 1 ?><?php if($key == 0){echo '&nbsp;';} ?></span> &nbsp;&nbsp; <?= $item["title"] ?><i class="icon fa fa-chevron-circle-right"></i></h5>
                                 </div>
                             </div>
 

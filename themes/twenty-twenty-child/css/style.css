@@ -8037,6 +8037,60 @@ a.text-dark:focus, a.text-dark:hover {
 * All variables and most of the configuration is defined on this page. */
 /*** Background color for `<body>`.*/
 /*** Grey */
+@keyframes movingcloudGroupOne {
+  0% {
+    left: -5%;
+  }
+  100% {
+    left: 20%;
+  }
+}
+
+@keyframes movingcloudGroupTwo {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 10%;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-2deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(-2deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(2deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 html,
 body {
   background-color: #ffffff !important;
@@ -8055,7 +8109,7 @@ header.site-header {
   background-color: #ffffff;
   min-height: 100px;
   padding: 20px 10px;
-  border-bottom: 1px solid #787f81 !important;
+  border-bottom: 1px solid #787f81;
 }
 
 header.site-header .mobile-menu-items {
@@ -8225,6 +8279,133 @@ footer.footer .scroll-top i {
 
 .home-page-content {
   background-color: #ffffff;
+}
+
+.home-page-content .home-hero-banner {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  background-color: transparent;
+  height: 80vh;
+  background-position-y: -20vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-page-content .home-hero-banner .column {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.home-page-content .home-hero-banner .cloud-group {
+  min-height: 200px;
+}
+
+.home-page-content .home-hero-banner .cloud-group-one {
+  width: 100%;
+  position: absolute;
+  left: 20%;
+  -webkit-animation: movingcloudGroupOne 5s linear;
+  -moz-animation: movingcloudGroupOne 5s linear;
+  -o-animation: movingcloudGroupOne 5s linear;
+}
+
+.home-page-content .home-hero-banner .cloud-group-one img {
+  max-width: 380px;
+}
+
+.home-page-content .home-hero-banner .cloud-group-one img.cloud_one {
+  position: absolute;
+}
+
+.home-page-content .home-hero-banner .cloud-group-one img.cloud_two {
+  position: absolute;
+  left: 100px;
+  top: 60px;
+}
+
+.home-page-content .home-hero-banner .cloud-group-two {
+  width: 100%;
+  position: absolute;
+  right: 10%;
+  -webkit-animation: movingcloudGroupTwo 5s linear;
+  -moz-animation: movingcloudGroupTwo 5s linear;
+  -o-animation: movingcloudGroupTwo 5s linear;
+}
+
+.home-page-content .home-hero-banner .cloud-group-two img {
+  max-width: 350px;
+}
+
+.home-page-content .home-hero-banner .cloud-group-two img.cloud_one {
+  position: absolute;
+  right: 100px;
+}
+
+.home-page-content .home-hero-banner .cloud-group-two img.cloud_two {
+  position: absolute;
+  right: 100px;
+  top: 60px;
+  max-width: 300px;
+}
+
+.home-page-content .home-hero-banner .hero-text-container {
+  max-width: 800px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-page-content .home-hero-banner .hero-text-container h3 {
+  font-size: 36px;
+  color: #323439;
+  margin: 0 0 60px 0;
+}
+
+.home-page-content .home-hero-banner .hero-house-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.home-page-content .home-hero-banner .hero-house-container .house-group-one img.house {
+  max-width: 220px;
+  position: relative;
+  margin: 0 auto;
+  top: -120px;
+  left: 50px;
+  float: left;
+}
+
+.home-page-content .home-hero-banner .hero-house-container .house-group-one img.tree {
+  float: right;
+  max-width: 120px;
+  animation: shake 6s;
+  animation-iteration-count: infinite;
+  transition: 10s linear;
+}
+
+.home-page-content .home-hero-banner .hero-house-container .house-group-two img.house {
+  max-width: 300px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.home-page-content .home-hero-banner .hero-house-container .house-group-three img.house {
+  max-width: 300px;
+  position: relative;
+  margin: 0 auto;
+  float: right;
+  top: -100px;
+  right: 50px;
+}
+
+.home-page-content .home-hero-banner .hero-house-container .house-group-three img.tree {
+  float: left;
+  max-width: 100px;
+  left: -50px;
+  position: absolute;
+  animation: shake 6s;
+  animation-iteration-count: infinite;
+  transition: 10s linear;
 }
 
 .home-page-content .scroll-animation {

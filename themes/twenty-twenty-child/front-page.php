@@ -8,8 +8,50 @@
 
 ?>
 <?php get_header(); // get header assets 
+
+$hero = get_field('home_hero_banner');
 ?>
+
 <div class="home-page-content">
+
+    <div class="jumbotron home-hero-banner" style="background-image: url(<?= $hero["background_image"] ?>)">
+        <div class="container-fluid">
+
+            <div class="row cloud-group">
+                <div class="col-lg-6 column">
+                    <div class="cloud-group-one">
+                        <img class="cloud_one" src="<?= $hero["cloud_group_one"]["cloud_one"] ?>" />
+                        <img class="cloud_two" src="<?= $hero["cloud_group_one"]["cloud_two"] ?>" />
+                    </div>
+                </div>
+                <div class="col-lg-6 column">
+                    <div class="cloud-group-two">
+                        <img class="cloud_one" src="<?= $hero["cloud_group_two"]["cloud_one"] ?>" />
+                        <img class="cloud_two" src="<?= $hero["cloud_group_two"]["cloud_two"] ?>" />
+                    </div>
+                </div>
+            </div>
+            <div class="row hero-text-container">
+                <div class="col-lg-12">
+                    <?= $hero["hero_text"] ?>
+                </div>
+            </div>
+
+            <div class="row hero-house-container">
+                <div class="col-lg-4 house-group-one">
+                    <img class="house" src="<?= $hero["houses"]["house_one"] ?>" />
+                    <img class="tree" src="<?= $hero["trees"]["tree_one"] ?>">
+                </div>
+                <div class="col-lg-4 house-group-two">
+                    <img class="house" src="<?= $hero["houses"]["house_two"] ?>" />
+                </div>
+                <div class="col-lg-4 house-group-three">
+                    <img class="tree" src="<?= $hero["trees"]["tree_two"] ?>">
+                    <img class="house" src="<?= $hero["houses"]["house_three"] ?>" />
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="scroll-animation">
 
@@ -86,8 +128,8 @@
                     <div class="col-lg-4 start-your-journey-block">
                         <h4><?= $section["title"] ?></h4>
                         <br />
-                        <img id="journey-icon-<?= $key + 1 ?>" class="journey-icon j-icon-<?= $key+1 ?>" src="<?= $section["icon"]["sizes"]["medium"] ?>" alt="<?= $section["icon"]["alt"] ?>" onmouseover="" onmouseout="" />
-                        <div id="circle-home-<?= $key+1 ?>" class="circle--<?= $section["angle"] ?>" style="background-color: <?= $section["circle_colour"] ?>">
+                        <img id="journey-icon-<?= $key + 1 ?>" class="journey-icon j-icon-<?= $key + 1 ?>" src="<?= $section["icon"]["sizes"]["medium"] ?>" alt="<?= $section["icon"]["alt"] ?>" onmouseover="" onmouseout="" />
+                        <div id="circle-home-<?= $key + 1 ?>" class="circle--<?= $section["angle"] ?>" style="background-color: <?= $section["circle_colour"] ?>">
                             <div class="triangle" style="border-top-color: <?= $section["triangle_colour"] ?>"></div>
                         </div>
                     </div>
@@ -163,5 +205,12 @@
 </div>
 
 </div>
+
+<style>
+    header.site-header {
+        border-bottom: unset !important;
+        background-color: #eaf2fa !important;
+    }
+</style>
 <?php get_footer(); // get footer assets 
 ?>
