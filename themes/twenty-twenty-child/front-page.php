@@ -120,26 +120,56 @@ $hero = get_field('home_hero_banner');
 
     <div class="jumbotron start-your-journey">
         <div class="container-fluid">
-            <div class="row">
+            <?php $journey_sections = get_field("journey_sections"); ?>
+            <?php $journey_cta = get_field("journey_call_to_action"); ?>
 
-                <?php $journey_sections = get_field("journey_sections"); ?>
+            <div class="row m-hide">
 
-                <?php foreach ($journey_sections as $key => $section) : ?>
-                    <div class="col-lg-4 start-your-journey-block">
-                        <h4><?= $section["title"] ?></h4>
-                        <br />
-                        <img id="journey-icon-<?= $key + 1 ?>" class="journey-icon j-icon-<?= $key + 1 ?>" src="<?= $section["icon"]["sizes"]["medium"] ?>" alt="<?= $section["icon"]["alt"] ?>" onmouseover="" onmouseout="" />
-                        <div id="circle-home-<?= $key + 1 ?>" class="circle--<?= $section["angle"] ?>" style="background-color: <?= $section["circle_colour"] ?>">
-                            <div class="triangle" style="border-top-color: <?= $section["triangle_colour"] ?>"></div>
+                <?php foreach ($journey_sections as $key => $circle) : ?>
+
+                    <div class="col-lg-4 col-12">
+
+                        <div class="circle-container" id="circle-home-<?= $key + 1; ?>">
+                            <img class="circle-icon" src="<?= $circle["icon"]["url"] ?>" alt="<?= $circle["icon"]["alt"] ?>" />
+
+                            <div class="circle" style="background-color: <?= $circle["circle_colour"] ?>">
+                                <div class="triangle" style="border-top-color: <?= $circle["triangle_colour"] ?>"></div>
+                            </div>
+
+
                         </div>
                     </div>
+
                 <?php endforeach; ?>
-                <?php $journey_cta = get_field("journey_call_to_action"); ?>
+
+            </div>
+            <div class="row d-hide" id="circle-one-mobile">
+
+
+                <?php foreach ($journey_sections as $key => $circle) : ?>
+
+
+                    <div class="col-lg-4">
+
+                        <div class=" circle-container" id="circle-home-<?= $key + 1; ?>">
+                            <img class="circle-icon" src="<?= $circle["icon"]["url"] ?>" alt="<?= $circle["icon"]["alt"] ?>" />
+
+                            <div class="circle" style="background-color: <?= $circle["circle_colour"] ?>">
+                                <div class="triangle" style="border-top-color: <?= $circle["triangle_colour"] ?>"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
+
+            </div>
+            <div class="row">
                 <div class="col-lg-12">
                     <a class="journey_cta" href="<?= $journey_cta["link"] ?>"><?= $journey_cta["text"] ?></a>
                 </div>
-
             </div>
+
         </div>
     </div>
 

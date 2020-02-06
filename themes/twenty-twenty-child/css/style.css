@@ -8491,19 +8491,21 @@ footer.footer .scroll-top i {
 
 .home-page-content .start-your-journey {
   background-color: #e2ebf8;
-  padding: 50px 10px 80px 10px;
+  padding: 90px 10px 80px 10px;
   margin-bottom: 0;
 }
 
-.home-page-content .start-your-journey .start-your-journey-block {
-  margin: 0 auto;
-  display: block;
+.home-page-content .start-your-journey .circle-container {
   position: relative;
-  text-align: center;
-  padding: 40px 0;
 }
 
-.home-page-content .start-your-journey .start-your-journey-block .circle--135deg {
+@media (max-width: 770px) {
+  .home-page-content .start-your-journey .circle-container {
+    padding-bottom: 40px;
+  }
+}
+
+.home-page-content .start-your-journey .circle-container .circle {
   margin: 0 auto;
   display: block;
   position: relative;
@@ -8516,51 +8518,13 @@ footer.footer .scroll-top i {
   transform: rotate(135deg);
 }
 
-.home-page-content .start-your-journey .start-your-journey-block .circle--135deg:hover {
+.home-page-content .start-your-journey .circle-container .circle:hover {
   -ms-transform: rotate(225deg);
   transform: rotate(225deg);
   transition: 0.3s linear;
 }
 
-.home-page-content .start-your-journey .start-your-journey-block .circle--225deg {
-  margin: 0 auto;
-  display: block;
-  position: relative;
-  width: 220px;
-  height: 220px;
-  border-radius: 100%;
-  transition: 0.3s linear;
-  z-index: 9;
-  -ms-transform: rotate(225deg);
-  transform: rotate(225deg);
-}
-
-.home-page-content .start-your-journey .start-your-journey-block .circle--225deg:hover {
-  -ms-transform: rotate(315deg);
-  transform: rotate(315deg);
-  transition: 0.3s linear;
-}
-
-.home-page-content .start-your-journey .start-your-journey-block .circle--45deg {
-  margin: 0 auto;
-  display: block;
-  position: relative;
-  width: 220px;
-  height: 220px;
-  border-radius: 100%;
-  transition: 0.3s linear;
-  z-index: 9;
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.home-page-content .start-your-journey .start-your-journey-block .circle--45deg:hover {
-  -ms-transform: rotate(135deg);
-  transform: rotate(135deg);
-  transition: 0.3s linear;
-}
-
-.home-page-content .start-your-journey .start-your-journey-block .triangle {
+.home-page-content .start-your-journey .circle-container .triangle {
   width: 0;
   height: 0;
   border-left: 100px solid transparent;
@@ -8572,70 +8536,63 @@ footer.footer .scroll-top i {
   z-index: 999;
 }
 
-.home-page-content .start-your-journey .start-your-journey-block .circle-blue {
-  background-color: #5097ca;
-}
-
-.home-page-content .start-your-journey .start-your-journey-block .circle-green {
-  background-color: #91c73e;
-}
-
-.home-page-content .start-your-journey .start-your-journey-block .circle-purple {
-  background-color: #774d9e;
-}
-
-.home-page-content .start-your-journey .start-your-journey-block .triangle-blue {
-  border-top-color: #77addc;
-}
-
-.home-page-content .start-your-journey .start-your-journey-block .triangle-green {
-  border-top-color: #b1d476;
-}
-
-.home-page-content .start-your-journey .start-your-journey-block .triangle-purple {
-  border-top-color: #9578b6;
-}
-
-.home-page-content .start-your-journey .start-your-journey-block img.journey-icon {
-  position: absolute;
-  max-width: 120px;
-  top: 50%;
-  left: 38%;
+.home-page-content .start-your-journey .circle-container img.circle-icon {
+  max-width: 160px;
   z-index: 99;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
-@media (min-width: 768px) {
-  .home-page-content .start-your-journey .start-your-journey-block img.journey-icon {
-    max-width: 100px;
-    top: 57%;
-    left: 35%;
-  }
+.home-page-content .start-your-journey #circle-one-mobile button.slick-next.slick-arrow {
+  right: 5px;
+  top: 160px;
+  background-color: unset !important;
 }
 
-@media (min-width: 1301px) {
-  .home-page-content .start-your-journey .start-your-journey-block img.journey-icon {
-    max-width: 100px;
-    top: 58%;
-    left: 39%;
-  }
+.home-page-content .start-your-journey #circle-one-mobile button.slick-next.slick-arrow::before {
+  color: #323439;
+  content: "\003E";
+  font-size: 50px;
 }
 
-.home-page-content .start-your-journey .start-your-journey-block img.j-icon-1:hover ~ .circle--135deg {
-  -ms-transform: rotate(225deg);
-  transform: rotate(225deg);
-  transition: 0.3s linear;
+.home-page-content .start-your-journey #circle-one-mobile button.slick-prev.slick-arrow {
+  left: 5px;
+  top: 160px;
+  background-color: unset !important;
 }
 
-.home-page-content .start-your-journey .start-your-journey-block img.j-icon-2:hover ~ .circle--45deg {
-  -ms-transform: rotate(225deg);
-  transform: rotate(225deg);
-  transition: 0.3s linear;
+.home-page-content .start-your-journey #circle-one-mobile button.slick-prev.slick-arrow::before {
+  color: #323439;
+  content: "\003C";
+  font-size: 50px;
 }
 
-.home-page-content .start-your-journey .start-your-journey-block img.j-icon-3:hover ~ .circle--225deg {
-  -ms-transform: rotate(225deg);
-  transform: rotate(225deg);
-  transition: 0.3s linear;
+.home-page-content .start-your-journey #circle-two-mobile button.slick-next.slick-arrow {
+  right: 5px;
+  top: 160px;
+  background-color: unset !important;
+}
+
+.home-page-content .start-your-journey #circle-two-mobile button.slick-next.slick-arrow::before {
+  color: #323439;
+  content: "\003E";
+  font-size: 50px;
+}
+
+.home-page-content .start-your-journey #circle-two-mobile button.slick-prev.slick-arrow {
+  left: 5px;
+  top: 160px;
+  background-color: unset !important;
+}
+
+.home-page-content .start-your-journey #circle-two-mobile button.slick-prev.slick-arrow::before {
+  color: #323439;
+  content: "\003C";
+  font-size: 50px;
 }
 
 .home-page-content .start-your-journey a.journey_cta {
@@ -8790,6 +8747,46 @@ footer.footer .scroll-top i {
   100% {
     left: -250px;
   }
+}
+
+/* Circles on the First Block */
+#circle-home-1 .circle {
+  -ms-transform: rotate(-100deg);
+  transform: rotate(-100deg);
+}
+
+#circle-home-1 .circle:hover,
+#circle-home-1 img.circle-icon:hover ~ .circle {
+  cursor: auto;
+  -ms-transform: rotate(80deg);
+  transform: rotate(80deg);
+  transition: 0.3s linear;
+}
+
+#circle-home-2 .circle {
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+#circle-home-2 .circle:hover,
+#circle-home-2 img.circle-icon:hover ~ .circle {
+  cursor: auto;
+  -ms-transform: rotate(210deg);
+  transform: rotate(210deg);
+  transition: 0.3s linear;
+}
+
+#circle-home-3 .circle {
+  -ms-transform: rotate(140deg);
+  transform: rotate(140deg);
+}
+
+#circle-home-3 .circle:hover,
+#circle-home-3 img.circle-icon:hover ~ .circle {
+  cursor: auto;
+  -ms-transform: rotate(280deg);
+  transform: rotate(280deg);
+  transition: 0.3s linear;
 }
 
 .about-page-content .about-hero {

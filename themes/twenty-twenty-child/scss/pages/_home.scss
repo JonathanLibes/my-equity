@@ -204,17 +204,14 @@
 
   .start-your-journey {
     background-color: $light-blue;
-    padding: 50px 10px 80px 10px;
+    padding: 90px 10px 80px 10px;
     margin-bottom: 0;
-    .start-your-journey-block {
-      margin: 0 auto;
-      display: block;
+    .circle-container {
       position: relative;
-      text-align: center;
-      padding: 40px 0;
-
-      // Circles
-      .circle--135deg {
+      @include media("<=770px"){
+        padding-bottom: 40px;
+      }
+      .circle {
         @include circleStyles();
         transform: rotate(135deg);
         &:hover {
@@ -222,77 +219,19 @@
           @include circleTransition();
         }
       }
-
-      .circle--225deg {
-        @include circleStyles();
-        transform: rotate(225deg);
-        &:hover {
-          transform: rotate(315deg);
-          @include circleTransition();
-        }
-      }
-
-      .circle--45deg {
-        @include circleStyles();
-        transform: rotate(45deg);
-        &:hover {
-          transform: rotate(135deg);
-          @include circleTransition();
-        }
-      }
-
       .triangle {
         @include circleTriangle();
       }
-
-      .circle-blue {
-        background-color: $circle-blue;
+  
+      img.circle-icon {
+        @include circleIcon();
       }
-      .circle-green {
-        background-color: $circle-green;
-      }
-      .circle-purple {
-        background-color: $circle-purple;
-      }
-      .triangle-blue {
-        border-top-color: $triangle-blue;
-      }
-      .triangle-green {
-        border-top-color: $triangle-green;
-      }
-      .triangle-purple {
-        border-top-color: $triangle-purple;
-      }
-
-      img.journey-icon {
-        position: absolute;
-        max-width: 120px;
-        top: 50%;
-        left: 38%;
-        z-index: 99;
-        @include media(">=768px") {
-          max-width: 100px;
-          top: 57%;
-          left: 35%;
-        }
-        @include media(">1300px") {
-          max-width: 100px;
-          top: 58%;
-          left: 39%;
-        }
-      }
-      img.j-icon-1:hover ~ .circle--135deg {
-        transform: rotate(225deg);
-        @include circleTransition();
-      }
-      img.j-icon-2:hover ~ .circle--45deg {
-        transform: rotate(225deg);
-        @include circleTransition();
-      }
-      img.j-icon-3:hover ~ .circle--225deg {
-        transform: rotate(225deg);
-        @include circleTransition();
-      }
+    }
+    #circle-one-mobile {
+      @include sliderArrows();
+    }
+    #circle-two-mobile {
+      @include sliderArrows();
     }
     a.journey_cta {
       max-width: 350px;
@@ -481,5 +420,41 @@
   }
   100% {
     left: -250px;
+  }
+}
+
+
+/* Circles on the First Block */
+#circle-home-1 {
+  .circle {
+    transform: rotate(-100deg);
+  }
+  .circle:hover,
+  img.circle-icon:hover ~ .circle {
+    cursor: auto;
+    transform: rotate(80deg);
+    @include circleTransition();
+  }
+}
+#circle-home-2 {
+  .circle {
+    transform: rotate(30deg);
+  }
+  .circle:hover,
+  img.circle-icon:hover ~ .circle {
+    cursor: auto;
+    transform: rotate(210deg);
+    @include circleTransition();
+  }
+}
+#circle-home-3 {
+  .circle {
+    transform: rotate(140deg);
+  }
+  .circle:hover,
+  img.circle-icon:hover ~ .circle {
+    cursor: auto;
+    transform: rotate(280deg);
+    @include circleTransition();
   }
 }
