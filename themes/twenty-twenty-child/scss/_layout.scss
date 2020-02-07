@@ -116,6 +116,11 @@ footer.footer {
     color: $body-bg;
     margin: 0 auto;
     font-size: 18px;
+    @include media("<500px"){
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
   }
   ul {
     text-align: center;

@@ -20,14 +20,16 @@
 <div class="jumbotron team-members">
     <div class="container">
         <?php foreach ($team as $key => $member) : ?>
-            <div class="row d-flex team-member">
-                <div class="col-lg-2">
-                    <img src="<?= $member["thumbnail"]["sizes"]["medium"] ?>" alt="<?= $member["thumbnail"]["alt"] ?>" />
+            <div class="row d-flex team-member <?php if ($key == 3) {
+                                                    echo "team-member-no-border";
+                                                } ?>">
+                <div class="col-lg-3 col-12">
+                    <img class="team-member-img" src="<?= $member["thumbnail"]["sizes"]["medium"] ?>" alt="<?= $member["thumbnail"]["alt"] ?>" />
                 </div>
-                <div class="col-lg-10 justify-content-center align-self-center">
+                <div class="col-lg-9 col-12 justify-content-center align-self-center">
                     <h5 class="name"><?= $member["name"] ?></h5>
                     <p><?= $member["job_title"] ?></p>
-                    <p>
+                    <p class="text">
                         <?= $member["bio"] ?>
                     </p>
                 </div>

@@ -54,20 +54,6 @@ $linkedin = get_field("linkedin", "options");
 
 <?php wp_footer(); ?>
 
-<script>
-  jQuery(function() {
-    jQuery('.testimonial-block').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      arrows: false,
-      dots: true,
-    });
-
-  });
-</script>
-
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
     background-color: transparent;
-    height: 80vh;
+    height: 90vh;
     background-position-y: -20vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,6 +15,9 @@
     }
     .cloud-group {
       min-height: 200px;
+      @include media("<1300px", ">1000px") {
+        min-height: 120px;
+      }
     }
     .cloud-group-one {
       width: 100%;
@@ -25,6 +28,9 @@
       -o-animation: movingcloudGroupOne 5s linear;
       img {
         max-width: 380px;
+        @include media("<1300px", ">1000px") {
+          max-width: 200px !important;
+        }
       }
       img.cloud_one {
         position: absolute;
@@ -33,6 +39,10 @@
         position: absolute;
         left: 100px;
         top: 60px;
+        @include media("<1300px", ">1000px") {
+          left: 35px !important;
+          top: 25px !important;
+        }
       }
     }
     .cloud-group-two {
@@ -44,6 +54,9 @@
       -o-animation: movingcloudGroupTwo 5s linear;
       img {
         max-width: 350px;
+        @include media("<1300px", ">1000px") {
+          max-width: 180px !important;
+        }
       }
       img.cloud_one {
         position: absolute;
@@ -54,6 +67,10 @@
         right: 100px;
         top: 60px;
         max-width: 300px;
+        @include media("<1300px", ">1000px") {
+          right: 100px;
+          top: 20px;
+        }
       }
     }
     .hero-text-container {
@@ -65,6 +82,9 @@
         font-size: 36px;
         color: $dark;
         margin: 0 0 60px 0;
+        @include media(">1000px", "<1300px") {
+          font-size: 25px;
+        }
       }
     }
     .hero-house-container {
@@ -78,13 +98,23 @@
           top: -120px;
           left: 50px;
           float: left;
+          @include media(">1000px", "<1300px") {
+            max-width: 160px;
+            position: relative;
+            margin: 0 auto;
+            top: -90px;
+            left: 25px;
+          }
         }
         img.tree {
           float: right;
           max-width: 120px;
-          animation: shake 6s;
-          animation-iteration-count: infinite;
-          transition: 10s linear;
+          @include media(">1000px", "<1300px") {
+            max-width: 70px;
+          }
+          // animation: shake 6s;
+          // animation-iteration-count: infinite;
+          // transition: 10s linear;
         }
       }
       .house-group-two {
@@ -92,6 +122,10 @@
           max-width: 300px;
           position: relative;
           margin: 0 auto;
+          top: 80px;
+          @include media(">1000px", "<1300px") {
+            max-width: 180px;
+          }
         }
       }
       .house-group-three {
@@ -102,15 +136,27 @@
           float: right;
           top: -100px;
           right: 50px;
+          @include media(">1000px", "<1300px") {
+            max-width: 180px;
+            position: relative;
+            margin: 0 auto;
+            float: right;
+            top: -60px;
+            right: 30px;
+          }
         }
         img.tree {
           float: left;
           max-width: 100px;
           left: -50px;
+          @include media(">1000px", "<1300px") {
+            max-width: 70px;
+            left: -20px;
+          }
           position: absolute;
-          animation: shake 6s;
-          animation-iteration-count: infinite;
-          transition: 10s linear;
+          // animation: shake 6s;
+          // animation-iteration-count: infinite;
+          // transition: 10s linear;
         }
       }
     }
@@ -206,11 +252,38 @@
     background-color: $light-blue;
     padding: 90px 10px 80px 10px;
     margin-bottom: 0;
+    h4 {
+      margin: 0;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    p.label {
+      text-align: center;
+      padding-top: 40px;
+      margin: 0 auto;
+      max-width: 320px;
+    }
+
+    .circle-outlines {
+      padding-bottom: 30px;
+    }
+    .arrow-down {
+      @extend .d-hide;
+      max-width: 100px;
+      margin: 0 auto;
+      position: relative;
+      margin-top: 40px;
+      i {
+        position: absolute;
+        text-align: center;
+        font-size: 40px;
+        left: 0;
+        right: 0;
+      }
+    }
     .circle-container {
       position: relative;
-      @include media("<=770px"){
-        padding-bottom: 40px;
-      }
+
       .circle {
         @include circleStyles();
         transform: rotate(135deg);
@@ -222,9 +295,12 @@
       .triangle {
         @include circleTriangle();
       }
-  
+
       img.circle-icon {
         @include circleIcon();
+        @include media("<770px") {
+          max-width: 140px !important;
+        }
       }
     }
     #circle-one-mobile {
@@ -257,6 +333,30 @@
     padding: 50px 10px 80px 10px;
     margin-bottom: 0;
     color: $body-bg;
+    #why-invest-mobile {
+      @include sliderArrows();
+      .slick-arrow {
+        top: 300px !important;
+        &::before {
+          color: $body-bg !important;
+          font-size: 60px !important;
+        }
+      }
+    }
+    .arrow-down {
+      @extend .d-hide;
+      max-width: 100px;
+      margin: 0 auto;
+      position: relative;
+      margin-top: 40px;
+      i {
+        position: absolute;
+        text-align: center;
+        font-size: 40px;
+        left: 0;
+        right: 0;
+      }
+    }
     .why-invest-block {
       margin: 0 auto;
       display: block;
@@ -267,6 +367,9 @@
         display: block;
         margin: 0 auto;
         height: 300px;
+        @include media("<770px") {
+          height: 240px !important;
+        }
         width: auto;
         padding-top: 40px;
       }
@@ -293,10 +396,16 @@
   .testimonial-section {
     background-color: $body-bg;
     padding: 40px 40px 80px 40px;
+    @include media("<770px") {
+      padding: 20px 0;
+    }
     margin-bottom: 0;
     color: $dark;
     .testimonial-block {
-      padding: 60px;
+      padding: 50px;
+      @include media("<770px") {
+        padding: 20px;
+      }
       max-width: 1600px;
       width: 100%;
       position: relative;
@@ -305,10 +414,65 @@
       color: $black;
       img {
         max-width: 260px;
+        @include media("<1000px") {
+          margin: 0 auto;
+          max-width: 240px;
+          margin-bottom: 30px;
+        }
+        @include media("<500px"){
+          max-width: 160px;
+        }
       }
       .testimonial-text > p {
         font-size: 20px;
         text-align: center;
+        @include media("<770px") {
+          font-size: 18px;
+          max-width: 450px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        @include media("<500px") {
+          font-size: 16px;
+        }
+      }
+
+      .testimonial-text {
+        img {
+          @include media("<500px") {
+            display: none;
+          }
+        }
+        img.quote-one {
+          position: relative;
+          max-width: 100px;
+          @include media("<770px") {
+            float: left;
+            top: -80px;
+            max-width: 80px;
+          }
+        }
+        img.quote-two {
+          position: relative;
+          float: right;
+          max-width: 100px;
+          @include media("<770px") {
+            max-width: 80px;
+          }
+        }
+      }
+
+      // Slider
+      @include sliderArrows();
+      .slick-arrow {
+        top: 300px !important;
+        &::before {
+          color: $dark !important;
+          font-size: 60px !important;
+        }
+        @include media(">900px") {
+          display: none !important;
+        }
       }
     }
   }
@@ -360,69 +524,68 @@
 
 #cloud1 {
   top: 40px;
-  left: 400px;
-  -webkit-animation: movingcloud1 25s linear infinite;
-  -moz-animation: movingcloud1 25s linear infinite;
-  -o-animation: movingcloud1 25s linear infinite;
+  right: 50px;
+  -webkit-animation: movingcloud1 2s linear;
+  -moz-animation: movingcloud1 2s linear;
+  -o-animation: movingcloud1 2s linear;
 }
 #cloud2 {
   top: 200px;
-  left: 400px;
-  -webkit-animation: movingcloud2 25s linear infinite;
-  -moz-animation: movingcloud2 25s linear infinite;
-  -o-animation: movingcloud2 25s linear infinite;
+  left: 50px;
+  -webkit-animation: movingcloud2 2s linear;
+  -moz-animation: movingcloud2 2s linear;
+  -o-animation: movingcloud2 2s linear;
 }
 
 @keyframes movingcloud1 {
   0% {
-    left: -250px;
+    right: 0px;
   }
   100% {
-    left: 102%;
+    right: 50px;
   }
 }
 @-webkit-keyframes movingcloud1 {
   0% {
-    left: -250px;
+    right: 0px;
   }
   100% {
-    left: 102%;
+    right: 50px;
   }
 }
 @-moz-keyframes movingcloud1 {
   0% {
-    left: -250px;
+    right: 0px;
   }
   100% {
-    left: 102%;
+    right: 50px;
   }
 }
 
 @keyframes movingcloud2 {
   0% {
-    left: 102%;
+    left: 0px;
   }
   100% {
-    left: -250px;
+    left: 50px;
   }
 }
 @-webkit-keyframes movingcloud2 {
   0% {
-    left: 102%;
+    left: 0px;
   }
   100% {
-    left: -250px;
+    left: 50px;
   }
 }
 @-moz-keyframes movingcloud2 {
   0% {
-    left: 102%;
+    left: 0px;
   }
   100% {
-    left: -250px;
+    left: 50px;
   }
 }
-
 
 /* Circles on the First Block */
 #circle-home-1 {

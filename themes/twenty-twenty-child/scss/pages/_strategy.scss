@@ -245,6 +245,17 @@
     @include circleTransition();
   }
 }
+#circle-one-4 {
+  .circle {
+    transform: rotate(45deg);
+  }
+  .circle:hover,
+  img.circle-icon:hover ~ .circle {
+    cursor: auto;
+    transform: rotate(225deg);
+    @include circleTransition();
+  }
+}
 
 /* Circles on the Second Block */
 #circle-two-1 {

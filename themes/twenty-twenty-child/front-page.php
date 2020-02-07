@@ -123,11 +123,13 @@ $hero = get_field('home_hero_banner');
             <?php $journey_sections = get_field("journey_sections"); ?>
             <?php $journey_cta = get_field("journey_call_to_action"); ?>
 
-            <div class="row m-hide">
+            <div class="row circle-outlines m-hide">
 
                 <?php foreach ($journey_sections as $key => $circle) : ?>
 
                     <div class="col-lg-4 col-12">
+
+                        <h4><?= $circle["title"] ?></h4>
 
                         <div class="circle-container" id="circle-home-<?= $key + 1; ?>">
                             <img class="circle-icon" src="<?= $circle["icon"]["url"] ?>" alt="<?= $circle["icon"]["alt"] ?>" />
@@ -135,21 +137,23 @@ $hero = get_field('home_hero_banner');
                             <div class="circle" style="background-color: <?= $circle["circle_colour"] ?>">
                                 <div class="triangle" style="border-top-color: <?= $circle["triangle_colour"] ?>"></div>
                             </div>
-
-
                         </div>
+
+                        <p class="label"><?= $circle["label"] ?></p>
                     </div>
 
                 <?php endforeach; ?>
 
             </div>
-            <div class="row d-hide" id="circle-one-mobile">
+            <div class="row circle-outlines d-hide" id="circle-one-mobile">
 
 
                 <?php foreach ($journey_sections as $key => $circle) : ?>
 
 
                     <div class="col-lg-4">
+
+                        <h4><?= $circle["title"] ?></h4>
 
                         <div class=" circle-container" id="circle-home-<?= $key + 1; ?>">
                             <img class="circle-icon" src="<?= $circle["icon"]["url"] ?>" alt="<?= $circle["icon"]["alt"] ?>" />
@@ -159,6 +163,9 @@ $hero = get_field('home_hero_banner');
                             </div>
                         </div>
 
+                        <p class="label"><?= $circle["label"] ?></p>
+
+
                     </div>
 
                 <?php endforeach; ?>
@@ -167,6 +174,9 @@ $hero = get_field('home_hero_banner');
             <div class="row">
                 <div class="col-lg-12">
                     <a class="journey_cta" href="<?= $journey_cta["link"] ?>"><?= $journey_cta["text"] ?></a>
+                    <div class="arrow-down">
+                        <i class="fa fa-angle-down"></i>
+                    </div>
                 </div>
             </div>
 
@@ -177,7 +187,8 @@ $hero = get_field('home_hero_banner');
 
     <div class="jumbotron why-invest">
         <div class="container-fluid">
-            <div class="row">
+            <!-- Desktop -->
+            <div class="row m-hide">
 
                 <?php $why_invest = get_field("why_invest_sections"); ?>
 
@@ -193,6 +204,28 @@ $hero = get_field('home_hero_banner');
                     </div>
                 <?php endforeach; ?>
 
+            </div>
+            <!-- Mobile -->
+            <div class="d-hide" id="why-invest-mobile">
+                <?php foreach ($why_invest as $key => $section) : ?>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4 class="text-center"><?= get_field("why_section_title") ?></h4>
+                        </div>
+                        <div class="col-lg-4 why-invest-block">
+                            <h5><?= $section["title"] ?></h5>
+                            <img id="why-invest-icon-<?= $key + 1 ?>" class="why-invest-icon" src="<?= $section["thumbnail"]["sizes"]["medium"] ?>" alt="<?= $section["thumbnail"]["alt"] ?>">
+                            <a class="why-invest-cta" href="<?= $section["cta"]["link"] ?>"><?= $section["cta"]["text"] ?></a>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="arrow-down">
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -217,11 +250,13 @@ $hero = get_field('home_hero_banner');
 
                     <div>
                         <div class="row d-flex">
-                            <div class="col-lg-3 justify-content-center align-self-center">
-                                <img src="<?= $testimonial["thumbnail"]["sizes"]["medium"] ?>" alt="<?= $testimonial["thumbnail"]["alt"] ?>">
+                            <div class="col-lg-3 col-md-12 justify-content-center align-self-center">
+                                <img class="testimonial-img" src="<?= $testimonial["thumbnail"]["sizes"]["medium"] ?>" alt="<?= $testimonial["thumbnail"]["alt"] ?>">
                             </div>
-                            <div class="col-lg-9 justify-content-center align-self-center testimonial-text">
+                            <div class="col-lg-9 col-md-12 justify-content-center align-self-center testimonial-text">
+                                <img class="quote-one" src="<?= get_stylesheet_directory_uri() ?>/images/quote-one.png" />
                                 <?= $testimonial["content"] ?>
+                                <img class="quote-two" src="<?= get_stylesheet_directory_uri() ?>/images/quote-two.png" />
                             </div>
                         </div>
                     </div>

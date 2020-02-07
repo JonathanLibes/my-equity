@@ -64,7 +64,7 @@ $investment_strategy_mobile = array_merge($investment_strategy["circles_row_one"
                             <div class="triangle" style="border-top-color: <?= $circle["triangle_color"] ?>"></div>
                         </div>
                     </div>
-                    <p class="label"><?= $circleLabel["label"] ?></p>
+                    <p class="label"><?= $circle["label"] ?></p>
 
                 </div>
 

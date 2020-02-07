@@ -13,6 +13,16 @@ jQuery(function () {
 
     /** ================= Strategy Page ==================*/
 
+    /** Testimonials */
+    jQuery('.testimonial-block').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: true,
+        dots: true,
+    });
+
     /** Circles One */
     jQuery('#circle-one-mobile').slick({
         infinite: true,
@@ -41,5 +51,24 @@ jQuery(function () {
         arrows: true,
         dots: true,
     });
-});
 
+    /** Family Rentals Cards */
+    jQuery('#why-invest-mobile').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: true,
+        dots: false,
+    });
+
+    /** Team Slider */
+    jQuery('.team-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: true,
+        dots: true,
+    });
+});

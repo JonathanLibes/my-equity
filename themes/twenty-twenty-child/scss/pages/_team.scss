@@ -5,15 +5,27 @@
         margin-top: 0;
         padding-top: 150px;
     }
+    @include media("<500px"){
+        min-height: 400px;
+    }
 }
 
 .team-members{
     margin-bottom: 0rem;
+    background-color: $body-bg;
 
     .team-member{
-        padding-bottom: 70px;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        border-bottom: 1px solid $dark;
         h5.name{
             margin: 0;
+        }
+        img.team-member-img{
+            margin: 0 auto;
+            @include media("<770px"){
+                margin-bottom: 30px;
+            }
         }
         img.partner-logo{
             max-width: 200px;
@@ -21,9 +33,16 @@
             position: relative;
             margin: 0 auto;
         }
+        p.text{
+            @include media("<767px"){
+                font-size: 16px;
+            }
+        }
+    }
+    .team-member-no-border{
+        border-bottom: none;
     }
     .partner{
-       
         padding-top: 40px !important;
         padding-bottom: 40px !important;
     }
