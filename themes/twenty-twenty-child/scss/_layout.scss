@@ -116,7 +116,7 @@ footer.footer {
     color: $body-bg;
     margin: 0 auto;
     font-size: 18px;
-    @include media("<500px"){
+    @include media("<500px") {
       font-size: 16px;
       text-align: center;
       margin-bottom: 20px;
@@ -130,11 +130,18 @@ footer.footer {
       list-style: none;
       a {
         text-decoration: none !important;
-        margin: 2px !important;
       }
+      // i {
+      //   font-size: 35px !important;
+      //   color: $body-bg !important;
+
+      // }
       i {
-        font-size: 35px !important;
-        color: $body-bg !important;
+        font-size: 26px;
+        color: $dark;
+        background-color: $body-bg;
+        padding: 5px 10px;
+        border-radius: 4px;
       }
     }
   }
@@ -142,7 +149,7 @@ footer.footer {
     position: absolute;
     right: 50px;
     bottom: 20px;
-    @include media("<500px"){
+    @include media("<500px") {
       right: 20px;
       bottom: 30px;
     }

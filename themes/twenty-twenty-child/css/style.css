@@ -8243,12 +8243,14 @@ footer.footer ul li {
 
 footer.footer ul li a {
   text-decoration: none !important;
-  margin: 2px !important;
 }
 
 footer.footer ul li i {
-  font-size: 35px !important;
-  color: #ffffff !important;
+  font-size: 26px;
+  color: #323439;
+  background-color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
 footer.footer .scroll-top {
@@ -10056,7 +10058,8 @@ footer.footer .scroll-top i {
 
 .contact-page-form input[type="text"],
 .contact-page-form input[type="tel"],
-.contact-page-form input[type="email"], .contact-page-form textarea {
+.contact-page-form input[type="email"],
+.contact-page-form textarea {
   border: 1px solid grey;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -10125,6 +10128,44 @@ footer.footer .scroll-top i {
   max-width: unset !important;
   width: 100% !important;
   background-color: #5197CB;
+}
+
+.social-promotion {
+  margin-bottom: 50px;
+}
+
+.social-promotion a {
+  display: inline-block;
+  width: 30%;
+  margin: 1%;
+  padding: 10px;
+  background-color: #5197CB;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media (max-width: 499px) {
+  .social-promotion a {
+    display: block;
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+.social-promotion a i {
+  color: #5197CB;
+  background-color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.social-promotion a:hover {
+  text-decoration: none;
 }
 
 .strategy-hero {

@@ -1,16 +1,16 @@
-.contact-page-hero{
-    background-color: $body-bg;
-    min-height: 200px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin: 0 !important;
+.contact-page-hero {
+  background-color: $body-bg;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 !important;
 
-    img.bird-image{
-        max-width: 150px;
-        position: absolute;
-        right: 200px;
-        top: 280px;
-    }
+  img.bird-image {
+    max-width: 150px;
+    position: absolute;
+    right: 200px;
+    top: 280px;
+  }
 }
 
 .contact-page-form {
@@ -29,12 +29,13 @@
 
   input[type="text"],
   input[type="tel"],
-  input[type="email"], textarea {
+  input[type="email"],
+  textarea {
     border: 1px solid grey;
     border-radius: 10px;
     margin-bottom: 30px;
   }
-  input[type="submit"]{
+  input[type="submit"] {
     background-color: $purple;
     text-transform: capitalize;
     position: relative;
@@ -44,38 +45,71 @@
     font-size: 2rem;
     font-weight: 300;
     padding: 15px;
-    &:hover{
-        text-decoration: none;
+    &:hover {
+      text-decoration: none;
     }
   }
-  a.register-seminar{
-      @include buttonCTA();
-      margin-top: 10px !important;
-      margin-bottom: 50px !important;
+  a.register-seminar {
+    @include buttonCTA();
+    margin-top: 10px !important;
+    margin-bottom: 50px !important;
   }
 
-  .contact-cta{
+  .contact-cta {
     max-width: 800px;
     position: relative;
     margin: 0 auto;
-    .columns{
+    .columns {
       padding-left: 5px !important;
       padding-right: 5px !important;
-      @include media("<770px"){
+      @include media("<770px") {
         padding: 10px;
       }
-      a.other-cta{
+      a.other-cta {
         width: 100% !important;
         margin: 0 auto !important;
         font-size: 20px;
         letter-spacing: unset !important;
         padding: 20px;
       }
-      a.large-button{
+      a.large-button {
         max-width: unset !important;
         width: 100% !important;
         background-color: $blue;
       }
+    }
+  }
+}
+
+.social-promotion {
+  margin-bottom: 50px;
+  a {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    padding: 10px;
+    background-color: $blue;
+    color: $body-bg;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    @include media("<500px"){
+      display: block;
+      max-width: 240px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+    i{
+      color: $blue;
+      background-color: $body-bg;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+    &:hover{
+      text-decoration: none;
     }
   }
 }
