@@ -48,16 +48,16 @@
         h3 {
           color: $purple-thick;
           margin: 0 !important;
-          margin-bottom: 40px !important;
-          margin-top: 40px !important;
+          margin-bottom: 20px !important;
+          margin-top: 20px !important;
           font-size: 35px;
         }
-        padding-top: 30px;
-        .row{
-          margin-bottom: 30px;
+        padding-top: 20px;
+        .row {
+          margin-bottom: 20px;
         }
         .column {
-          margin-top: 20px;
+          padding: 30px;
           h5 {
             text-align: center;
             color: $dark;
@@ -71,15 +71,107 @@
           }
           p {
             margin: 0 auto;
-            margin-top: 30px;
+            margin-top: 20px;
             text-align: center;
             max-width: 250px;
-            line-height: 1.2;          }
+            line-height: 1.2;
+            em{
+              font-weight: 600;
+              font-style: unset;
+            }
+          }
         }
         .cta {
           a {
             @include buttonCTA();
           }
+        }
+      }
+    }
+  }
+}
+
+.menu-investor {
+  background-color: $purple;
+}
+
+.services-mobile-inner {
+  a.menu {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+    @extend .d-flex;
+    height: 50px;
+    h5 {
+      @extend .justify-content-center;
+      @extend .align-self-center;
+      color: $body-bg;
+      margin: 0 auto;
+    }
+  }
+  .content-one {
+    h3 {
+      color: $purple;
+    }
+    .cta {
+      max-width: 300px;
+      margin: 0 auto;
+      a {
+        @include buttonCTA();
+        background-color: $blue;
+        margin-bottom: 30px;
+      }
+    }
+    .column {
+      border-bottom: 1px solid $dark;
+      &:nth-child(4) {
+        border: 0;
+      }
+      h5,
+      p {
+        text-align: center;
+      }
+      p {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      img {
+        margin: 0 auto;
+        @include media("<500px") {
+          max-width: 220px;
+        }
+      }
+    }
+  }
+  .content-two {
+    h3 {
+      color: $purple;
+    }
+    .cta {
+      max-width: 300px;
+      margin: 0 auto;
+      a {
+        @include buttonCTA();
+        background-color: $blue;
+        margin-bottom: 30px;
+      }
+    }
+    .column {
+      padding: 20px;
+      border-bottom: 1px solid $dark;
+      h5,
+      p {
+        text-align: center;
+      }
+      p {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      img {
+        margin: 0 auto;
+        @include media("<500px") {
+          max-width: 160px;
         }
       }
     }

@@ -2,7 +2,7 @@
   &__seminars {
     margin-bottom: 0 !important;
 
-    .services-body{
+    .services-body {
       padding-bottom: 40px;
     }
 
@@ -21,14 +21,21 @@
         margin-bottom: 30px !important;
       }
 
-      a.register{
+      .seminar-subtitle {
+        color: $menu-active-blue !important;
+        margin-bottom: 30px !important;
+        font-weight: 600;
+      }
+
+      a.register {
         @include buttonCTA();
         max-width: 250px;
+        background-color: $blue;
       }
 
       .unit-title {
         color: $black;
-        margin: 10px 0 0 0;
+        margin: 20px 0 40px 0;
         span {
           color: $menu-active-blue !important;
           font-size: 2rem;
@@ -42,8 +49,8 @@
         border-bottom: 1px solid $grey !important;
       }
 
-      .units{
-        li:last-child{
+      .units {
+        li:last-child {
           border-bottom: none !important;
         }
       }
@@ -63,6 +70,26 @@
       .slick-prev {
         background-color: transparent;
       }
+    }
+  }
+}
+
+.seminars-mobile-inner {
+  .menu-seminar {
+    background-color: $blue;
+  }
+  a.menu {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+    @extend .d-flex;
+    height: 50px;
+    h5 {
+      @extend .justify-content-center;
+      @extend .align-self-center;
+      color: $body-bg;
+      margin: 0 auto;
     }
   }
 }

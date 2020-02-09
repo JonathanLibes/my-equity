@@ -323,3 +323,12 @@
     @include circleTransition();
   }
 }
+
+div#circle-three-3 > img.circle-icon {
+  max-width: unset !important;
+  max-height: 150px !important;
+}
+
+div#circle-two-3 > img.circle-icon {
+  max-width: 140px !important;
+}

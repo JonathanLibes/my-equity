@@ -9,10 +9,12 @@
 ?>
 <?php get_header(); // get header assets 
 ?>
-<div class="jumbotron hero hero-team" style="background-image: url(<?= get_field("background_image")["sizes"]["large"] ?>)">
+<div class="jumbotron hero hero-team m-hide" style="background-image: url(<?= get_field("background_image")["sizes"]["large"] ?>)">
     <div class="container">
         <h2 class="page-title">OUR TEAM</h2>
     </div>
+</div>
+<div class="jumbotron hero hero-team d-hide" style="background-image: url(<?= get_field("background_image_mobile")["sizes"]["large"] ?>)">
 </div>
 
 <?php $team = get_field("team_members"); ?>

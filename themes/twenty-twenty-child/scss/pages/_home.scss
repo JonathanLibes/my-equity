@@ -5,10 +5,14 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
     background-color: transparent;
-    height: 90vh;
+    height: 100vh;
     background-position-y: -20vh;
     background-size: cover;
     background-repeat: no-repeat;
+    @include media("<1000px") {
+      background: none;
+      background-color: #eaf2fa;
+    }
     .column {
       margin: 0 !important;
       padding: 0 !important;
@@ -23,13 +27,18 @@
       width: 100%;
       position: absolute;
       left: 20%;
-      -webkit-animation: movingcloudGroupOne 5s linear;
-      -moz-animation: movingcloudGroupOne 5s linear;
-      -o-animation: movingcloudGroupOne 5s linear;
+      @include media(">1000px") {
+        -webkit-animation: movingcloudGroupOne 5s linear;
+        -moz-animation: movingcloudGroupOne 5s linear;
+        -o-animation: movingcloudGroupOne 5s linear;
+      }
       img {
         max-width: 380px;
         @include media("<1300px", ">1000px") {
           max-width: 200px !important;
+        }
+        @include media("<770px") {
+          max-width: 100px;
         }
       }
       img.cloud_one {
@@ -43,19 +52,27 @@
           left: 35px !important;
           top: 25px !important;
         }
+        @include media("<770px") {
+          max-width: 100px;
+        }
       }
     }
     .cloud-group-two {
       width: 100%;
       position: absolute;
       right: 10%;
-      -webkit-animation: movingcloudGroupTwo 5s linear;
-      -moz-animation: movingcloudGroupTwo 5s linear;
-      -o-animation: movingcloudGroupTwo 5s linear;
+      @include media(">1000px") {
+        -webkit-animation: movingcloudGroupTwo 5s linear;
+        -moz-animation: movingcloudGroupTwo 5s linear;
+        -o-animation: movingcloudGroupTwo 5s linear;
+      }
       img {
         max-width: 350px;
         @include media("<1300px", ">1000px") {
           max-width: 180px !important;
+        }
+        @include media("<770px") {
+          max-width: 100px;
         }
       }
       img.cloud_one {
@@ -70,6 +87,9 @@
         @include media("<1300px", ">1000px") {
           right: 100px;
           top: 20px;
+        }
+        @include media("<770px") {
+          max-width: 100px;
         }
       }
     }
@@ -164,7 +184,7 @@
 
   .scroll-animation {
     position: relative;
-    overflow: visible;
+    overflow: hidden;
   }
 
   img.our-bird {
@@ -243,6 +263,51 @@
     }
     .container-fluid {
       position: relative;
+    }
+  }
+
+  .home-mobile-blocks {
+    .img-container {
+      min-height: 75vh;
+      // background-size: cover;
+      // background-repeat: no-repeat;
+    }
+    .text-container {
+      min-height: 160px;
+
+      color: $body-bg;
+      padding: 15px;
+      text-align: center;
+      h3 {
+        margin: 10px;
+      }
+      p {
+        font-size: 16px;
+      }
+      i {
+        font-size: 40px;
+        position: relative;
+        top: -20px;
+      }
+    }
+  }
+
+  // Knowledge
+  .knowledge-block-mobile {
+    .text-container {
+      background-color: $purple;
+    }
+  }
+  // Asset
+  .asset-block-mobile {
+    .text-container {
+      background-color: $circle-green;
+    }
+  }
+  // Data
+  .data-block-mobile {
+    .text-container {
+      background-color: $blue;
     }
   }
 
@@ -419,7 +484,7 @@
           max-width: 240px;
           margin-bottom: 30px;
         }
-        @include media("<500px"){
+        @include media("<500px") {
           max-width: 160px;
         }
       }

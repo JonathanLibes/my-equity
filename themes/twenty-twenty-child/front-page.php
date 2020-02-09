@@ -14,7 +14,7 @@ $hero = get_field('home_hero_banner');
 
 <div class="home-page-content">
 
-    <div class="jumbotron home-hero-banner" style="background-image: url(<?= $hero["background_image"] ?>)">
+    <div class="jumbotron home-hero-banner m-hide" style="background-image: url(<?= $hero["background_image"] ?>)">
         <div class="container-fluid">
 
             <div class="row cloud-group">
@@ -53,7 +53,7 @@ $hero = get_field('home_hero_banner');
         </div>
     </div>
 
-    <div class="scroll-animation">
+    <div class="scroll-animation m-hide">
 
         <div id="cloud1" class="cloud" style="background-image: url(<?= get_field("da_cloud_one")["sizes"]["medium"] ?>)"></div>
         <div id="cloud2" class="cloud" style="background-image: url(<?= get_field("da_cloud_two")["sizes"]["medium"] ?>)"></div>
@@ -80,25 +80,11 @@ $hero = get_field('home_hero_banner');
 
         <!-- Asset Management Section -->
 
-        <div class="jumbotron full-screen asset-management">
-            <div class="container-fluid d-flex h-100">
-                <div class="row justify-content-center align-self-center asset-management-body">
-                    <div class="col-lg-1"></div>
-                    <div class="col-lg-7 asset-management-body__img">
-                        <img id="bg-asset-management" src="<?= get_field("am_background_image")["sizes"]["large"] ?>" alt="Asset Management">
-                    </div>
-                    <div class="col-lg-3 d-flex">
-                        <div class="justify-content-center align-self-center">
-                            <?= get_field('am_content') ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php get_template_part("template-parts/asset-management"); ?>
 
         <!-- Asset Management Section -->
 
-        <div class="jumbotron full-screen knowledge">
+        <div class="jumbotron full-screen knowledge m-hide">
             <div class="container-fluid d-flex h-100">
                 <div class="row justify-content-center align-self-center knowledge-body">
                     <div class="col-lg-3 d-flex">
@@ -113,8 +99,47 @@ $hero = get_field('home_hero_banner');
                 </div>
             </div>
         </div>
-
     </div>
+
+    <!-- ################################################################### -->
+    <!-- #################### Mobile Section Starts Here ################### -->
+    <!-- ################################################################### -->
+
+    <div class="home-mobile-blocks data-block-mobile d-hide">
+        <div class="img-container">
+            <img src="<?= get_field("da_background_image_mobile")["sizes"]["large"] ?>" alt="Image">
+        </div>
+        <div class="text-container">
+        <?= get_field('da_content') ?>
+            <i class="fa fa-angle-down"></i>
+        </div>
+    </div>
+
+    <div class="home-mobile-blocks asset-block-mobile d-hide">
+        <div class="img-container">
+            <img src="<?= get_field("am_background_image_mobile")["sizes"]["large"] ?>" alt="Image">
+        </div>
+        <div class="text-container">
+        <?= get_field('am_content') ?>
+            <i class="fa fa-angle-down"></i>
+        </div>
+    </div>
+
+    <div class="home-mobile-blocks knowledge-block-mobile d-hide">
+        <div class="img-container">
+        <img src="<?= get_field("k_background_image_mobile")["sizes"]["large"] ?>" alt="Image">
+        </div>
+        <div class="text-container">
+            <?= get_field('k_content') ?>
+            <i class="fa fa-angle-down"></i>
+        </div>
+    </div>
+
+
+    <!-- ################################################################### -->
+    <!-- #################### Mobile Section Ends Here ################### -->
+    <!-- ################################################################### -->
+
 
     <!-- Start Your Journey Section -->
 

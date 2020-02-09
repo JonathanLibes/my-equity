@@ -23,7 +23,9 @@ $linkedin = get_field("linkedin", "options");
       <div class="col-lg-3 col-md-12 col-sm-12 col-12 d-flex">
         <p class="copyright justify-content-center align-self-center">&copy;&nbsp;All right reserved | My Equity</p>
       </div>
-      <div class="col-lg-6 col-12 justify-content-center align-self-center"></div>
+      <div class="col-lg-6 col-12 justify-content-center align-self-center">
+
+      </div>
       <div class="col-lg-3 col-md-12 col-sm-12 col-12 justify-content-center align-self-center">
         <ul>
           <li>

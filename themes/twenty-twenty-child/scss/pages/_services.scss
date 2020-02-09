@@ -13,15 +13,16 @@
       background-color: $dark;
       color: $body-bg;
       cursor: pointer;
-      &:hover{
-          background-color: $grey;
-          color: $body-bg;
+      &:hover {
+        opacity: 0.5;
+        color: $body-bg;
       }
       p.menu-text {
         transform: rotate(-90deg);
         margin: 0;
         position: absolute;
-        font-size: 18px;
+        font-size: 16px;
+        font-weight: bold;
       }
     }
     .seminar-active {
@@ -34,12 +35,40 @@
       background-color: $menu-active-green;
     }
   }
-  .sidenav{
+  .sidenav {
     background-color: $body-bg;
   }
   .service-body {
     background-color: $body-bg;
     min-height: 100vh !important;
     height: 100% !important;
+  }
+}
+
+.services {
+  .item {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+    position: relative;
+    display: block;
+    height: 33.33333%;
+    @extend .d-flex;
+    h3 {
+      @extend .justify-content-center;
+      @extend .align-self-center;
+      color: $body-bg;
+      margin: 0 auto;
+    }
+  }
+  .investors {
+    background-color: $purple;
+  }
+  .builders {
+    background-color: $circle-green;
+  }
+  .seminars {
+    background-color: $blue;
   }
 }

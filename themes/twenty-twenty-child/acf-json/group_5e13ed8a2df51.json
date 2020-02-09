@@ -43,6 +43,30 @@
             "mime_types": ""
         },
         {
+            "key": "field_5e3fff2ecfc17",
+            "label": "Background Image Mobile",
+            "name": "da_background_image_mobile",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_5e13edc2423cc",
             "label": "Content",
             "name": "da_content",
@@ -150,6 +174,30 @@
             "mime_types": ""
         },
         {
+            "key": "field_5e3ffd3db7198",
+            "label": "Background Image Mobile",
+            "name": "am_background_image_mobile",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_5e181d6597e80",
             "label": "Content",
             "name": "am_content",
@@ -212,6 +260,30 @@
             "key": "field_5e181e4bb1230",
             "label": "Background Image",
             "name": "k_background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e3ffd2823f4e",
+            "label": "Background Image Mobile",
+            "name": "k_background_image_mobile",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -1075,5 +1147,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1581037072
+    "modified": 1581252407
 }

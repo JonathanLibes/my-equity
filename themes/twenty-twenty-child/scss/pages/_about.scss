@@ -72,9 +72,12 @@
     }
 
     .circle-container {
-      padding-top: 0 !important;
-      @include media("<770px") {
-        margin-top: 50px;
+      // padding-top: 0 !important;
+      // @include media("<770px") {
+      //   margin-top: 50px;
+      // }
+      img.circle-icon{
+        max-width: 115px;
       }
     }
 

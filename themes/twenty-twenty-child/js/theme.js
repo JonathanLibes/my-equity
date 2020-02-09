@@ -71,4 +71,45 @@ jQuery(function () {
         arrows: true,
         dots: true,
     });
+
+    /** Investor -mobile */
+    jQuery('.investor-mobile-carousel').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: true,
+        dots: true,
+    });
+
+    // Builder mobile
+    jQuery('#builder-carousel-mobile').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: true,
+        dots: true,
+    });
+
+    // Seminars
+
+    jQuery('.seminar-carousel').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        dots: true,
+    });
+
+
+    /** Gridify */
+
+    const gridify = new Gridify({
+        containerSelector: '.blog-posts',
+        itemSelector: '.blog-post',
+        resizable: true,
+    });
+
 });
