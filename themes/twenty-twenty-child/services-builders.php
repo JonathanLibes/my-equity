@@ -30,17 +30,20 @@ $builder_slider = get_field("builder_slider");
             <div class="col-lg-11 full-screen services-body">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 body-text">
                             <h3 class="builder-title text-center"><?= $page_title ?></h3>
                             <?= $page_content ?>
                         </div>
                     </div>
                 </div>
                 <div class="builder-carousel">
-                    <?php foreach($builder_slider as $key => $builder): ?>
-                        <div class="builder-property">
+                    <?php foreach ($builder_slider as $key => $builder) : ?>
+                        <a class="builder-property" href="#">
                             <img src="<?= $builder["image"]["sizes"]["medium"] ?>" alt="<?= $builder["image"]["alt"] ?>">
-                        </div>
+                            <div class="text">
+                                <h5>Virtual Tours<br/>Scanned Property</h5>
+                            </div>
+                        </a>
                     <?php endforeach; ?>
                 </div>
             </div>
@@ -48,17 +51,5 @@ $builder_slider = get_field("builder_slider");
     </div>
 </div>
 
-<script>
-    // jQuery(function() {
-    //     jQuery('.builder-carousel').slick({
-    //         infinite: true,
-    //         slidesToShow: 3,
-    //         slidesToScroll: 1,
-    //         autoplay: true,
-    //         arrows: false,
-    //         dots: true,
-    //     });
-    // });
-</script>
 <?php get_footer(); // get footer assets 
 ?>
