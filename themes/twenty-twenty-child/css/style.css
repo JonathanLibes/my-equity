@@ -8174,7 +8174,6 @@ header.site-header .navbar-toggler {
 header.site-header div#navbarNavDropdown {
   margin-left: 40px;
   letter-spacing: 1px;
-  margin: 0 auto;
 }
 
 header.site-header img.site-logo {
@@ -8201,13 +8200,25 @@ header.site-header .site-main-nav ul li {
 
 header.site-header .site-main-nav ul li a {
   color: #33363a !important;
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
+  font-size: 16px;
 }
 
-header.site-header .site-main-nav .nav-login {
-  position: absolute;
-  right: 80px;
+.login-menus ul {
+  margin: 0;
+  display: block;
+}
+
+.login-menus ul li {
+  display: inline;
+}
+
+.login-menus ul li a {
+  color: #33363a !important;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 footer.footer {
@@ -9032,6 +9043,24 @@ footer.footer .scroll-top i {
   .home-page-content .testimonial-section .testimonial-block .slick-arrow {
     display: none !important;
   }
+}
+
+.upcoming-events {
+  margin: 0;
+  background-color: #eaf2fa;
+}
+
+.upcoming-events h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #323439;
+}
+
+.upcoming-events h6 {
+  text-align: center;
+  margin-top: 10px;
+  text-transform: none;
+  color: #323439;
 }
 
 .slick-dots {
@@ -10713,6 +10742,10 @@ div#circle-two-3 > img.circle-icon {
 img.advertisements {
   width: 90%;
   margin-top: 30px;
+}
+
+a:hover path {
+  fill: #000000;
 }
 
 @media screen and (max-width: 1000px) {

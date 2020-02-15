@@ -543,6 +543,22 @@
   }
 }
 
+.upcoming-events{
+  margin: 0;
+  background-color: #eaf2fa;
+  h4{
+    text-align: center;
+    margin-bottom: 20px;
+    color: $dark;
+  }
+  h6{
+    text-align: center;
+    margin-top: 10px;
+    text-transform: none;
+    color: $dark;
+  }
+}
+
 // Styling the default Slick dots
 
 .slick-dots {

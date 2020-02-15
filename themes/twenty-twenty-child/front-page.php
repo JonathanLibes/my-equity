@@ -110,7 +110,7 @@ $hero = get_field('home_hero_banner');
             <img src="<?= get_field("da_background_image_mobile")["sizes"]["large"] ?>" alt="Image">
         </div>
         <div class="text-container">
-        <?= get_field('da_content') ?>
+            <?= get_field('da_content') ?>
             <i class="fa fa-angle-down"></i>
         </div>
     </div>
@@ -120,14 +120,14 @@ $hero = get_field('home_hero_banner');
             <img src="<?= get_field("am_background_image_mobile")["sizes"]["large"] ?>" alt="Image">
         </div>
         <div class="text-container">
-        <?= get_field('am_content') ?>
+            <?= get_field('am_content') ?>
             <i class="fa fa-angle-down"></i>
         </div>
     </div>
 
     <div class="home-mobile-blocks knowledge-block-mobile d-hide">
         <div class="img-container">
-        <img src="<?= get_field("k_background_image_mobile")["sizes"]["large"] ?>" alt="Image">
+            <img src="<?= get_field("k_background_image_mobile")["sizes"]["large"] ?>" alt="Image">
         </div>
         <div class="text-container">
             <?= get_field('k_content') ?>
@@ -292,6 +292,20 @@ $hero = get_field('home_hero_banner');
 
         </div>
     </div>
+
+    <!-- Upcoming events -->
+
+    <div class="jumbotron upcoming-events">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Upcoming Events</h4>
+                    <h6>Choose a date</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 </div>

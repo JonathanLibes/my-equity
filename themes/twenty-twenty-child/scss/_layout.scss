@@ -74,7 +74,7 @@ header.site-header {
   div#navbarNavDropdown {
     margin-left: 40px;
     letter-spacing: 1px;
-    margin: 0 auto;
+    // margin: 0 auto;
   }
 
   img.site-logo {
@@ -95,14 +95,31 @@ header.site-header {
         display: inline;
         a {
           color: #33363a !important;
-          font-weight: bold;
+          font-weight: 500;
           text-decoration: none;
+          font-size: 16px;
         }
       }
     }
-    .nav-login {
-      position: absolute;
-      right: 80px;
+    // .nav-login {
+    //   position: absolute;
+    //   right: 80px;
+    // }
+  }
+}
+
+.login-menus {
+  ul {
+    margin: 0;
+    display: block;
+    li {
+      display: inline;
+      a {
+        color: #33363a !important;
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 16px;
+      }
     }
   }
 }

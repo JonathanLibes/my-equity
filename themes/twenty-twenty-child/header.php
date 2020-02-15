@@ -28,7 +28,7 @@ if (!defined('ABSPATH')) {
 		<!-- Header Includes the Main Nav and the top Nav -->
 		<header class="site-header">
 			<div class="mobile-menu-items" style="display: none;">
-				<img class="close" src="<?= get_stylesheet_directory_uri().'/images/close_box.png' ?>" alt="">
+				<img class="close" src="<?= get_stylesheet_directory_uri() . '/images/close_box.png' ?>" alt="">
 				<?php
 				wp_nav_menu(array(
 					'theme_location' => 'my-custom-menu',
@@ -57,8 +57,15 @@ if (!defined('ABSPATH')) {
 							'menu_class'      => 'navbar-nav mr-auto',
 						));
 						?>
-
 					</div>
+
+					<div class="login-menus">
+						<ul>
+							<li><a href="/login">Login</a></li>
+							<li><a href="/register">Register</a></li>
+						</ul>
+					</div>
+
 				</nav>
 			</div>
 		</header><!-- Header ends -->
