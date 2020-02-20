@@ -10681,6 +10681,28 @@ div#circle-two-3 > img.circle-icon {
   max-width: 140px !important;
 }
 
+.category-nav ul {
+  margin: 0 auto;
+}
+
+.category-nav ul a {
+  color: #323439;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+}
+
+.category-nav ul a:hover {
+  text-decoration: none;
+  color: #323439;
+}
+
+.category-nav ul a li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+
 .blog-posts {
   width: 100%;
   display: -ms-grid;
