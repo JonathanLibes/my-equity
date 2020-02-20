@@ -144,7 +144,7 @@ $hero = get_field('home_hero_banner');
     <!-- Start Your Journey Section -->
 
     <div class="jumbotron start-your-journey">
-        <div class="container-fluid">
+        <div class="container">
             <?php $journey_sections = get_field("journey_sections"); ?>
             <?php $journey_cta = get_field("journey_call_to_action"); ?>
 
@@ -211,7 +211,7 @@ $hero = get_field('home_hero_banner');
     <!-- Why Invest Section -->
 
     <div class="jumbotron why-invest">
-        <div class="container-fluid">
+        <div class="container">
             <!-- Desktop -->
             <div class="row m-hide">
 

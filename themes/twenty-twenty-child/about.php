@@ -21,7 +21,7 @@
     <?php $what_we_do = get_field("what_we_do"); ?>
 
     <div class="jumbotron housing-market what-we">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h3><?= $what_we_do["title"] ?></h3>
@@ -76,7 +76,7 @@
     <?php $who_we_are = get_field("who_we_are"); ?>
 
     <div class="jumbotron who-we-are">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-2">
                     <h2 class="subtitle m-hide"><?= $who_we_are["title"] ?></h2>
