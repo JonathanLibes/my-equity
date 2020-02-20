@@ -8,14 +8,40 @@
 
 get_header();
 
+$categories = get_categories();
+$category = !empty($_GET["category"]) ? $_GET["category"] : $categories[0]->slug;
+
 ?>
 
 
 <?php
-$wpb_all_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish',)); ?>
+$wpb_all_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'category_name' => $category)); ?>
 
 <div class="container-fluid">
     <div class="row">
+
+        <?php
+
+        foreach ($categories as $item) {
+            echo '<div class="col-md-4"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';
+        }
+        ?>
+
+        <?php if ($category != null) : ?>
+
+            <div class="col-lg-12 category-nav">
+                <ul>
+                    <?php foreach ($categories as $item) : ?>
+
+                        <a href="?category=<?= $item->slug ?>">
+                            <li><?= $item->name ?></li>
+                        </a>
+
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+
+        <?php endif; ?>
 
         <?php if ($wpb_all_query->have_posts()) : ?>
             <div class="col-lg-9">
