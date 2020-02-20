@@ -23,10 +23,13 @@ $wpb_all_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'pub
                     <!-- the loop -->
                     <?php while ($wpb_all_query->have_posts()) : $wpb_all_query->the_post(); ?>
                         <div class="blog-post">
-                            <img src="<?= get_field("blog_image")["url"]; ?>" alt="">
-                            <h6 class="blog-post-title"><?= the_title(); ?></h6>
-
-                            <p class="blog-excerpt"><?= get_field("excerpt"); ?></p>
+                            <a href="<?php the_permalink(); ?>">
+                                <img src="<?= get_field("blog_image")["url"]; ?>" alt="<?= get_field("blog_image")["alt"]; ?>">
+                            </a>
+                            <a href="<?php the_permalink(); ?>">
+                                <h6 class="blog-post-title"><?= the_title(); ?></h6>
+                            </a>
+                            <p class="blog-excerpt"><?= get_field("excerpt") . "..."; ?></p>
                         </div>
                     <?php endwhile; ?>
                     <!-- end of the loop -->
