@@ -10701,6 +10701,7 @@ div#circle-two-3 > img.circle-icon {
 
 .blog-posts .blog-post a {
   color: #323439;
+  text-decoration: none;
 }
 
 .blog-posts .blog-post .blog-post-title {
