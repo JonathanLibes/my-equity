@@ -10699,6 +10699,10 @@ div#circle-two-3 > img.circle-icon {
   font-size: 150%;
 }
 
+.blog-posts .blog-post a {
+  color: #323439;
+}
+
 .blog-posts .blog-post .blog-post-title {
   text-transform: none;
   margin: 10px 0;
