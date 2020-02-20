@@ -10681,8 +10681,14 @@ div#circle-two-3 > img.circle-icon {
   max-width: 140px !important;
 }
 
+.category-nav {
+  border-bottom: 1px solid #323439;
+}
+
 .category-nav ul {
   margin: 0 auto;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .category-nav ul a {

@@ -1,6 +1,9 @@
 .category-nav{
+  border-bottom: 1px solid $dark;
   ul{
     margin: 0 auto;
+    text-align: center;
+    margin: 20px 0;
     a{
       color: $dark;
       text-decoration: none;
