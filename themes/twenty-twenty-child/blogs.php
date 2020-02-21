@@ -33,7 +33,7 @@ $wpb_all_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'pub
                 <ul>
                     <?php foreach ($categories as $item) : ?>
 
-                        <a href="?category=<?= $item->slug ?>">
+                        <a class="<?= $category == $item->slug ? "nav-active" : "" ?>" href="?category=<?= $item->slug ?>">
                             <li><?= $item->name ?></li>
                         </a>
 
