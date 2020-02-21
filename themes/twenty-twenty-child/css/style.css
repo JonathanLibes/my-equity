@@ -8279,7 +8279,7 @@ footer.footer .scroll-top {
 
 footer.footer .scroll-top i {
   color: #ffffff;
-  font-size: 60px;
+  font-size: 45px;
 }
 
 .hero {
@@ -10713,6 +10713,8 @@ div#circle-two-3 > img.circle-icon {
 .blog-container {
   max-width: 90%;
   margin: 0 auto;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
 
 .blog-posts {
@@ -10726,6 +10728,20 @@ div#circle-two-3 > img.circle-icon {
   margin-top: 40px;
   border-right: 1px solid grey;
   padding: 0 30px;
+}
+
+@media (max-width: 1099px) {
+  .blog-posts {
+    -ms-grid-columns: (50%)[2];
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (max-width: 499px) {
+  .blog-posts {
+    -ms-grid-columns: (100%)[1];
+    grid-template-columns: repeat(1, 100%);
+  }
 }
 
 .blog-posts .blog-post {
@@ -10800,8 +10816,52 @@ div#circle-two-3 > img.circle-icon {
   border-radius: 4px;
 }
 
-img.advertisements {
-  width: 90%;
+.blog-sidebar #header-widget-area h2 {
+  font-size: 1.8rem;
+  color: #323439;
+}
+
+.blog-sidebar #header-widget-area form.es_subscription_form {
+  position: relative;
+}
+
+.blog-sidebar #header-widget-area form.es_subscription_form input[type="email"] {
+  background-color: lightgrey;
+  border: 1px solid grey;
+}
+
+.blog-sidebar #header-widget-area form.es_subscription_form input[type="submit"] {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: red;
+  background: none;
+}
+
+.blog-sidebar #header-widget-area form.es_subscription_form input[type="submit"]::after {
+  content: "\f105";
+  color: black;
+}
+
+.blog-sidebar #header-widget-area form.es_subscription_form button.btn {
+  background: none !important;
+}
+
+.blog-sidebar #header-widget-area form.es_subscription_form button.btn i {
+  color: #323439;
+}
+
+.blog-sidebar #header-widget-area form.es_subscription_form i.fa-angle-right {
+  position: absolute;
+  top: 10px;
+  left: 94%;
+  font-size: 30px;
+  color: #323439;
+}
+
+.ads img.advertisements {
+  width: 100%;
   margin-top: 30px;
 }
 

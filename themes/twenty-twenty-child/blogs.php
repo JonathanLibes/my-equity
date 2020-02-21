@@ -92,7 +92,18 @@ $wpb_all_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'pub
                         </ul>
                     </div>
 
-                    <img class="advertisements" src="<?= get_field("advertisement", "options"); ?>" alt="Ads">
+                    <div class="ads">
+                        <img class="advertisements" src="<?= get_field("advertisement", "options"); ?>" alt="Ads">
+                    </div>
+
+                    <?php
+
+                    if (is_active_sidebar('blog-side-bar')) : ?>
+                        <div id="header-widget-area" class="chw-widget-area widget-area" role="complementary">
+                            <?php dynamic_sidebar('blog-side-bar'); ?>
+                        </div>
+
+                    <?php endif; ?>
                 </div>
             </div>
     </div>

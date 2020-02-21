@@ -55,3 +55,17 @@ function wpb_custom_new_menu()
     register_nav_menu('my-footer-menu', __('Footer Nav'));
 }
 add_action('init', 'wpb_custom_new_menu');
+
+function wpb_widgets_init() {
+ 
+    register_sidebar( array(
+        'name'          => 'Blog Sidebar',
+        'id'            => 'blog-side-bar',
+        'before_widget' => '<div class="blog-sidebar-widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="blog-sidebar-widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+ 
+}
+add_action( 'widgets_init', 'wpb_widgets_init' );

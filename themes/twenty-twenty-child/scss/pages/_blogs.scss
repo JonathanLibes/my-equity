@@ -26,6 +26,8 @@
 .blog-container{
   max-width: 90%;
   margin: 0 auto;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
 
 .blog-posts {
@@ -33,6 +35,12 @@
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 33.333%);
+  @include media("<1100px"){
+    grid-template-columns: repeat(2, 50%);
+  }  
+  @include media("<500px"){
+    grid-template-columns: repeat(1, 100%);
+  }
   margin: 0 auto;
   margin-top: 40px;
   border-right: 1px solid grey;
@@ -98,9 +106,52 @@
       }
     }
   }
+
+  #header-widget-area{
+    h2{
+      font-size: 1.8rem;
+      color: $dark;
+    }
+
+
+    form.es_subscription_form{
+      position: relative;
+      input[type="email"]{
+        background-color: lightgrey;
+        border: 1px solid grey;
+      }
+      input[type="submit"]{
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        color: red;
+        background: none;
+        &::after{
+          content: "\f105";
+          color: black;
+        }
+      }
+      button.btn{
+        background: none !important;
+        i{
+          color: $dark;
+        }
+      }
+      i.fa-angle-right{
+        position: absolute;
+        top: 10px;
+        left: 94%;
+        font-size: 30px;
+        color: $dark;
+      }
+    }
+  }
 }
 
-img.advertisements {
-  width: 90%;
-  margin-top: 30px;
+.ads{
+  img.advertisements {
+    width: 100%;
+    margin-top: 30px;
+  }
 }
