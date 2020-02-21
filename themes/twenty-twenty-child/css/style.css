@@ -10899,6 +10899,49 @@ div#circle-two-3 > img.circle-icon {
   margin-top: 30px;
 }
 
+.single-blog {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-right: 1px solid grey;
+  padding: 0 30px;
+}
+
+.single-blog h6 {
+  color: grey;
+  font-style: normal;
+  text-transform: none;
+  margin: 10px 0 0;
+}
+
+.single-blog h2 {
+  color: #323439;
+  font-size: 3.5rem;
+  margin: 20px 0 5px;
+}
+
+.single-blog .blog-hero {
+  background-color: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+.single-blog p.author {
+  color: grey;
+  font-weight: 500;
+}
+
+.single-blog p.author span {
+  color: #5197CB;
+}
+
+.single-blog .blog-body {
+  padding-bottom: 40px;
+  border-bottom: 1px solid grey;
+}
+
 a:hover path {
   fill: #000000;
 }

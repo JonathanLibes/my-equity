@@ -183,3 +183,40 @@
     margin-top: 30px;
   }
 }
+
+.single-blog{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-right: 1px solid grey;
+  padding: 0 30px;
+  h6{
+    color: grey;
+    font-style: normal;
+    text-transform: none;
+    margin: 10px 0 0;
+  }
+  h2{
+    color: $dark;
+    font-size: 3.5rem;
+    margin: 20px 0 5px;
+  }
+  .blog-hero{
+    background-color: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+  }
+  p.author{
+    color: grey;
+    font-weight: 500;
+    span{
+      color: $blue;
+    }
+  }
+  .blog-body{
+    padding-bottom: 40px;
+    border-bottom: 1px solid grey;
+  }
+}
