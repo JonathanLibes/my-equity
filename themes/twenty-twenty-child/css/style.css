@@ -10682,7 +10682,7 @@ div#circle-two-3 > img.circle-icon {
 }
 
 .category-nav {
-  border-bottom: 1px solid #323439;
+  border-bottom: 1px solid grey;
 }
 
 .category-nav ul {
@@ -10696,6 +10696,7 @@ div#circle-two-3 > img.circle-icon {
   text-decoration: none;
   font-size: 14px;
   text-align: center;
+  font-weight: 500;
 }
 
 .category-nav ul a:hover {
@@ -10709,6 +10710,11 @@ div#circle-two-3 > img.circle-icon {
   text-align: center;
 }
 
+.blog-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 .blog-posts {
   width: 100%;
   display: -ms-grid;
@@ -10718,12 +10724,14 @@ div#circle-two-3 > img.circle-icon {
   grid-template-columns: repeat(3, 33.333%);
   margin: 0 auto;
   margin-top: 40px;
+  border-right: 1px solid grey;
+  padding: 0 30px;
 }
 
 .blog-posts .blog-post {
   color: #323439;
   border-radius: 5px;
-  padding: 20px;
+  padding: 0 20px 20px;
   font-size: 150%;
 }
 
@@ -10740,14 +10748,24 @@ div#circle-two-3 > img.circle-icon {
 .blog-posts .blog-post .blog-post-title {
   text-transform: none;
   margin: 10px 0;
+  font-size: 25px;
+  line-height: 1.2;
 }
 
 .blog-posts .blog-post .blog-excerpt {
   font-size: 16px;
 }
 
+.blog-posts .blog-post .blog-cat {
+  margin-bottom: 0;
+  margin-top: 20px;
+  font-size: 16px;
+  color: grey;
+  font-weight: 700;
+}
+
 .blog-sidebar {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .blog-sidebar h6 {
@@ -10755,10 +10773,13 @@ div#circle-two-3 > img.circle-icon {
   margin: 10px 0;
 }
 
+.blog-sidebar .social {
+  padding-top: 10px;
+}
+
 .blog-sidebar .social ul {
   text-align: left;
   margin: 0 !important;
-  padding: 0;
 }
 
 .blog-sidebar .social ul li {
@@ -10769,12 +10790,14 @@ div#circle-two-3 > img.circle-icon {
 
 .blog-sidebar .social ul li a {
   text-decoration: none !important;
-  margin: 2px !important;
 }
 
 .blog-sidebar .social ul li i {
-  font-size: 25px !important;
-  color: #323439 !important;
+  font-size: 26px;
+  color: #ffffff;
+  background-color: #323439;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
 img.advertisements {

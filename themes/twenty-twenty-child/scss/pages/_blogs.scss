@@ -1,5 +1,5 @@
 .category-nav{
-  border-bottom: 1px solid $dark;
+  border-bottom: 1px solid grey;
   ul{
     margin: 0 auto;
     text-align: center;
@@ -9,6 +9,7 @@
       text-decoration: none;
       font-size: 14px;
       text-align: center;
+      font-weight: 500;
       &:hover{
         text-decoration: none;
         color: $dark;
@@ -22,6 +23,11 @@
   }
 }
 
+.blog-container{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 .blog-posts {
   width: 100%;
   display: grid;
@@ -29,11 +35,13 @@
   grid-template-columns: repeat(3, 33.333%);
   margin: 0 auto;
   margin-top: 40px;
+  border-right: 1px solid grey;
+  padding: 0 30px;
 
   .blog-post {
     color: $dark;
     border-radius: 5px;
-    padding: 20px;
+    padding: 0 20px 20px;
     font-size: 150%;
     a {
       color: $dark;
@@ -46,35 +54,46 @@
     .blog-post-title {
       text-transform: none;
       margin: 10px 0;
+      font-size: 25px;
+      line-height: 1.2;
     }
     .blog-excerpt {
       font-size: 16px;
+    }
+    .blog-cat{
+      margin-bottom: 0;
+      margin-top: 20px;
+      font-size: 16px;
+      color: grey;
+      font-weight: 700;
     }
   }
 }
 
 .blog-sidebar {
-  margin-top: 50px;
+  margin-top: 40px;
   h6 {
     text-transform: none;
     margin: 10px 0;
   }
   .social {
+    padding-top: 10px;
     ul {
       text-align: left;
       margin: 0 !important;
-      padding: 0;
       li {
         display: inline;
         list-style: none;
         margin: 0;
         a {
           text-decoration: none !important;
-          margin: 2px !important;
         }
         i {
-          font-size: 25px !important;
-          color: $dark !important;
+          font-size: 26px;
+          color: $body-bg;
+          background-color: $dark;
+          padding: 5px 10px;
+          border-radius: 4px;
         }
       }
     }
