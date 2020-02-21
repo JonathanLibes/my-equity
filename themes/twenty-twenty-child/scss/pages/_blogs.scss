@@ -113,6 +113,30 @@
       color: $dark;
     }
 
+    .blog-sidebar-widget{
+      border-bottom: 1px solid grey;
+      &:last-child(){
+        border-bottom: none;
+      }
+      ul{
+        margin-left: 0;
+        li{
+          list-style: none;
+          margin-left: 0;
+          margin-bottom: 25px;
+          a{
+            color: $dark;
+            text-decoration: none;
+            font-weight: 500;
+            &:hover{
+              color: grey;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
 
     form.es_subscription_form{
       position: relative;

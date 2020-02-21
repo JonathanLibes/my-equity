@@ -10821,6 +10821,35 @@ div#circle-two-3 > img.circle-icon {
   color: #323439;
 }
 
+.blog-sidebar #header-widget-area .blog-sidebar-widget {
+  border-bottom: 1px solid grey;
+}
+
+.blog-sidebar #header-widget-area .blog-sidebar-widget:last-child {
+  border-bottom: none;
+}
+
+.blog-sidebar #header-widget-area .blog-sidebar-widget ul {
+  margin-left: 0;
+}
+
+.blog-sidebar #header-widget-area .blog-sidebar-widget ul li {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 25px;
+}
+
+.blog-sidebar #header-widget-area .blog-sidebar-widget ul li a {
+  color: #323439;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.blog-sidebar #header-widget-area .blog-sidebar-widget ul li a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
 .blog-sidebar #header-widget-area form.es_subscription_form {
   position: relative;
 }
