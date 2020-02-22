@@ -37,8 +37,25 @@ get_header();
 					<div id="header-widget-area" class="chw-widget-area widget-area" role="complementary">
 						<?php dynamic_sidebar('blog-post-related-post'); ?>
 					</div>
-
 				<?php endif; ?>
+
+				<?php
+				/**
+				 *  Output comments wrapper if it's a post, or if comments are open,
+				 * or if there's a comment number – and check for password.
+				 * */
+				if ((is_single() || is_page()) && (comments_open() || get_comments_number()) ) {
+				?>
+
+					<div class="comments-wrapper section-inner">
+
+						<?php comments_template(); ?>
+
+					</div><!-- .comments-wrapper -->
+
+				<?php
+				}
+				?>
 			</div>
 		</div>
 		<div class="col-lg-3">
