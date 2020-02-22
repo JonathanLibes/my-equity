@@ -258,6 +258,9 @@
     }
   }
 }
+.comment-reply-title{
+  display: none !important;
+}
 .comment-respond #submit{
   padding: 15px 30px !important;
   background-color: $blue !important;
@@ -265,4 +268,12 @@
   font-weight: 600 !important;
   font-size: 22px !important;
   text-transform: none;
+}
+.comments-inner{
+  max-width: 100% !important;
+  .comment-content{
+    p{
+      max-width: 100% !important;
+    }
+  }
 }

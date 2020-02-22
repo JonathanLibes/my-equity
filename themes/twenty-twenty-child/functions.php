@@ -15,12 +15,16 @@ function enqueue_styles()
     wp_enqueue_script('jquery-migrate', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js', array('jquery'), '', false);
     wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js', array('jquery'), '', false);
     wp_enqueue_script('bootstrap-scripts', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array(), '', true);
-    wp_enqueue_script('gridify-scripts', get_stylesheet_directory_uri() . '/js/gridify.min.js', array(), '', true);
 
     wp_enqueue_script('jqv-map', get_stylesheet_directory_uri() . '/js/jquery.vmap.min.js', array(), '', true);
     wp_enqueue_script('jqv-map-usa', get_stylesheet_directory_uri() . '/js/jquery.vmap.usa.js', array(), '', true);
     wp_enqueue_script('map-config', get_stylesheet_directory_uri() . '/js/map.js', array(), '', true);
+    wp_enqueue_style('calendar-styles', get_stylesheet_directory_uri() . '/css/evo-calendar.css', array(), 1.1);
+    wp_enqueue_script('calendar-scripts', get_stylesheet_directory_uri() . '/js/evo-calendar.js', array(), '', true);
 
+    if (!is_front_page()) {
+        wp_enqueue_script('gridify-scripts', get_stylesheet_directory_uri() . '/js/gridify.min.js', array(), '', true);
+    }
 
     if (is_front_page()) {
         // Scroll magic

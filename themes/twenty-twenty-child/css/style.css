@@ -9063,6 +9063,10 @@ footer.footer .scroll-top i {
   color: #323439;
 }
 
+.upcoming-events .calendar-container {
+  max-width: 1250px;
+}
+
 .slick-dots {
   position: relative !important;
   display: -ms-flexbox;
@@ -10988,6 +10992,10 @@ div#circle-two-3 > img.circle-icon {
   display: none !important;
 }
 
+.comment-reply-title {
+  display: none !important;
+}
+
 .comment-respond #submit {
   padding: 15px 30px !important;
   background-color: #5197CB !important;
@@ -10995,6 +11003,14 @@ div#circle-two-3 > img.circle-icon {
   font-weight: 600 !important;
   font-size: 22px !important;
   text-transform: none;
+}
+
+.comments-inner {
+  max-width: 100% !important;
+}
+
+.comments-inner .comment-content p {
+  max-width: 100% !important;
 }
 
 a:hover path {
