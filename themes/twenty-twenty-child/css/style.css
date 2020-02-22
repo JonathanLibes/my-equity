@@ -10942,6 +10942,36 @@ div#circle-two-3 > img.circle-icon {
   border-bottom: 1px solid grey;
 }
 
+/* Related posts */
+.blog-post-related {
+  border-bottom: 1px solid grey;
+}
+
+.blog-post-related .blog-post-related-title {
+  color: grey;
+}
+
+.blog-post-related a.relpost-block-single {
+  width: 33.33% !important;
+}
+
+.blog-post-related a.relpost-block-single div {
+  width: 100% !important;
+}
+
+.blog-post-related .relpost-block-single-image {
+  width: 100% !important;
+  height: 250px !important;
+}
+
+.blog-post-related .relpost-block-single-text {
+  font-size: 22px !important;
+  color: #323439 !important;
+  font-weight: 600 !important;
+  text-align: left !important;
+  margin-top: 15px !important;
+}
+
 a:hover path {
   fill: #000000;
 }

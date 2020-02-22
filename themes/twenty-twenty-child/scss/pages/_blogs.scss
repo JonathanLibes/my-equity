@@ -1,33 +1,33 @@
-.category-nav{
+.category-nav {
   border-bottom: 1px solid grey;
-  ul{
+  ul {
     margin: 0 auto;
     text-align: center;
     margin: 20px 0;
-    a{
+    a {
       color: $dark;
       text-decoration: none;
       font-size: 14px;
       text-align: center;
       font-weight: 600;
       margin: 0 10px;
-      &:hover{
+      &:hover {
         text-decoration: none;
         color: grey;
       }
-      li{
+      li {
         list-style: none;
         display: inline-block;
         text-align: center;
       }
     }
-    a.nav-active{
+    a.nav-active {
       color: grey;
     }
   }
 }
 
-.blog-container{
+.blog-container {
   max-width: 90%;
   margin: 0 auto;
   padding-bottom: 50px;
@@ -39,10 +39,10 @@
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 33.333%);
-  @include media("<1100px"){
+  @include media("<1100px") {
     grid-template-columns: repeat(2, 50%);
-  }  
-  @include media("<500px"){
+  }
+  @include media("<500px") {
     grid-template-columns: repeat(1, 100%);
   }
   margin: 0 auto;
@@ -72,7 +72,7 @@
     .blog-excerpt {
       font-size: 16px;
     }
-    .blog-cat{
+    .blog-cat {
       margin-bottom: 0;
       margin-top: 20px;
       font-size: 16px;
@@ -111,28 +111,28 @@
     }
   }
 
-  #header-widget-area{
-    h2{
+  #header-widget-area {
+    h2 {
       font-size: 1.8rem;
       color: $dark;
     }
 
-    .blog-sidebar-widget{
+    .blog-sidebar-widget {
       border-bottom: 1px solid grey;
-      &:last-child(){
+      &:last-child() {
         border-bottom: none;
       }
-      ul{
+      ul {
         margin-left: 0;
-        li{
+        li {
           list-style: none;
           margin-left: 0;
           margin-bottom: 25px;
-          a{
+          a {
             color: $dark;
             text-decoration: none;
             font-weight: 500;
-            &:hover{
+            &:hover {
               color: grey;
               text-decoration: none;
             }
@@ -141,32 +141,31 @@
       }
     }
 
-
-    form.es_subscription_form{
+    form.es_subscription_form {
       position: relative;
-      input[type="email"]{
+      input[type="email"] {
         background-color: lightgrey;
         border: 1px solid grey;
       }
-      input[type="submit"]{
+      input[type="submit"] {
         position: absolute;
         right: 0;
         top: 0;
         bottom: 0;
         color: red;
         background: none;
-        &::after{
+        &::after {
           content: "\f105";
           color: black;
         }
       }
-      button.btn{
+      button.btn {
         background: none !important;
-        i{
+        i {
           color: $dark;
         }
       }
-      i.fa-angle-right{
+      i.fa-angle-right {
         position: absolute;
         top: 10px;
         left: 94%;
@@ -177,46 +176,72 @@
   }
 }
 
-.ads{
+.ads {
   img.advertisements {
     width: 100%;
     margin-top: 30px;
   }
 }
 
-.single-blog{
+.single-blog {
   width: 100%;
   margin: 0 auto;
   margin-top: 40px;
   border-right: 1px solid grey;
   padding: 0 30px;
-  h6{
+  h6 {
     color: grey;
     font-style: normal;
     text-transform: none;
     margin: 10px 0 0;
   }
-  h2{
+  h2 {
     color: $dark;
     font-size: 3.5rem;
     margin: 20px 0 5px;
   }
-  .blog-hero{
+  .blog-hero {
     background-color: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 70vh;
   }
-  p.author{
+  p.author {
     color: grey;
     font-weight: 500;
-    span{
+    span {
       color: $blue;
     }
   }
-  .blog-body{
+  .blog-body {
     padding-bottom: 40px;
     border-bottom: 1px solid grey;
+  }
+}
+
+/* Related posts */
+
+.blog-post-related {
+  border-bottom: 1px solid grey;
+  .blog-post-related-title {
+    color: grey;
+  }
+  a.relpost-block-single {
+    width: 33.33% !important;
+    div {
+      width: 100% !important;
+    }
+  }
+  .relpost-block-single-image {
+    width: 100% !important;
+    height: 250px !important;
+  }
+  .relpost-block-single-text{
+    font-size: 22px !important;
+    color: $dark !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+    margin-top: 15px !important;
   }
 }

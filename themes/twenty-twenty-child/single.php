@@ -32,6 +32,13 @@ get_header();
 				<div class="blog-body">
 					<?= $post_object->post_content; ?>
 				</div>
+
+				<?php if (is_active_sidebar('blog-post-related-post')) : ?>
+					<div id="header-widget-area" class="chw-widget-area widget-area" role="complementary">
+						<?php dynamic_sidebar('blog-post-related-post'); ?>
+					</div>
+
+				<?php endif; ?>
 			</div>
 		</div>
 		<div class="col-lg-3">

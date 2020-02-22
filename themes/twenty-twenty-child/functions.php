@@ -56,16 +56,32 @@ function wpb_custom_new_menu()
 }
 add_action('init', 'wpb_custom_new_menu');
 
-function wpb_widgets_init() {
- 
-    register_sidebar( array(
+
+/** Widgets */
+
+function wpb_widgets_init()
+{
+
+    /** Blog Sidebar */
+
+    register_sidebar(array(
         'name'          => 'Blog Sidebar',
         'id'            => 'blog-side-bar',
         'before_widget' => '<div class="blog-sidebar-widget">',
         'after_widget'  => '</div>',
         'before_title'  => '<h2 class="blog-sidebar-widget-title">',
         'after_title'   => '</h2>',
-    ) );
- 
+    ));
+
+    /** Related POsts */
+
+    register_sidebar(array(
+        'name'          => 'Blog Post Related Post',
+        'id'            => 'blog-post-related-post',
+        'before_widget' => '<div class="blog-post-related">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h5 class="blog-post-related-title">',
+        'after_title'   => '</h5>',
+    ));
 }
-add_action( 'widgets_init', 'wpb_widgets_init' );
+add_action('widgets_init', 'wpb_widgets_init');
