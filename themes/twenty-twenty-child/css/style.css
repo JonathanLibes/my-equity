@@ -8650,7 +8650,7 @@ footer.footer .scroll-top i {
 }
 
 .home-page-content .knowledge-block-mobile .text-container {
-  background-color: #733F9A;
+  background-color: #733f9a;
 }
 
 .home-page-content .asset-block-mobile .text-container {
@@ -8658,7 +8658,7 @@ footer.footer .scroll-top i {
 }
 
 .home-page-content .data-block-mobile .text-container {
-  background-color: #5197CB;
+  background-color: #5197cb;
 }
 
 .home-page-content .start-your-journey {
@@ -9094,7 +9094,7 @@ footer.footer .scroll-top i {
 }
 
 .slick-dots li.slick-active button {
-  background-color: #733F9A !important;
+  background-color: #733f9a !important;
 }
 
 .cloud {
@@ -9351,7 +9351,7 @@ footer.footer .scroll-top i {
   margin-top: 40px;
   letter-spacing: 1px;
   max-width: 350px !important;
-  background-color: #5197CB;
+  background-color: #5197cb;
 }
 
 .about-page-content .our-team .team-slider button.slick-next.slick-arrow {
@@ -9523,7 +9523,7 @@ footer.footer .scroll-top i {
 }
 
 .services .investors {
-  background-color: #733F9A;
+  background-color: #733f9a;
 }
 
 .services .builders {
@@ -9531,7 +9531,7 @@ footer.footer .scroll-top i {
 }
 
 .services .seminars {
-  background-color: #5197CB;
+  background-color: #5197cb;
 }
 
 .services__investors {
@@ -9552,7 +9552,7 @@ footer.footer .scroll-top i {
 }
 
 .services__investors .investor-carousel .investor-carousel-inner1 h3 {
-  color: #733F9A;
+  color: #733f9a;
   margin: 0 !important;
   margin-bottom: 30px !important;
   font-size: 35px;
@@ -9599,7 +9599,7 @@ footer.footer .scroll-top i {
 }
 
 .services__investors .investor-carousel .investor-carousel-inner2 h3 {
-  color: #733F9A;
+  color: #733f9a;
   margin: 0 !important;
   margin-bottom: 20px !important;
   margin-top: 20px !important;
@@ -9657,7 +9657,7 @@ footer.footer .scroll-top i {
 }
 
 .menu-investor {
-  background-color: #733F9A;
+  background-color: #733f9a;
 }
 
 .services-mobile-inner a.menu {
@@ -9675,7 +9675,7 @@ footer.footer .scroll-top i {
 }
 
 .services-mobile-inner .content-one h3 {
-  color: #733F9A;
+  color: #733f9a;
 }
 
 .services-mobile-inner .content-one .cta {
@@ -9697,7 +9697,7 @@ footer.footer .scroll-top i {
   font-size: 20px;
   margin-top: 40px;
   letter-spacing: 1px;
-  background-color: #5197CB;
+  background-color: #5197cb;
   margin-bottom: 30px;
 }
 
@@ -9730,7 +9730,7 @@ footer.footer .scroll-top i {
 }
 
 .services-mobile-inner .content-two h3 {
-  color: #733F9A;
+  color: #733f9a;
 }
 
 .services-mobile-inner .content-two .cta {
@@ -9752,7 +9752,7 @@ footer.footer .scroll-top i {
   font-size: 20px;
   margin-top: 40px;
   letter-spacing: 1px;
-  background-color: #5197CB;
+  background-color: #5197cb;
   margin-bottom: 30px;
 }
 
@@ -9827,7 +9827,7 @@ footer.footer .scroll-top i {
   margin-top: 40px;
   letter-spacing: 1px;
   max-width: 250px;
-  background-color: #5197CB;
+  background-color: #5197cb;
 }
 
 .services__seminars .seminar-carousel .unit-title {
@@ -9869,7 +9869,7 @@ footer.footer .scroll-top i {
 }
 
 .seminars-mobile-inner .menu-seminar {
-  background-color: #5197CB;
+  background-color: #5197cb;
 }
 
 .seminars-mobile-inner a.menu {
@@ -10099,7 +10099,7 @@ footer.footer .scroll-top i {
 }
 
 .contact-page-form input[type="submit"] {
-  background-color: #733F9A;
+  background-color: #733f9a;
   text-transform: capitalize;
   position: relative;
   display: block;
@@ -10160,7 +10160,7 @@ footer.footer .scroll-top i {
 .contact-page-form .contact-cta .columns a.large-button {
   max-width: unset !important;
   width: 100% !important;
-  background-color: #5197CB;
+  background-color: #5197cb;
 }
 
 .social-promotion {
@@ -10172,7 +10172,7 @@ footer.footer .scroll-top i {
   width: 30%;
   margin: 1%;
   padding: 10px;
-  background-color: #5197CB;
+  background-color: #5197cb;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -10191,7 +10191,7 @@ footer.footer .scroll-top i {
 }
 
 .social-promotion a i {
-  color: #5197CB;
+  color: #5197cb;
   background-color: #ffffff;
   padding: 5px 10px;
   border-radius: 4px;
@@ -10938,7 +10938,7 @@ div#circle-two-3 > img.circle-icon {
 }
 
 .single-blog p.author span {
-  color: #5197CB;
+  color: #5197cb;
 }
 
 .single-blog .blog-body {
@@ -10998,7 +10998,7 @@ div#circle-two-3 > img.circle-icon {
 
 .comment-respond #submit {
   padding: 15px 30px !important;
-  background-color: #5197CB !important;
+  background-color: #5197cb !important;
   margin: 0 auto !important;
   font-weight: 600 !important;
   font-size: 22px !important;
@@ -11013,12 +11013,154 @@ div#circle-two-3 > img.circle-icon {
   max-width: 100% !important;
 }
 
-a:hover path {
+.properties-map {
+  margin-bottom: 0;
+  background-color: #ffffff;
+}
+
+.properties-map a:hover path {
   fill: #000000;
+}
+
+.properties-section {
+  background-color: #ffffff;
 }
 
 .properties-section .container {
   max-width: 1600px !important;
+}
+
+.properties-section .container .property-card {
+  margin-bottom: 20px;
+  border-radius: 0;
+  border: 1px solid #ffffff;
+}
+
+.properties-section .container .property-card .card-header {
+  padding: 0;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.properties-section .container .property-card .card-body {
+  background-color: #323439;
+  color: #ffffff;
+  padding: 0;
+}
+
+.properties-section .container .property-card .card-body .card-details {
+  margin-left: 0;
+  margin-right: 0;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.properties-section .container .property-card .card-body .card-details span {
+  font-size: 14px !important;
+  font-weight: 500;
+  text-align: center !important;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.properties-section .container .property-card .card-body .card-details h4 {
+  margin: 5px 0 0;
+  text-align: center;
+}
+
+.properties-section .container .property-card .card-body .card-details h5 {
+  margin: 5px 0 0;
+  text-align: center;
+}
+
+.properties-section .container .property-card .card-body .card-details h6 {
+  margin: 5px 0 0;
+  text-align: center;
+  text-transform: none;
+}
+
+.properties-section .container .property-card .card-body .card-details .purchase-price {
+  padding: 0 !important;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
+  border-right: 1px solid grey;
+}
+
+.properties-section .container .property-card .card-body .card-details .down-payment {
+  border-left: 1px solid grey;
+  padding: 0 !important;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
+}
+
+.properties-section .container .property-card .card-body .card-details .size {
+  padding: 0 !important;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
+  border-right: 1px solid grey;
+}
+
+.properties-section .container .property-card .card-body .card-details .bedrooms {
+  padding: 0 !important;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+}
+
+.properties-section .container .property-card .card-body .card-details .bathrooms {
+  padding: 0 !important;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
+  border-left: 1px solid grey;
+}
+
+.properties-section .container .property-card .card-body .card-details .model {
+  padding: 0 !important;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
+  border-right: 1px solid grey;
+}
+
+.properties-section .container .property-card .card-body .card-details .metro {
+  padding: 0 !important;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+}
+
+.properties-section .container .property-card .card-body .card-details .state {
+  padding: 0 !important;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
+  border-left: 1px solid grey;
+}
+
+.properties-section .container .property-card .card-footer {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-top: 1px solid #ffffff;
+  background-color: transparent;
+}
+
+.properties-section .container .property-card .card-footer a {
+  position: relative;
+  display: block;
+  background-color: #7fcc0a;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #323439;
+  font-weight: 500;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.properties-section .container .property-card .card-footer a:hover {
+  background-color: #b1d476;
 }
 
 @media screen and (max-width: 1000px) {

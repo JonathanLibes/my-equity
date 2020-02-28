@@ -1,14 +1,121 @@
-.properties-map {
+@mixin cardDetailsPadding() {
+  padding: 0 !important;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
 }
 
-a:hover {
-  path {
-    fill: #000000;
+.properties-map {
+  margin-bottom: 0;
+  background-color: $body-bg;
+  a:hover {
+    path {
+      fill: #000000;
+    }
   }
 }
 
 .properties-section {
+  background-color: $body-bg;
   .container {
     max-width: 1600px !important;
+    .property-card {
+      margin-bottom: 20px;
+      border-radius: 0;
+      border: 1px solid $body-bg;
+      .card-header {
+        padding: 0;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .card-body {
+        background-color: $dark;
+        color: $body-bg;
+        padding: 0;
+
+        .card-details {
+          margin-left: 0;
+          margin-right: 0;
+          border-top: 1px solid $body-bg;
+          border-bottom: 1px solid $body-bg;
+          span {
+            font-size: 14px !important;
+            font-weight: 500;
+            text-align: center !important;
+            position: relative;
+            display: block;
+            margin: 0 auto;
+          }
+          h4 {
+            margin: 5px 0 0;
+            text-align: center;
+          }
+          h5 {
+            margin: 5px 0 0;
+            text-align: center;
+          }
+          h6 {
+            margin: 5px 0 0;
+            text-align: center;
+            text-transform: none;
+          }
+          .purchase-price {
+            @include cardDetailsPadding();
+            border-right: 1px solid grey;
+          }
+          .down-payment {
+            border-left: 1px solid grey;
+            @include cardDetailsPadding();
+          }
+          .size {
+            @include cardDetailsPadding();
+            border-right: 1px solid grey;
+          }
+          .bedrooms {
+            @include cardDetailsPadding();
+            border-right: 1px solid grey;
+            border-left: 1px solid grey;
+          }
+          .bathrooms {
+            @include cardDetailsPadding();
+            border-left: 1px solid grey;
+          }
+          .model {
+            @include cardDetailsPadding();
+            border-right: 1px solid grey;
+          }
+          .metro {
+            @include cardDetailsPadding();
+            border-right: 1px solid grey;
+            border-left: 1px solid grey;
+          }
+          .state {
+            @include cardDetailsPadding();
+            border-left: 1px solid grey;
+          }
+        }
+      }
+      .card-footer {
+        padding: 0 !important;
+        margin: 0 !important;
+        border-top: 1px solid $body-bg;
+        background-color: transparent;
+        a {
+          position: relative;
+          display: block;
+          background-color: $card-cta;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          color: $dark;
+          font-weight: 500;
+          padding: 15px;
+          text-decoration: none;
+          &:hover {
+            background-color: $triangle-green;
+          }
+        }
+      }
+    }
   }
 }
