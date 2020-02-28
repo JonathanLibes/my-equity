@@ -296,14 +296,14 @@ $hero = get_field('home_hero_banner');
     <!-- Upcoming events -->
 
     <div class="jumbotron upcoming-events">
-        <div class="container">
+        <div class="container calendar-container">
             <div class="row">
                 <div class="col-lg-12">
                     <h4>Upcoming Events</h4>
                     <h6>Choose a date</h6>
-                    <div id="datepicker"></div>
- 
-
+                    <div id="evoCalendar"></div>
+                    <!-- Try this as well -->
+                    <!-- http://kylestetz.github.io/CLNDR/ -->
                 </div>
             </div>
         </div>
@@ -319,5 +319,35 @@ $hero = get_field('home_hero_banner');
         background-color: #eaf2fa !important;
     }
 </style>
+
 <?php get_footer(); // get footer assets 
 ?>
+
+<script>
+        jQuery('#evoCalendar').evoCalendar({
+            todayHighlight: true,
+            sidebarToggler: false,
+            eventListToggler: false,
+            canAddEvent: false,
+            calendarEvents: [
+                { name: "New Year", date: "Wed Jan 01 2020 00:00:00 GMT-0800 (Pacific Standard Time)", type: "holiday", everyYear: true },
+                { name: "Valentine's Day", date: "Fri Feb 14 2020 00:00:00 GMT-0800 (Pacific Standard Time)", type: "holiday", everyYear: true },
+                { name: "Patient #1", date: "February/3/2020", type: "event" },
+                { name: "Patient #3", date: "February/3/2020", type: "event" },
+                { name: "Patient #4", date: "February/3/2020", type: "event" },
+                { name: "Holiday #3", date: "February/3/2020", type: "holiday" },
+                { name: "Birthday #2", date: "February/3/2020", type: "birthday" },
+                { name: "Author's Birthday", date: "February/15/2020", type: "birthday", everyYear: true },
+                { name: "Holiday #4", date: "February/15/2020", type: "event" },
+                { name: "Patient #2", date: "February/8/2020", type: "event" },
+                { name: "Leap day", date: "February/29/2020", type: "holiday", everyYear: true }
+            ],
+            onSelectDate: function() {
+                // console.log('onSelectDate!')
+            },
+            onAddEvent: function() {
+                console.log('onAddEvent!')
+            }
+        });
+        // $("#evoCalendar").evoCalendar('addCalendarEvent', [...]);
+    </script>

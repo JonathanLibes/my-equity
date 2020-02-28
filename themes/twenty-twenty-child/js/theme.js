@@ -112,4 +112,8 @@ jQuery(function () {
         resizable: true,
     });
 
+
+    /** Newsletter Icon */
+
+    jQuery(".es_subscription_form_submit").replaceWith("<button class=\"btn\" type=\"submit\"><i class=\"fa fa-angle-right\"></i></button>");
 });

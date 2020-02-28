@@ -33,7 +33,7 @@ $wpb_all_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'pub
                 <ul>
                     <?php foreach ($categories as $item) : ?>
 
-                        <a href="?category=<?= $item->slug ?>">
+                        <a class="<?= $category == $item->slug ? "nav-active" : "" ?>" href="?category=<?= $item->slug ?>">
                             <li><?= $item->name ?></li>
                         </a>
 
@@ -43,15 +43,23 @@ $wpb_all_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'pub
 
         <?php endif; ?>
 
+    </div>
+</div>
+
+<div class="container-fluid blog-container">
+    <div class="row">
+
         <?php if ($wpb_all_query->have_posts()) : ?>
             <div class="col-lg-9">
                 <div class="blog-posts">
                     <!-- the loop -->
                     <?php while ($wpb_all_query->have_posts()) : $wpb_all_query->the_post(); ?>
+                        <?php $cat_name = get_the_category(get_the_ID())[0]->name; ?>
                         <div class="blog-post">
                             <a href="<?php the_permalink(); ?>">
                                 <img src="<?= get_field("blog_image")["url"]; ?>" alt="<?= get_field("blog_image")["alt"]; ?>">
                             </a>
+                            <p class="blog-cat"><?= $cat_name; ?></p>
                             <a href="<?php the_permalink(); ?>">
                                 <h6 class="blog-post-title"><?= the_title(); ?></h6>
                             </a>
@@ -84,7 +92,18 @@ $wpb_all_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'pub
                         </ul>
                     </div>
 
-                    <img class="advertisements" src="<?= get_field("advertisement", "options"); ?>" alt="Ads">
+                    <div class="ads">
+                        <img class="advertisements" src="<?= get_field("advertisement", "options"); ?>" alt="Ads">
+                    </div>
+
+                    <?php
+
+                    if (is_active_sidebar('blog-side-bar')) : ?>
+                        <div id="header-widget-area" class="chw-widget-area widget-area" role="complementary">
+                            <?php dynamic_sidebar('blog-side-bar'); ?>
+                        </div>
+
+                    <?php endif; ?>
                 </div>
             </div>
     </div>

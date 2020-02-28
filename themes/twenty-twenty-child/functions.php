@@ -15,11 +15,12 @@ function enqueue_styles()
     wp_enqueue_script('jquery-migrate', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js', array('jquery'), '', false);
     wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js', array('jquery'), '', false);
     wp_enqueue_script('bootstrap-scripts', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array(), '', true);
-    wp_enqueue_script('gridify-scripts', get_stylesheet_directory_uri() . '/js/gridify.min.js', array(), '', true);
 
     wp_enqueue_script('jqv-map', get_stylesheet_directory_uri() . '/js/jquery.vmap.min.js', array(), '', true);
     wp_enqueue_script('jqv-map-usa', get_stylesheet_directory_uri() . '/js/jquery.vmap.usa.js', array(), '', true);
     wp_enqueue_script('map-config', get_stylesheet_directory_uri() . '/js/map.js', array(), '', true);
+    // wp_enqueue_style('calendar-styles', get_stylesheet_directory_uri() . '/css/evo-calendar.css', array(), 1.1);
+    // wp_enqueue_script('calendar-scripts', get_stylesheet_directory_uri() . '/js/evo-calendar.js', array(), '', true);
 
     wp_enqueue_style('font-awesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), 1.1);
 
@@ -60,3 +61,33 @@ function wpb_custom_new_menu()
     register_nav_menu('my-footer-menu', __('Footer Nav'));
 }
 add_action('init', 'wpb_custom_new_menu');
+
+
+/** Widgets */
+
+function wpb_widgets_init()
+{
+
+    /** Blog Sidebar */
+
+    register_sidebar(array(
+        'name'          => 'Blog Sidebar',
+        'id'            => 'blog-side-bar',
+        'before_widget' => '<div class="blog-sidebar-widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="blog-sidebar-widget-title">',
+        'after_title'   => '</h2>',
+    ));
+
+    /** Related POsts */
+
+    register_sidebar(array(
+        'name'          => 'Blog Post Related Post',
+        'id'            => 'blog-post-related-post',
+        'before_widget' => '<div class="blog-post-related">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h5 class="blog-post-related-title">',
+        'after_title'   => '</h5>',
+    ));
+}
+add_action('widgets_init', 'wpb_widgets_init');

@@ -557,6 +557,9 @@
     text-transform: none;
     color: $dark;
   }
+  .calendar-container{
+    max-width: 1250px;
+  }
 }
 
 // Styling the default Slick dots

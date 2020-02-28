@@ -276,26 +276,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_5e27cd902c9a8",
-            "label": "From",
-            "name": "from_date",
-            "type": "date_time_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "display_format": "m\/d\/Y g:i a",
-            "return_format": "Y-m-d H:i:s",
-            "first_day": 1
-        },
-        {
             "key": "field_5e27cdc52c9a9",
-            "label": "To",
-            "name": "to_date",
+            "label": "Date & Time",
+            "name": "date_time",
             "type": "date_time_picker",
             "instructions": "",
             "required": 0,
@@ -327,5 +310,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1581264841
+    "modified": 1582356825
 }
