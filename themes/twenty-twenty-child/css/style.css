@@ -11017,6 +11017,10 @@ a:hover path {
   fill: #000000;
 }
 
+.properties-section .container {
+  max-width: 1600px !important;
+}
+
 @media screen and (max-width: 1000px) {
   .m-hide {
     display: none !important;
