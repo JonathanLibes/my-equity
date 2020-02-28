@@ -8172,8 +8172,8 @@ header.site-header .navbar-toggler {
 }
 
 header.site-header div#navbarNavDropdown {
-  margin-left: 40px;
   letter-spacing: 1px;
+  margin: 0 auto;
 }
 
 header.site-header img.site-logo {

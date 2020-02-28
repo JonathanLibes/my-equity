@@ -21,6 +21,8 @@ function enqueue_styles()
     wp_enqueue_script('jqv-map-usa', get_stylesheet_directory_uri() . '/js/jquery.vmap.usa.js', array(), '', true);
     wp_enqueue_script('map-config', get_stylesheet_directory_uri() . '/js/map.js', array(), '', true);
 
+    wp_enqueue_style('font-awesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), 1.1);
+
 
     if (is_front_page()) {
         // Scroll magic
@@ -33,6 +35,9 @@ function enqueue_styles()
         wp_enqueue_script('gsap-cssplugin', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/CSSRulePlugin.min.js', array('jquery'), '', false);
         wp_enqueue_script('gsap-motionpath', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/MotionPathPlugin.min.js', array('jquery'), '', false);
         wp_enqueue_script('myequity-scroll-animation', get_stylesheet_directory_uri() . '/js/scroll-animation.js', array(), '', true);
+
+        wp_enqueue_script('calendar-ui', get_stylesheet_directory_uri() . '/calendar/calendar.js', array(), '', true);
+        wp_enqueue_style('calendar-ui', get_stylesheet_directory_uri() . '/calendar/calendar.css', array(), 1.1);
     }
 
     wp_enqueue_script('slick-js', get_stylesheet_directory_uri() . '/js/slick.min.js', array('jquery'), '', false);

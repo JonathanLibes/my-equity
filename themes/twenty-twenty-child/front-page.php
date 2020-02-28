@@ -301,6 +301,9 @@ $hero = get_field('home_hero_banner');
                 <div class="col-lg-12">
                     <h4>Upcoming Events</h4>
                     <h6>Choose a date</h6>
+                    <div id="datepicker"></div>
+ 
+
                 </div>
             </div>
         </div>

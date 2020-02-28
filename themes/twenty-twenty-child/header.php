@@ -59,12 +59,12 @@ if (!defined('ABSPATH')) {
 						?>
 					</div>
 
-					<div class="login-menus">
+					<!-- <div class="login-menus">
 						<ul>
 							<li><a href="/login">Login</a></li>
 							<li><a href="/register">Register</a></li>
 						</ul>
-					</div>
+					</div> -->
 
 				</nav>
 			</div>
