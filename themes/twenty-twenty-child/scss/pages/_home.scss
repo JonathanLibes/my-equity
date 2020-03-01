@@ -10,8 +10,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     @include media("<1000px") {
-      background: none;
-      background-color: #eaf2fa;
+      background-image: none !important;
+      background-color: #eaf2fa !important;
+      background-position: unset !important;
     }
     .column {
       margin: 0 !important;
@@ -21,6 +22,9 @@
       min-height: 200px;
       @include media("<1300px", ">1000px") {
         min-height: 120px;
+      }
+      @include media("<1000px"){
+        display: none !important;
       }
     }
     .cloud-group-one {
@@ -105,12 +109,18 @@
         @include media(">1000px", "<1300px") {
           font-size: 25px;
         }
+        @include media("<1000px"){
+          margin: 50px 0 20px 0;
+        }
       }
     }
     .hero-house-container {
       position: relative;
       margin: 0 auto;
       .house-group-one {
+        @include media("<1000px"){
+          display: none !important;
+        }
         img.house {
           max-width: 220px;
           position: relative;
@@ -149,6 +159,9 @@
         }
       }
       .house-group-three {
+        @include media("<1000px"){
+          display: none !important;
+        }
         img.house {
           max-width: 300px;
           position: relative;

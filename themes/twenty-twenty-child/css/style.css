@@ -8314,8 +8314,9 @@ footer.footer .scroll-top i {
 
 @media (max-width: 999px) {
   .home-page-content .home-hero-banner {
-    background: none;
-    background-color: #eaf2fa;
+    background-image: none !important;
+    background-color: #eaf2fa !important;
+    background-position: unset !important;
   }
 }
 
@@ -8331,6 +8332,12 @@ footer.footer .scroll-top i {
 @media (max-width: 1299px) and (min-width: 1001px) {
   .home-page-content .home-hero-banner .cloud-group {
     min-height: 120px;
+  }
+}
+
+@media (max-width: 999px) {
+  .home-page-content .home-hero-banner .cloud-group {
+    display: none !important;
   }
 }
 
@@ -8461,9 +8468,21 @@ footer.footer .scroll-top i {
   }
 }
 
+@media (max-width: 999px) {
+  .home-page-content .home-hero-banner .hero-text-container h3 {
+    margin: 50px 0 20px 0;
+  }
+}
+
 .home-page-content .home-hero-banner .hero-house-container {
   position: relative;
   margin: 0 auto;
+}
+
+@media (max-width: 999px) {
+  .home-page-content .home-hero-banner .hero-house-container .house-group-one {
+    display: none !important;
+  }
 }
 
 .home-page-content .home-hero-banner .hero-house-container .house-group-one img.house {
@@ -8506,6 +8525,12 @@ footer.footer .scroll-top i {
 @media (min-width: 1001px) and (max-width: 1299px) {
   .home-page-content .home-hero-banner .hero-house-container .house-group-two img.house {
     max-width: 180px;
+  }
+}
+
+@media (max-width: 999px) {
+  .home-page-content .home-hero-banner .hero-house-container .house-group-three {
+    display: none !important;
   }
 }
 
